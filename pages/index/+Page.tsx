@@ -140,9 +140,9 @@ export default function Page() {
                       Level {display}
                     </h3>
                   </div>
-                  <p className="mt-2 text-gray-500">
+                  {/* <p className="mt-2 text-gray-500">
                     View all dungeons in this level range
-                  </p>
+                  </p> */}
                 </a>
               </div>
             ))}
