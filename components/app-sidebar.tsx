@@ -4,6 +4,7 @@ import {
   SidebarGroup,
   SidebarGroupContent,
   SidebarGroupLabel,
+  SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
@@ -89,50 +90,57 @@ export function AppSidebar() {
   }, [pageContext.urlPathname]);
   const renderSidebarContent = () => (
     <>
-      <div className="mb-6">
-        <Link
-          href="/"
-          className="block text-xl font-bold text-blue-600 hover:text-blue-800 mb-2"
-        >
-          HaveSome Stratfu
-        </Link>
-        <div className="text-sm text-gray-500">Strategies & Guides</div>
-      </div>
-
-      <div className="space-y-1">
-        <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
-          {currentSlice ? "Dungeons" : "Level Ranges"}
-        </h3>
-
-        {currentSlice && dungeonsBySlice[currentSlice]
-          ? // Show dungeons for current level slice
-            dungeonsBySlice[currentSlice].map((dungeon) => (
-              <a
-                key={dungeon.name}
+      {/* <div className="space-y-1"> */}
+      {currentSlice && dungeonsBySlice[currentSlice]
+        ? // Show dungeons for current level slice
+          dungeonsBySlice[currentSlice].map((dungeon) => (
+            <SidebarMenuItem key={dungeon.name}>
+              <Link
                 href={`#${dungeon.name.toLowerCase().replace(/\s+/g, "-")}`}
                 className="block px-3 py-2 text-sm rounded-md hover:bg-gray-100 text-gray-700 hover:text-gray-900"
               >
                 {dungeon.name}
-              </a>
-            ))
-          : // Show all level slices
-            levelSlices.map((slice) => (
+              </Link>
+            </SidebarMenuItem>
+          ))
+        : // Show all level slices
+          levelSlices.map((slice) => (
+            <SidebarMenuItem key={slice}>
               <Link
-                key={slice}
                 href={`/level/${slice}`}
                 className="block px-3 py-2 text-sm rounded-md hover:bg-gray-100 text-gray-700 hover:text-gray-900"
               >
                 Level {slice}
               </Link>
-            ))}
-      </div>
+            </SidebarMenuItem>
+          ))}
+      {/* </div> */}
     </>
   );
   return (
-    <Sidebar>
+    <Sidebar variant="inset">
+      <SidebarHeader>
+        {/* {" "} */}
+        <div className="mb-2">
+          <Link
+            href="/"
+            className="block text-xl font-bold text-blue-600 hover:text-blue-800 mb-2"
+          >
+            HaveSome Stratfu
+          </Link>
+          <div className="text-sm text-gray-500">Strategies & Guides</div>
+        </div>
+      </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Application</SidebarGroupLabel>
+          <SidebarGroupLabel>
+            {/* <SidebarMenuButton> */}
+            {/* {" "} */}
+            {/* <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider"> */}
+            {currentSlice ? "Dungeons" : "Level Ranges"}
+            {/* </h3> */}
+            {/* </SidebarMenuButton> */}
+          </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>{renderSidebarContent()}</SidebarMenu>
           </SidebarGroupContent>
