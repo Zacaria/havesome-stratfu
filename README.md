@@ -1,28 +1,83 @@
-Generated with [vike.dev/new](https://vike.dev/new) ([version 443](https://www.npmjs.com/package/create-vike/v/0.0.443)) using this command:
+# HaveSome Stratfu
 
-```sh
-pnpm create vike@latest --react --tailwindcss --shadcn-ui --vercel --biome
-```
+A static website for Wakfu dungeon strategies, built with Vite, Vike, React, and Tailwind CSS.
 
-## Contents
+## Features
 
-* [React](#react)
+- 📱 Responsive design
+- ⚡ Fast page loads with client-side routing
+- 🔍 Global dungeon search
+- 📱 Mobile-friendly layout
+- 🎨 Dark mode support
 
-  * [`/pages/+config.ts`](#pagesconfigts)
-  * [Routing](#routing)
-  * [`/pages/_error/+Page.jsx`](#pages_errorpagejsx)
-  * [`/pages/+onPageTransitionStart.ts` and `/pages/+onPageTransitionEnd.ts`](#pagesonpagetransitionstartts-and-pagesonpagetransitionendts)
-  * [SSR](#ssr)
-  * [HTML Streaming](#html-streaming)
+## Development
 
-* [shadcn/ui](#shadcnui)
+### Prerequisites
 
-  * [Configuration](#configuration)
-  * [Add Components to Your Project](#add-components-to-your-project)
+- Node.js 18+
+- pnpm
 
-## React
+### Getting Started
 
-This app is ready to start. It's powered by [Vike](https://vike.dev) and [React](https://react.dev/learn).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/havesome-stratfu.git
+   cd havesome-stratfu
+   ```
+
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+
+3. Start the development server:
+   ```bash
+   pnpm dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Deployment
+
+This project is configured to deploy to GitHub Pages. Follow these steps to deploy:
+
+1. Create a new GitHub repository named `havesome-stratfu`
+2. Push your code to the `main` branch
+3. Go to your repository settings > Pages
+4. Under "Build and deployment", select "GitHub Actions"
+5. The site will be deployed to `https://your-username.github.io/havesome-stratfu/`
+
+### Manual Deployment
+
+To deploy manually:
+
+1. Build the project:
+   ```bash
+   pnpm build
+   ```
+
+2. The built files will be in the `dist` directory.
+
+## License
+
+MIT
+
+## Built With
+
+- [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling
+- [Vike](https://vike.dev/) - The successor to Next.js
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [TypeScript](https://www.typescriptlang.org/) - TypeScript is a typed superset of JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
+- [shadcn/ui](https://ui.shadcn.com/) - Beautifully designed components
+
+## Project Structure
+
+- `/pages` - Page components
+- `/components` - Reusable React components
+- `/public` - Static files
+- `/scripts` - Build and data processing scripts
+- `/layouts` - Layout components
 
 ### `/pages/+config.ts`
 
