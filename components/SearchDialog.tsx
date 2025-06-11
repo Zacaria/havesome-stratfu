@@ -1,6 +1,11 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { usePageContext } from "vike-react/usePageContext";
 import { Link } from "./Link";
+
+// Simple classNames helper for conditional classes
+function classNames(...classes: (string | boolean | undefined)[]): string {
+  return classes.filter(Boolean).join(' ');
+}
 
 // Define types for the dungeon data structure
 interface Dungeon {
@@ -16,8 +21,10 @@ export function SearchDialog() {
   const [isOpen, setIsOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<Dungeon[]>([]);
+  const [selectedIndex, setSelectedIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+  const resultsRef = useRef<HTMLDivElement>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const pageContext = usePageContext();
   const allDungeonsRef = useRef<Dungeon[]>([]);
@@ -120,18 +127,89 @@ export function SearchDialog() {
     setIsLoading(false);
   }, [query]);
 
-  // Handle keyboard shortcuts
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
-        e.preventDefault();
-        setIsOpen(true);
+  // Handle navigation to a search result
+  const navigateToResult = useCallback((index: number) => {
+    if (results[index]) {
+      const dungeon = results[index];
+      const href = `/level/${dungeon.levelRange}#${dungeon.name
+        .toLowerCase()
+        .replace(/\s+/g, "-")
+        .replace(/[^a-z0-9-]/g, "")}`;
+      
+      // Close the dialog first to ensure smooth transition
+      setIsOpen(false);
+      setQuery('');
+      
+      // Use the router to navigate to the page
+      if (pageContext?.urlPathname?.startsWith('/level/')) {
+        // If we're already on a level page, do a full page load to ensure anchor works
+        window.location.href = href;
+      } else {
+        // Otherwise use client-side navigation
+        window.location.assign(href);
       }
-    };
+    }
+  }, [results, pageContext?.urlPathname]);
 
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, []);
+  // Handle keyboard navigation
+  const handleKeyDown = useCallback((e: KeyboardEvent) => {
+    // Only handle keyboard events when search is open or for opening the search
+    if (isOpen) {
+      // Prevent default for all navigation keys when search is open
+      if (['ArrowDown', 'ArrowUp', 'Enter', 'Escape'].includes(e.key)) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+
+      // Handle arrow keys and enter
+      switch (e.key) {
+        case "ArrowDown":
+          setSelectedIndex(prev => 
+            Math.min(prev + 1, results.length - 1)
+          );
+          break;
+        case "ArrowUp":
+          setSelectedIndex(prev => Math.max(prev - 1, 0));
+          break;
+        case "Enter":
+          if (results.length > 0) {
+            navigateToResult(selectedIndex);
+          }
+          break;
+        case "Escape":
+          setIsOpen(false);
+          break;
+      }
+    } else if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+      // Open search with Cmd+K/Ctrl+K
+      e.preventDefault();
+      setIsOpen(true);
+    }
+  }, [isOpen, results, selectedIndex, navigateToResult]);
+
+  // Auto-focus input when dialog opens
+  useEffect(() => {
+    if (isOpen && inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, [isOpen]);
+
+  // Handle keyboard events
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => handleKeyDown(e);
+    window.addEventListener('keydown', handler, true); // Use capture phase
+    return () => window.removeEventListener('keydown', handler, true);
+  }, [handleKeyDown]);
+
+  // Reset selected index when search results change
+  useEffect(() => {
+    setSelectedIndex(0);
+    
+    // Auto-focus input when results change
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, [results]);
 
   return (
     <div>
@@ -191,7 +269,15 @@ export function SearchDialog() {
                       placeholder="Search for a dungeon or boss..."
                       value={query}
                       onChange={(e) => setQuery(e.target.value)}
+                      onKeyDown={(e) => {
+                        // Handle Enter key in search input
+                        if (e.key === 'Enter' && results.length > 0) {
+                          e.preventDefault();
+                          navigateToResult(selectedIndex);
+                        }
+                      }}
                       aria-label="Search input"
+                      autoComplete="off"
                     />
                   </div>
 
@@ -200,17 +286,30 @@ export function SearchDialog() {
                       Loading...
                     </div>
                   ) : results.length > 0 ? (
-                    <div className="max-h-96 overflow-y-auto">
+                    <div className="max-h-96 overflow-y-auto" ref={resultsRef}>
                       <ul>
-                        {results.map((dungeon) => (
-                          <li key={`${dungeon.name}-${dungeon.levelRange}`}>
-                            <Link
-                              href={`/level/${dungeon.levelRange}#${dungeon.name
-                                .toLowerCase()
-                                .replace(/\s+/g, "-")
-                                .replace(/[^a-z0-9-]/g, "")}`}
-                              className="block px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
-                              onClick={() => setIsOpen(false)}
+                        {results.map((dungeon, index) => (
+                          <li 
+                            key={`${dungeon.name}-${dungeon.levelRange}`}
+                            data-index={index}
+                            className={classNames(
+                              "border-l-2",
+                              selectedIndex === index 
+                                ? "border-blue-500 bg-gray-50 dark:bg-gray-700" 
+                                : "border-transparent"
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                "block px-4 py-3 transition-colors cursor-pointer",
+                                selectedIndex === index 
+                                  ? "bg-gray-50 dark:bg-gray-700" 
+                                  : "hover:bg-gray-50 dark:hover:bg-gray-700"
+                              )}
+                              onClick={() => navigateToResult(index)}
+                              onKeyDown={(e) => e.key === 'Enter' && navigateToResult(index)}
+                              role="button"
+                              tabIndex={0}
                             >
                               <div className="flex items-center justify-between">
                                 <div>
@@ -237,7 +336,7 @@ export function SearchDialog() {
                                   />
                                 </svg>
                               </div>
-                            </Link>
+                            </div>
                           </li>
                         ))}
                       </ul>
