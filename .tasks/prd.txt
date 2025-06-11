@@ -1,0 +1,46 @@
+{{ ... }}
+# Wakfu Dungeon Strategy Website - Product Requirements Document
+
+## Overview
+This website is a static site generated with Next.js designed as a tool for players of the game Wakfu. Its primary purpose is to provide quick access and readability to dungeon strategies, which are organized by level slices such as 36-50, 51-65, etc.
+
+## Goals
+- Deliver a user-friendly, fast-loading static website.
+- Emphasize clear layout and UX for quick access to dungeon strategies.
+- Organize strategies by dungeon level ranges.
+- Include key points and strategy details for each dungeon.
+
+## User Experience
+- Simple navigation to select dungeon level slices.
+- Fast search or filter functionality for dungeon strategies.
+- Clean, readable presentation of strategy content.
+- Mobile and desktop responsive design.
+- Search bar to quickly jump to a specific dungeon.
+- One page per level slice to avoid overloading with too much data.
+- Main page dispatches to each level slice page.
+- All content to be computed at build time using static generation.
+
+## Data Source
+- Dungeon strategies data is maintained in a Google Sheets document.
+- Integration method to fetch and update data to be determined.
+- Need to authenticate on Google API, download the sheet, and parse it to generate content.
+
+## Reference
+- The website https://wakfu.guide serves as a UX inspiration for layout and usability.
+
+## Technical Stack
+- Next.js for static site generation.
+- Possible integration with Google Sheets API or alternative for data source.
+
+## Deliverables
+- Fully specified PRD in this file (.tasks/prd.txt).
+- Initial Next.js project setup.
+- Data integration plan.
+- UI/UX design mockups (optional).
+
+## Next Steps
+- Review this PRD with stakeholders.
+- Plan Next.js site structure.
+- Research Google Sheets data integration.
+
+{{ ... }}
