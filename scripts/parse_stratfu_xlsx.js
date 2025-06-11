@@ -8,19 +8,29 @@ import { existsSync } from 'fs';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+const targetDir = "../public/data/"
+
 function cleanText(text) {
   if (!text) return '';
   return String(text).trim();
 }
 
-function isElementRow(row) {
+function isIgnoredRow(row) {
   const [level] = row.map(cleanText);
+  if (level.startsWith("Intéressant")) {
+    return true;
+  }
+  
+  if (level.startsWith('Résistances à favoriser')) {
+    return true;
+  }
+  
   return ['Principale', 'Secondaire', 'Inutile', 'Utile'].includes(level);
 }
 
 function isDungeonRow(row) {
   const [level, name] = row.map(cleanText);
-  return level && name && !isElementRow(row) && !name.includes(':') && name !== 'Boss';
+  return level && name && !isIgnoredRow(row) && !name.includes(':') && name !== 'Boss';
 }
 
 async function parseDungeonData(rows) {
@@ -63,7 +73,7 @@ async function parseDungeonData(rows) {
       currentTips = [];
     } 
     // If we're in a dungeon and this is not an element row
-    else if (currentDungeon && !isElementRow(row)) {
+    else if (currentDungeon && !isIgnoredRow(row)) {
       // Add strategy text (third column)
       if (strategy) {
         currentStrategy.push(strategy);
@@ -120,7 +130,7 @@ async function analyzeXLSX() {
     }
 
     // Save the structured data
-    const outputPath = resolve(__dirname, '../build/data/dungeons.json');
+    const outputPath = resolve(__dirname, targetDir + 'dungeons.json');
     await writeFile(outputPath, JSON.stringify(result, null, 2));
     console.log(`\nData saved to: ${outputPath}`);
 
@@ -132,7 +142,7 @@ async function analyzeXLSX() {
 }
 
 // Create output directory if it doesn't exist
-const outputDir = resolve(__dirname, '../build/data');
+const outputDir = resolve(__dirname, targetDir);
 if (!existsSync(outputDir)) {
   await mkdir(outputDir, { recursive: true });
 }

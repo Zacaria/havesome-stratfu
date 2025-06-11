@@ -1881,15 +1881,7 @@
       "level": "Fulgurosaure",
       "boss": "Mécanique du donjon et du Fulgurosaure",
       "strategies": [
-        "Le Fulgurosaure récupère 5% de ses points de vie tous les 2 tours, donc les tours pairs."
-      ],
-      "tips": []
-    },
-    {
-      "name": "Résistances à favoriser\n\nIntéressant",
-      "level": "Utile",
-      "boss": "Phase 1 - 100%-70%\n    A chaque fois que vous tapez le Fulgurosaure avec un personnage, une fois par tour, il gagne 1 point de wakfu, jusqu'a 6 points de wakfu par tour.\n    Au début de son tour, le Fulgurosaure va invoquer des \"Pierre d'ailes\" qui taperont autours d'elles en zone cercles 3 et perdront 50% de leurs points de vie, chaque pierre présente sur le terrain au début du tour du Fulgurosaure, il perdra 50 résistances.",
-      "strategies": [
+        "Le Fulgurosaure récupère 5% de ses points de vie tous les 2 tours, donc les tours pairs.",
         "Phase 2 - 70%-0%\n    A chaque fois que vous tapez le Fulgurosaure, par tour, il gagne 1 point de wakfu, jusqu'a 6 points de wakfu par tour.\n    Au début de son tour, le Fulgurosaure va invoquer des \"Pierre d'ailes\" qui cette fois-ci vous permettrons d'éviter la \"Colère celeste\" du Fulgurosaure en étant en mélée des pierre d'ailes, et perdront 50% de leurs points de vie par tour\n    Le Fulgurosaure gagne 75 de résistances par pierre sur le terrain et aura une vulnérabilité de -150 résistance pendant la phase\n    Tous les 3 tours, il va faire apparaître des cases \"feu noir\"",
         "Monstres",
         "Vélociraptueur\n   Ne tape qu'au contact mais retire des résistances à chaque coup.",
@@ -1906,15 +1898,7 @@
       "level": "Imagori",
       "boss": "Mécanique du donjon et d'Imagori",
       "strategies": [
-        "Les monstres vont gagner 30% de leurs points de vie en armure à chaque fois que vous leurs enleverez 10% de leurs points de vie maximum."
-      ],
-      "tips": []
-    },
-    {
-      "name": "Résistances à favoriser\n\nIntéressant",
-      "level": "Utile",
-      "boss": "A chaque fois que vous taperez 10% de la vie d'un monstre ou d'Imagori, vous gagnerez également un état Puissance de Wakfu qui augmentera considérablement vos dégats et vos points d'actions.\nLa puissance de WAKFU se transmet entre les personnage à chaque tour, mais diminue. Pour la transferer sans perte et en gagnant des niveau, il vous faudra taper vos allier en étant aligné pour leurs donner l'état.",
-      "strategies": [
+        "Les monstres vont gagner 30% de leurs points de vie en armure à chaque fois que vous leurs enleverez 10% de leurs points de vie maximum.",
         "Imagori a 4 Disruption\n1. Pousse de 6 cases, réduit dégats de dos de 50%.\n2. -30% points de vie sur les cibles qui ne sont pas aligné à un allié, réduit dégats de côté et face de 50%.\n3. Gagne 300 dommages infligés mélée, réduit les dégats distance de 50%.\n4. Gagne 300 dommages infligés distance, réduit les dégats mélée de 50%.\n\nIl gagne également une disruption à chaque fois que vous tombez 10% de ses points de vie, ce qu'il fait que pendant le tour où vous tombez ses points de vie, il peut avoir plusieurs disruption d'un coup. Elles dépendent également d'où tape le personnage qui passe les 10%.",
         "!! Attention: Ne jamais déclencher les Disruption 3 (mélée) et la Disruption 4 (distance) en même temps ! Sinon il va vous tuer que ce soit à distance ou en mélée. Si ça se produit, seulement un Féca pourra vous sauver avec la pacification ! (Déphasage de l'éniripsa ne marche pas car son sort de début de tour est lancé automatiquement).",
         "Monstres",
@@ -1932,17 +1916,7 @@
       "level": "Timö le possédé",
       "boss": "Mécanique du donjon et de Timö",
       "strategies": [
-        "Des zones seront présente sur la carte. Chaque zone correspond à un élément. Les monstres auront une résistance, il vous faudra la force contraire (Eau-Feu//Air-Terre) pour pouvoir infliger des dommages."
-      ],
-      "tips": [
-        "DOCUMENT pour les gomettes de placement en phase 2 & 3."
-      ]
-    },
-    {
-      "name": "Résistances à favoriser\n\nIntéressant",
-      "level": "Utile",
-      "boss": "Le système du combat fonctionne par vague. A chaque fois qu'une vague est tuée, Timö réinvoque les monstres et change de phase. Vous ne pouvez pas taper Timö avant la Phase 4. Chaque vague est plus résistante et frappe plus fort que la précédente. Dès la phase 2, les monstres apparaissent autours de Timö et jouent tous les uns-après les autres.",
-      "strategies": [
+        "Des zones seront présente sur la carte. Chaque zone correspond à un élément. Les monstres auront une résistance, il vous faudra la force contraire (Eau-Feu//Air-Terre) pour pouvoir infliger des dommages.",
         "Le seul sort de dégat de Timö est un sort air qui rebondit sur les cibles alignées.",
         "Chaque début de tour, Timö va lancer un ultime selon la zone sur laquelle zone il se trouve.",
         "!! Attention: Si vous êtes collé à un totem, Timö vous sautera dessus en début de tour, prendra l'élément du totem et fera son ultime en conséquence ! Il gagnera également 25 dommages infligés cumulable à l'infini avec sa téléportation.",
@@ -1956,6 +1930,7 @@
         "Chimère veilleuse\n    Pousse au corps-à-corps de 3 cases, vous met de dos et tappe en cercle de 2 AIR en vol de vie + soin en zone autours de lui 2 fois par tours. Plus il y a d'entités dans la zone, plus il fera de dégats => Ne vous regroupez pas!!\n A sa mort, il pose une zone qui soignera un de ses alliés de 100% de ses points de vie et empechera les monstres dedans de tomber sous 20% de leurs points de vie."
       ],
       "tips": [
+        "DOCUMENT pour les gomettes de placement en phase 2 & 3.",
         "Feu - Zone hors des pilliers\nEau - Zone à l'intérieur des pilliers\nTerre - Zone autours des joueurs en zone de 2\nAir - Zone alignée au pilliers",
         "Quand vous taper un monstre avec le bon état, en plus de pouvoir le taper vous allez retirer 25 de resistance à tout les monstres en même temps. Ce qui signifie que si même avec vos support vous prenez les elements, vous allez permettre de retirer jusqu'a 150 de resistance à tout les monstres !",
         "Phase 3\nFeu Feu-Corrompu Eau Eau-Corrompu Terre Terre-Corrompu Air Air-Corrompu",
@@ -1967,15 +1942,7 @@
       "level": "Zulnara, cheffe de guerre",
       "boss": "Mécanique du donjon et de Zulnara",
       "strategies": [
-        "Zulnara pose un état Vengeresse sur tout les bworks: à chaque fois qu'un de leurs alliés est tué, elle gagne des dégats, des points de mouvements et des résistances. Elle gagne également 20% d'armure à chaque fois."
-      ],
-      "tips": []
-    },
-    {
-      "name": "Résistances à favoriser \n\nIntéressant",
-      "level": "Utile",
-      "boss": "Zulnara place une Corruption sur 2 entités en début de tour: En fin de tour, un allié corrompu infligera des dégats à toute entité alignée à lui à la fin de son tour, l'incluant. Si il n'est pas aligné, il ne subira pas les dommages non plus !",
-      "strategies": [
+        "Zulnara pose un état Vengeresse sur tout les bworks: à chaque fois qu'un de leurs alliés est tué, elle gagne des dégats, des points de mouvements et des résistances. Elle gagne également 20% d'armure à chaque fois.",
         "Zulnara utilise Correction shushutée en début de tour sur la cible ayant le plus de Provocation. Elle se téléporte face à la cible si la cellule est libre, sinon c'est aléatoire dans une zone proche de la cible : il est donc conseillé de faire attention à son orientation. Ce sort inflige des dommages en fonction du niveau de Provocation consommé sur la cible. Pour éviter un très gros burst, il peut être indiqué de bien répartir la provocation sur ses différents personnages pour réduire le montant maximal porté par un personnage unique (et bombarder les res eau).",
         "Le sort Prison de rose peut être lancé sur une cible seulement si elle a de la Provocation et seulement en ligne de vue : il est possible de contrôler à 100% le placement du boss chaque tour et de jouer facilement avec les obstacles du combat pour s'en protéger.",
         "La rendre vulnérable",
@@ -1998,15 +1965,7 @@
       "level": "Protozortemps",
       "boss": "Mécanique du donjon et du Protozortemps",
       "strategies": [
-        "Dans la salle 1, il faut prioriser l'élimination des Noxelanste dans la zone du fond si vous avez un sort qui permet de taper sans ligne de vue.\nSinon il faudra tuer tout les monstres sur le terrain, ils vont rester à 1 point de vie, et les placer sur les cases rouge pour débloquer la zone."
-      ],
-      "tips": []
-    },
-    {
-      "name": "Résistances à favoriser\n\nIntéressant",
-      "level": "Utile",
-      "boss": "L'Horloge donne 4 points de mouvements et 4 points d'actions à celui qui la tue (et res tout ceux à terre) ! Les noxines retire 40 dommages infligés au Protozortemps et 1 point de wakfu au alliés en zone de 2.",
-      "strategies": [
+        "Dans la salle 1, il faut prioriser l'élimination des Noxelanste dans la zone du fond si vous avez un sort qui permet de taper sans ligne de vue.\nSinon il faudra tuer tout les monstres sur le terrain, ils vont rester à 1 point de vie, et les placer sur les cases rouge pour débloquer la zone.",
         "Le Protozortemps sera dans un cube jusqu'a ce que toute les cases rouge soit retirée.\nTuer un monstre et placer le sur une case rouge pour la faire disparaître.",
         "Chaque tour, une vague de WAKFU va traverser le terrain. \nElle tape relativement fort et retire 50 de résistances cumulables à l'infinie si elle est actualisée à chaque tour sur chaque entité, comprenant les monstres.",
         "Une fois le boss apparu, il lance chaque tour en début de tour une AOE autours de lui qui vole des PW et sera plus grande et fera plus de dgt au plus il a de PW ! Ne stackez pas vos perso autours de lui.",
@@ -2067,17 +2026,7 @@
       "level": "Cratéros, Bourreau de la fin",
       "boss": "Mécanique du donjon et de Catéros:",
       "strategies": [
-        "Les ennemies de ce donjon sont liées:\n   Tout dégâts sur un ennemi est répliqués sur les autres. Si le placement des ennemies n'est pas bon, les dommages sont grandement réduits (80%). Chaque mobs possède une zone qui va apparaître après avoir tapé l'un d'entre-eux. Vous devez supperposé toute les zones de chaques ennemis pour pouvoir taper le maximum de dégats possible.\n   Les dégats ZONE sont répliqué et réduit de 30%, tandis que les dommage MONOCIBLE sont répliqués et amplifiés de 30% (L'idéal est de zoner salle 1 car beaucoup de mobs, et de burst monocible sur la salle du boss)"
-      ],
-      "tips": [
-        "Les zone, une fois activé, restent pendant le tours du joueur et ne BOUGE PAS AVEC LES MONSTRES. Exemple: Vous activez celle du Condamnateur en diagonale, vous poussez le condamnateur ensuite => Vous pouvez le taper de dos via la zone !"
-      ]
-    },
-    {
-      "name": "Résistances à favoriser\n\nIntéressant",
-      "level": "Utile",
-      "boss": "Pour chaque perso qui ne tapent pas un ennemi depuis sa zone, les mobs gagnent des dommages permanents. Le boss gagne 1 PM tous les 4 niveaux du passif.",
-      "strategies": [
+        "Les ennemies de ce donjon sont liées:\n   Tout dégâts sur un ennemi est répliqués sur les autres. Si le placement des ennemies n'est pas bon, les dommages sont grandement réduits (80%). Chaque mobs possède une zone qui va apparaître après avoir tapé l'un d'entre-eux. Vous devez supperposé toute les zones de chaques ennemis pour pouvoir taper le maximum de dégats possible.\n   Les dégats ZONE sont répliqué et réduit de 30%, tandis que les dommage MONOCIBLE sont répliqués et amplifiés de 30% (L'idéal est de zoner salle 1 car beaucoup de mobs, et de burst monocible sur la salle du boss)",
         "Pas de Phase: \n   Cratéros une attaque en zone 2 autour de lui qui fait beaucoup de dégâts et qui vole toutes votre armure, ce qui est vite un problème puisque que le \"Condamnateur\" vole aussi votre armure et vous met -50% de soin reçus.\n   Le boss peut aussi vous tp à son cac si vous êtes à plus de 6 PO. Il lance son sort tout les 3 tours.",
         "Monstres",
         "Sangsure\n   S'accroche, tape fort et vole de la vie, et stab la cible et la suit comme \"Calvalcade\" ou \"Kohmir\" où que vous alliez. Zone de 4-6",
@@ -2086,6 +2035,7 @@
         "Mécanique du donjon et de !@#dh`~"
       ],
       "tips": [
+        "Les zone, une fois activé, restent pendant le tours du joueur et ne BOUGE PAS AVEC LES MONSTRES. Exemple: Vous activez celle du Condamnateur en diagonale, vous poussez le condamnateur ensuite => Vous pouvez le taper de dos via la zone !",
         "Voici une façon de placer les mobs pour les taper! Il faudra taper MONOCIBLE un seul des monstres pour taper tout le monde de la meilleure des manière ! (F5 si l'image ne s'affiche pas)",
         "Aide additionnelle"
       ]
@@ -2094,13 +2044,6 @@
       "name": "Démentia",
       "level": "!@#dh`~",
       "boss": "Les ennemies de ce donjon ne meurent pas:\n  Ils tombent au sol et se releve 2 tours plus tard avec 50% des PV (ce montant baisse à chaque fois qu'ils sont tué et revivent), et pour finir le combat, il faut mettre au sol TOUT les mobs en même temps. \n  Chaque monstre à une condition à éviter, si elle n'est pas respecté => Le mob echange de place avec son allié le plus eloigné et gagne des resistances et des DI",
-      "strategies": [],
-      "tips": []
-    },
-    {
-      "name": "Résistances à favoriser\n\nIntéressant",
-      "level": "Utile",
-      "boss": "Pas de phase:\n Le boss même mécanique que les mobs, si vous le tuez sans avoir tuer tout les mobs, il revient à la vie avec 50% de ses HP: Il faut donc tuer tout les mobs et ensuite tuer le boss.\n Tout les 10% de vie retiré, il va se TP avec un de ses allié (qui sera ensuite stab). Si tout les alliés sont stab, il ne ce TP pas. Si il sont tous mort, il bougera de place aléatoirement.\n Il ne tape pas très fort, exclusivement feu. Le seul dangés réside dans la zone qu'il pose au début de sont tour sur la même ligne que lui, ainsi que les 2 ligne devant lui. La zone prend toute la largeur de la map, et fait TRES MAL",
       "strategies": [
         "Monstres",
         "Ésrevni:\n   Il ne faut pas les taper en MELEE, tape fort en ligne et vol de la vie",
@@ -2116,13 +2059,6 @@
       "name": "Spirale du Vide",
       "level": "Ar'nan, Augure du néant",
       "boss": "Les ennemis peuvent être \"Désactivé\":\n  Les conditions pour désactiver les monstres différes selon le monstre. Une fois remplie, pour la re-remplir il faudra la faire une fois de plus à chaque fois.\n Une fois désactivé, les monstres passeront leurs tours mais vont gagner 400 de resistances.",
-      "strategies": [],
-      "tips": []
-    },
-    {
-      "name": "Résistances à favoriser\n\nIntéressant",
-      "level": "Utile",
-      "boss": "Pas de Phase:\n  Ar'nan a une aura de dégâts qui alterne entre cercles de 0-3 PO et anneau de 7-infini PO. \n  L'aura alterne lorsqu'un mob ou un joueur est tué ou que le boss est désactivé.\n  Ar'nan se désactive en la tapant depuis l'aura, ou en ne la tapant pas du tout pendant 1 tour (2, 3.. selon le niveau de l'etat pour la désactiver).\nAr'nan perd 200 de resistance quand elle est désactivé ! Il faut donc la tuer pendant qu'elle est inactive",
       "strategies": [
         "Le boss fait énormément de dégâts, et il se déplacera de manière à vous mettre dans l'aura. Il est donc important de le garder désactivé quasiment tous les tours.",
         "Monstres",
@@ -2141,13 +2077,6 @@
       "name": "Royaume du Desespoir",
       "level": "Vaal'Enthia",
       "boss": "Dans le Donjon, une mécanique spéciale est présente: La Corruption. \n\nChaque mobs possèdent une corruption spécifique. Pour récuperer une corruption, il faut tomber les PDV d'un mobs a -50%, et vous lui vollerait une corruption. ATTENTION, eux aussi peuvent pour les voler si ils vous tombent en dessous de 50%.",
-      "strategies": [],
-      "tips": []
-    },
-    {
-      "name": "Résistances à favoriser\n\nIntéressant",
-      "level": "Utile",
-      "boss": "Salle 1: Plusieurs mobs seront invulnérable, et vous ne pourrez les taper que si votre personnage possède un etat corruption et tape en respectant la condition de la corruption que vous avez.\nVous pouvez voler une corruption à vos alliés en tapant dans la condition de la corruption que vous souhaitez voler. Chaque corruption augmente vos dégats dans la condition de celle-cis. Elles sont cumulable !",
       "strategies": [
         "La rendre vulnérable",
         "Vaal'Enthia: Ne peu être taper qu'en possédant un etat corruption et en tapant dans la condition de(s) (la) corruption sur votre personnage.",
@@ -2167,13 +2096,6 @@
       "name": "Route des morts",
       "level": "K'abah'al, Gardien de la route des morts",
       "boss": "Chaque MORT fera apparaître un rédisu.\nLe donjon a une mécanique particuliere: Lorsque que vous tuez un monstre, un \"résidu\" va apparaître. Il est innofensif, mais renvoie 100% des dégats que vous lui infligerait. Lorsque 2 résidu arrivent au cac l'un de l'autre, ils vont fusionné et re-devenir un monstre, qu'il faudra tuer (et aucun résidu n'apparaîtra).",
-      "strategies": [],
-      "tips": []
-    },
-    {
-      "name": "Résistances à favoriser\n\nIntéressant",
-      "level": "Utile",
-      "boss": "K'abah'al: Le boss tape 3 fois sans ligne de vu dans l'élement FEU, et peu \"griffer\" au CAC appliquant un etat \"déchiré\". Si il tape deux fois d'affilé quelqu'un dans l'etat déchiré, celui-ci va prendre beaucoup plus de dégats. Un tour sur deux, il va échangé de place l'entité la plus proche et la plus éloigné de lui. Stabilisez une des deux entité annule la TP.",
       "strategies": [
         "Si une cible est isolé de ses allié (4 cases et plus), alors K'abah'al va sauter dessus et le griffer directement. Evitez donc d'isoler une entité sauf si c'est volontaire pour éloigner le boss. Le boss fait également apparaître des cases sur le sol, et au début de son tour il lance AUTOMATIQUEMENT (même déphasé) une AOE de cercle de 4 cases sur chaques marque, et sur chaque résidu ! Faite très attention.",
         "Lorsque vous tuez K'abah'al, celui-ci va faire apparaître 8 résidu autours de vos personnages. Lorsqu'ils vont fusionné, ils font des nouveau K'abah'al avec 20% hp, qu'il faut re-tuer.",
@@ -2193,17 +2115,7 @@
       "level": "Sir Comte Flex",
       "boss": "Mécanique du donjon et de Sir Comte Flex",
       "strategies": [
-        "Les monstres ainsi que le boss ont tous un etat STASIFIE \nLes mobs ont tous un \"compteur\"appellé \"reserve de Stasis\", ce compteur augmente sous différentes conditions. Une fois le compteur à 5 et plus, chaque monstre peu lancer un \"ultime\" qui sera lancé automatiquement au début de leurs tours. Tout les monstres gagne 1 de charge à chaque fois qu'un ennemis et tué."
-      ],
-      "tips": [
-        "Conseil\n Il faudra zoner et éliminer au plus vite les monstre. Dans l'idéal, vous devrez avoir tuer tout les monstre T2 sinon le combat risque de devenir bourbier ! Avoir un support en fin de timeline pour replacer votre équipe en cas de mauvais positionnement pour eviter un ultime facilite énormement le combat."
-      ]
-    },
-    {
-      "name": "Résistances à favoriser\n\nIntéressant                     DGT STASIS !",
-      "level": "Uniformisez vos résistance, la plus faible sera celle prise en compte.",
-      "boss": "Sir Comte Flex est relativement dangereux, à chaque début de tour il fera une AOE sur toute les cases devant lui, sur l'intégralité de la map et possède également un compteur qui monte de 1 par ennemie tué et qui augmente selon un etat qui change tout les 3 tours:",
-      "strategies": [
+        "Les monstres ainsi que le boss ont tous un etat STASIFIE \nLes mobs ont tous un \"compteur\"appellé \"reserve de Stasis\", ce compteur augmente sous différentes conditions. Une fois le compteur à 5 et plus, chaque monstre peu lancer un \"ultime\" qui sera lancé automatiquement au début de leurs tours. Tout les monstres gagne 1 de charge à chaque fois qu'un ennemis et tué.",
         "Etat \"rouge\": Il gagne +1 par ennemies en mélée au début de son tours. Il pose des mînes autours des entité touché par ses sorts, et les fait exploser au début de son tour de jeu. \nUltime: Dégat en croix infinie sur chaque ENTITE (mécanisme inclut). \n                                             NE PAS ETRE ALIGNE SI IL PEU LANCER SON ULTI EN FIN DE TOUR.",
         "Etat \"Vert\": Il gagne +1 par dégat direct subit. Il retire X pm (Niveau d'état) avec chaque sort. \nUltime: Dégat en cercle 2 sur chaque ENTITE (mécanisme Inclut). \n                                             NE PAS ETRE EN MELEE LES UN DES AUTRES SI IL PEU LANCER SON ULTI EN FIN DE TOUR.",
         "Etat \"Mauve\": Ses attaques rebondissent toute dans un cercles de 3 cases, et il prend +1 à la fin de son tour par rebond effectué. \nUltime: Dégat en cerle 2-5 autours de chaques ENTITE (mécanisme inclut).\n                                              PAQUET-VOUS EN PETIT GROUPE ELOIGNEE LES UNS DES AUTRES SI IL PEU LANCER SON ULTI EN FIN DE TOUR.",
@@ -2220,6 +2132,7 @@
         "Raison de l'invulnérabilité ou du problème"
       ],
       "tips": [
+        "Conseil\n Il faudra zoner et éliminer au plus vite les monstre. Dans l'idéal, vous devrez avoir tuer tout les monstre T2 sinon le combat risque de devenir bourbier ! Avoir un support en fin de timeline pour replacer votre équipe en cas de mauvais positionnement pour eviter un ultime facilite énormement le combat.",
         "Astuce: Essayez d'envoyer une invocation pour le forcer à s'éloigner de votre équipe pour pouvoir gerer le combat. (Les mécanisme sont prit en compte, comme le tonneau du Pandawa)\n\nL'envoyer loin + retrait PM permet d'énormement l'empecher de jouer",
         "Astuce: Ne vous zoner pas entre-vous, si il à le malheure de lancer son ultime et que vous êtes paquet, c'est la fin !",
         "Astuce: Très dangereux au boss car il va systématiquement donner des reserve de stasis au boss, qui pourra donc lancer un ultime !",
