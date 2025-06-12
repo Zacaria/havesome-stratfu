@@ -6,14 +6,19 @@ type LinkProps = {
   href: string;
   children: React.ReactNode;
   className?: string;
-  [key: string]: any;
+  // [key: string]: any;
 };
 
 export function Link({ href, children, className = "", ...props }: LinkProps) {
   const pageContext = usePageContext();
   const { urlPathname } = pageContext;
   const isActive =
-    href === "/" ? urlPathname === href : urlPathname.startsWith(href);
+    href === "/"
+      ? urlPathname === href
+      : urlPathname.startsWith(normalize(href));
+
+  href = import.meta.env.BASE_URL + href;
+  href = normalize(href);
   return (
     <a
       {...props}
@@ -29,4 +34,8 @@ export function Link({ href, children, className = "", ...props }: LinkProps) {
       {children}
     </a>
   );
+}
+
+function normalize(url: string) {
+  return `/${url.split("/").filter(Boolean).join("/")}`;
 }
