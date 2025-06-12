@@ -115,7 +115,7 @@ async function analyzeXLSX() {
       });
 
       const dungeons = await parseDungeonData(jsonData);
-      result[sheetName] = dungeons;
+      result[cleanText(sheetName)] = dungeons;
       
       console.log(`Found ${dungeons.length} dungeons in ${sheetName}`);
       dungeons.forEach((d, i) => {
