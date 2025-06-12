@@ -1,20 +1,13 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { usePageContext } from "vike-react/usePageContext";
-import { Link } from "./Link";
+import { useDungeons } from "@/hooks/useDungeons";
+import type { DungeonWithLevelRange } from "@/types/dungeon";
+
+type Dungeon = DungeonWithLevelRange; // Alias for backward compatibility
 
 // Simple classNames helper for conditional classes
 function classNames(...classes: (string | boolean | undefined)[]): string {
   return classes.filter(Boolean).join(" ");
-}
-
-// Define types for the dungeon data structure
-interface Dungeon {
-  name: string;
-  level: string;
-  boss: string;
-  strategies: string[];
-  tips: string[];
-  levelRange: string;
 }
 
 export function SearchDialog() {
@@ -27,7 +20,8 @@ export function SearchDialog() {
   const resultsRef = useRef<HTMLDivElement>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const pageContext = usePageContext();
-  const allDungeonsRef = useRef<Dungeon[]>([]);
+  const { getAllDungeons, isLoading: isDungeonsLoading } = useDungeons();
+  const allDungeonsRef = useRef<DungeonWithLevelRange[]>([]);
 
   // Toggle search dialog
   useEffect(() => {
@@ -80,31 +74,10 @@ export function SearchDialog() {
 
   // Load all dungeons once when component mounts
   useEffect(() => {
-    const loadAllDungeons = async () => {
-      try {
-        const response = await fetch("/data/dungeons.json");
-        const data: Record<string, Omit<Dungeon, "levelRange">[]> =
-          await response.json();
-        const loadedDungeons: Dungeon[] = [];
-
-        // Flatten the data into a single array of dungeons with their level range
-        for (const [levelRange, dungeons] of Object.entries(data)) {
-          for (const dungeon of dungeons) {
-            loadedDungeons.push({
-              ...dungeon,
-              levelRange,
-            });
-          }
-        }
-
-        allDungeonsRef.current = loadedDungeons;
-      } catch (error) {
-        console.error("Failed to load dungeons:", error);
-      }
-    };
-
-    loadAllDungeons();
-  }, []);
+    if (!isDungeonsLoading) {
+      allDungeonsRef.current = getAllDungeons();
+    }
+  }, [getAllDungeons, isDungeonsLoading]);
 
   // Filter dungeons based on search query
   useEffect(() => {
@@ -206,6 +179,7 @@ export function SearchDialog() {
   }, [handleKeyDown]);
 
   // Reset selected index when search results change
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     setSelectedIndex(0);
 
@@ -217,13 +191,13 @@ export function SearchDialog() {
 
   return (
     <div className="relative">
-      <div
+      <button
         onClick={() => setIsOpen(true)}
         onKeyDown={(e) => e.key === "Enter" && setIsOpen(true)}
-        role="button"
         tabIndex={0}
         className="flex items-center w-full max-w-2xl mx-auto bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-2 text-left cursor-text hover:border-blue-300 dark:hover:border-blue-700 transition-colors"
         aria-label="Open search dialog"
+        type="button"
       >
         <svg
           className="h-5 w-5 text-gray-400"
@@ -247,7 +221,7 @@ export function SearchDialog() {
             ⌘K
           </kbd>
         </div>
-      </div>
+      </button>
 
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
@@ -341,7 +315,7 @@ export function SearchDialog() {
                           : "border-transparent"
                       )}
                     >
-                      <div
+                      <button
                         className={classNames(
                           "block px-6 py-4 transition-colors cursor-pointer",
                           selectedIndex === index
@@ -352,7 +326,7 @@ export function SearchDialog() {
                         onKeyDown={(e) =>
                           e.key === "Enter" && navigateToResult(index)
                         }
-                        role="button"
+                        type="button"
                         tabIndex={0}
                       >
                         <div className="flex items-center justify-between">
@@ -379,7 +353,7 @@ export function SearchDialog() {
                             />
                           </svg>
                         </div>
-                      </div>
+                      </button>
                     </li>
                   ))}
                 </ul>

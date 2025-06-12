@@ -481,10 +481,7 @@
       "level": "Lardevil",
       "boss": "- Lardevil tape au contact en monocible comme en zone, il possède peu de PM mais se téléporte et inflige des dégâts de zone lorsqu'un personnage traverse les cases alignées avec lui (sa téléportation peut blesser ses alliés), à la mort d'un de ses alliés il se téléporte sur l'attaquant et lui inflige des dommages. La stèle associé lui fait gagner 3 PM et stabilisé. (peut être stabilisé de base, à vérifier)",
       "strategies": [],
-      "tips": [
-        "Stèle 3:",
-        "Stèle 4:"
-      ]
+      "tips": ["Stèle 3:", "Stèle 4:"]
     },
     {
       "name": "L'Arène Dansante Niv.96",
@@ -739,13 +736,7 @@
         "- Porte feu : Lorsque vous tuez un monstre, une explosion de 2 à 4 cases autour de lui est déclenchée.",
         "- Porte eau : lorsqu'un monstre descends à moins de 30% de ses HP, il gagne beaucoup d'armure pour un tour."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Jawdin de la Weine Niv. 126",
@@ -757,13 +748,7 @@
         "- Quand il est désinvu il gagne 10 PM et débloque un sort qui frappe toute la map infligeant de lourds dégâts terre. Pour éviter ces dégâts il faut être au contact d'une autre cawotte.",
         "- Pour les monstres : \n   - Le Wabbit gagne 50% cumulable s'il croque un cawotte\n   - Le Ti Wabbit se téléporte au contact d'une cawotte en attirant autour de celle ci\n   - Le Wo Wabbit donne des résistances à ses alliés en cercle de 3 autour des cawottes. Il retire des PA en zone mélée\n   - Le Gwand Pa Wabbit"
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Sanctuaire Mihmol Niv. 126",
@@ -797,13 +782,7 @@
         "- La mécanique des baves est présente en salle 1, ce sont les 3 Cépolourpode écrasant qui en mettent dans leur sillage, il n'y a pas de bave en bord de map.",
         "- Chaque tour la map rétrécie, la bave se rapproche et si un personnage commence son tour sur une case avec de la bave, il est mort. Terminer dedans n'est pas dangereux tant qu'on vous déplace avant votre tour de jeu"
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Donjon de la Trouffe Salée Niv. 126",
@@ -812,13 +791,7 @@
       "strategies": [
         "- Ne pas finir en ligne vers là où regarde Fripon, sinon il chargera."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Donjon Abraknyde Niv. 126",
@@ -833,13 +806,7 @@
         "- Au Niveau 3 de l'état, les polters sortent des glyphes et vont vers le boss, les tuer avant.",
         "- Les polters retirent 25% d'HP au Chêne Mou."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Compost du grand Potofeu Niv. 126",
@@ -859,13 +826,7 @@
         "- Cawotte Zombie : Lorsqu'il subit des dommages Terre, il gagne 1 PM par attaque (deux fois maximum), pour chaque PM dépensé pendant son tour, il perd 20 résistances élémentaires (deux fois maximum pendant le combat et une fois par tour maximum).\n                  Le monstre inflige un sort au corps-à-corps qui zombifie la cible, lui infligeant -200 de résistances et les soins reçus transformés en dégâts pour 3  tours.",
         "Au début du combat, deux Fan le Radi apparaissent, ils sont immunisé à distance, et si ils subissent une attaque à distance, ils échangent de position avec l'attaquant."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     }
   ],
   "141 - 155": [
@@ -886,13 +847,7 @@
         "- Les glyphes lignes des totems, marcher dessus vous retire 100PM et vous serez KO au prochain tour, les totems retirent des PW max quand ils sont niveau maximum.",
         "- Les Serprieuses apparaissent quand on tape leur alliés hors autres Serprieuses, si vous tuez un monstre sur le coup, elles ne viennent pas au corps-à-corps et restent cachées."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Château du Wa Wabbit Niv. 141",
@@ -902,13 +857,7 @@
         "Le Wa Wabbit a deux phases:\n  - Phase 1 : il est intouchable. Il cible un de ses alliés pour 1 tour parmis le Tiwailleuw, le Gawde et le Chevaliew.  Il faut descendre cette cible à 1PV. Faire ça avec les 3 monstres, le Wobot ne sera jamais ciblé et peut être tuer de suite\nLorsque les 3 monstres sont passés à 1 PV, on passe en phase 2.\n  - Phase 2 : Il descend de sa position, vient sur le terrain et est maintenant ciblable. Les trois monstres sont maintenant dans notre camps, nous pouvons les controler et peuvent cibler le Wa Wabbit. \nLe Boss fait une zone autour d'eux en cercle de 3, s'ils retombent à 1 PV ils ne sont plus jouables.",
         "Les monstres: \n  - Le Tiwailleuw peut soigner ses alliés et mettre un malus -30PO\n  - Le Gawde saute dans le dos de ses ennemis, retire 200 resistances et retire PM\n  - Le Chevaliew peut sacrifer un allié et retirer des PM\n  - Le Wobot stabilise et retire PM, fait très mal au corps à corps"
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Laboratoire de Womewo Niv. 141",
@@ -927,13 +876,7 @@
         "- Le Wabbit Tados se téléporte derrière le personnage le plus éloigné et le pousse.",
         "- Avoir un placeur peu dépendant des pw en fin de tour de table peut grandement aider à respecter les états du boss"
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Donjon Srambad Niv. 141",
@@ -946,13 +889,7 @@
         "- Chaque monstre ainsi que Venâme posent des orbes d'armures récupérables, Venâme a également un sort qui les fait explosées, ne pas en laisser trop sur le terrain.",
         "- En salle 1, nos points de vie tombent à 1 et tout le reste est transformé en armure."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Donjon Enutrosor Niv. 141",
@@ -963,13 +900,7 @@
         "- Tuer une des pierres précieuses donnera un tour avec les dégats boostés pour le tour en cours uniquement, chaque gemme a des faiblesses dans un element précis (Jaune : Air / Rouge : Feu / Vert : Terre / Bleu : Eau)",
         "- De base, les mobs ont +400 de resistances. Il faut taper le boss pour baisser les resistances des montres, il faut donc tuer le boss en premier via le gain de dgt que procure les gemmes à leurs mort. Une fois Jamall mort, les mobs auront leurs resistance basique"
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Blopéra Niv. 141",
@@ -990,13 +921,7 @@
         "- Niveau 3 : -1500 dommages direct de l'élément reçus.",
         "- Niveau 5 : -2500 dommages direct de l'élément reçus."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Donjon Source du Mal Niv. 141",
@@ -1041,16 +966,13 @@
       "name": "Tal Kasha",
       "level": "Tal Kasha",
       "boss": "Stratégie du donjon:",
-      "strategies": [
-        "GDOC: Guide ECRIT TK",
-        "Vidéo GUIDE: GUIDE TK"
-      ],
+      "strategies": ["GDOC: Guide ECRIT TK", "Vidéo GUIDE: GUIDE TK"],
       "tips": []
     }
   ],
   "156 - 170": [
     {
-      "name": "La Patapoutrerie Niv. 156",
+      "name": "Lacocuocu Patapoutrerie Niv. 156",
       "level": "Mamapoutre",
       "boss": "La Mamapoutre n'a pas d'invulnérabilité mais :",
       "strategies": [
@@ -1089,13 +1011,7 @@
         "- 66% à 33% HP :",
         "- 33% à 0% HP : Infliger des dégats à Javeho fera des dégâts autour de lui en melée."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Roub'Bar Niv.156",
@@ -1112,13 +1028,7 @@
         "- Il a un sort de zone qui retire des PA, évitez de grouper vos personnage.",
         "Astuce : Stabiliser Remington lors du passage en Phase 2 permet de savoir où il est, car il ne pourra pas se téléporter à la fin de son tour, il suffira donc de lancer un sort sur la case où il a terminé son tour pour le trouver."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Donjon Riktus Elite Niv.156",
@@ -1134,13 +1044,7 @@
         "- Des étendards posés sur la carte bloquent les dommages de zone reçu à 1000 dégâts maximum en zone de 2 autour d'eux, il y en a un par Elitendards sur la carte, en tuant ces monstres ils disparaissent.",
         "- Les monstres ont tous \"Révolution Riktus\" comme état, il augmente les résistances à chaque tour de jeu sans avoir subit de retrait résistance."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Repaire de Kali Niv.156",
@@ -1313,12 +1217,7 @@
         "Au passage à la phase 2 , Pandore se téléporte au centre de map\n     - Il faut penser à le faire sortir de la zone qui donne des résistances quand on le tape\n     - Gros dégâts sur toute la zone centrale si aucun autel n'a été détruit au tour précédent\n     - Ne pas laisser Pandore isolé (= un personnage en mêlée et dans la zone centrale) sinon il gagne 2pm et des % de dégâts permanents\n     - Il se soigne de 50% pv manquant tous les 3 tours",
         "Plus le combat dure plus Pandore fera mal, il ne faut pas que le combat s'éternise"
       ],
-      "tips": [
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3:",
-        "Stèle 4:"
-      ]
+      "tips": ["Stèle 1:", "Stèle 2:", "Stèle 3:", "Stèle 4:"]
     },
     {
       "name": "Donjon Gerbouille Niv.171",
@@ -1470,13 +1369,7 @@
         "Si le Tanukouï-San ne peu taper personne, il va devenir comme \"Madara\" et lancer des météores en dégats FEU sur toute les entité allié de la map: Dégats en zone taille 3. Les dégats sont bcp plus conséquent autours de la cible.",
         "Astuce: Faites en sorte que le tanu ne vous tape jamais au cac, et restez toujours à 3 cases les un des autres. Les météores sont relativement simple a tanker si vous avez des resistances FEU"
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Canyon des Fléopards",
@@ -1512,32 +1405,20 @@
         "Le Granduk Hibourg n'a pas de phase, cependant: Il a une réduction de 75% de dégat et est stab tout le combat. Le combat est entouré de zone avec des symboles: Chaque zone change à chaque tour de table et offre des bonus aléatoire selon la zone. Une d'entre-elles sera \"Plume dorée\"",
         "Pour le taper, il faudra qu'il soit placer sur la zone \"La plume dorée\" pour pouvoir le taper convenablement. A chaque dégat subit, le \"Granduk\" va s'envoler vers la zone suivante sauf si la cases d'arrivée est bloqué par une entité. Attention, au début de son tour il sautera sur la case et tuera instantannément la cible qui est dessus: Placez donc une invocation sacrifiable sur la case pour empecher Granduk de s'envoler et de pouvoir le taper sans retenu !"
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Dimension-Objet d'Ombrage",
       "level": "Ombrage",
       "boss": "Stratégie du BU:",
-      "strategies": [
-        "GDoc: XXX",
-        "Vidéo GUIDE: GUIDE OMBRAGE"
-      ],
+      "strategies": ["GDoc: XXX", "Vidéo GUIDE: GUIDE OMBRAGE"],
       "tips": []
     },
     {
       "name": "Antre de Nogord l'Ezarélé",
       "level": "Nogord",
       "boss": "Stratégie du BU",
-      "strategies": [
-        "Gdoc: GUIDE ECRIT NOGORD",
-        "Vidéo GUIDE: XXX"
-      ],
+      "strategies": ["Gdoc: GUIDE ECRIT NOGORD", "Vidéo GUIDE: XXX"],
       "tips": []
     }
   ],
@@ -1559,13 +1440,7 @@
         "Tigris: Vol de vie en zone quand tapé (une fois par entité), Attaque qui stabilise au cac\n=> Le premier coup fait un vol de vie en aoe autours des Tigris, évitez de les taper si vous n'envisagez pas de les tuer dans le tour, sinon ils vont vite regagner de la vie si ils sont dans votre team.",
         "Mecanique du boss: Des totem sont présent sur la map, lorsqu'un totem est tué, le boss prend un archétype différent par totem (Non cumulable, mais chaque etat peu montrer jusqu'au niveau 15):\n                    - Chef de meute: Les alliées du Bufflamboyant gagnes des DI et des RES chaque tour, il invoque un allié tout les 3 tours. TP un mobs au cac quand on l'attaque (Une fois par entité)\n                    - Totem de Mage: Son AOE de flamme grandit et gagne des dégats chaque tour (Peu finir par prendre toute la map). Retire des PM quand il se fait taper (Une fois par entité).\n                    - Totem de Brute: Il pousse en ligne de X cases (Selon son niveau d'etat \"Brute\"), et provoque d'énorme dommage de collision. Vous TP à son contact une fois tapé (Une fois par éntité)"
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Donjon Plantigardes",
@@ -1578,13 +1453,7 @@
         "Oursonge: Armure en cercle de 3 cases (Evitez de mettre le boss dans l'AOE, l'armure donné est en % de vie de la cible)",
         "Le Casse-Cours (Boss): Il gagne 1 level de miel par tour (+1 niveau par mob mort).\nIl perd son miel en fin de tour sur tout la map et récupère ceux pas pris au début de tour, il recupere tout le miel au sol au début de son tour. Il saute sur le mec qui a le plus de miel pour lui voler, et inflige de gros dégat en zone autours de la case d'arrivée.\n\nAstuce: Mettez un maximum de Miel sur un SUPPORT, ou sur une invoque. Forcez le a sauter sur votre Panda/Tacleur pour qu'il soit obligé de perdre des PA/PM au détacle."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Donjon Cagnardeurs",
@@ -1596,13 +1465,7 @@
         "Castrorbital: Quand ils sont full hp, leurs sont gagnent une deuxieme ligne de dégats IRREDUCTIBLE. Ils sont perma-stab\nAstuce: Placer un Poison/Glyphe sous eux pour qu'ils perdent au moins 1pv et n'aient plus la ligne secondaire. (Dégat indirect pour passer sous l'armure)",
         "Scorpiétineur (Boss): -Lance un poison paralisant 1 tour sur 3 sur le joueur le plus éloigné. Après 2 tour, le poison vous empeche de bouger, et vous retire 5po. Il vous faudra infligez au moins 1 dégat à un ennemis pour ne pas mourrir.\n- Au contact, le boss va lancer un sort qui va rebondir sur toute les cible aligné, faite donc attention à ce que personne ne soit aligné à la cible du sort.\n- Son deuxieme sort d'AOE tape en carrée de 3x3 autour de la cible, faite en sorte de ne pas être dans cette zone pour eviter de prendre la zone.\n- Dès que vous déplacez le boss peu importe la manière, il sera stab à son prochain tour."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce:",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce:", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Donjon Vandaliénés",
@@ -1614,13 +1477,7 @@
         "Assassinge: Plus il utilise de pm, plus ils font de di (et donc vous explose) => à FOCUS",
         "Phacochemar (Boss): En début de tour, il saute de sorte à attérrir là où le plus d'entité seront touché par son AOE de cercle 3: Il inflige plus de dégat si plus d'entité sont touché.\n- Il pousse en ligne, retire des PA mais n'est pas dangereux si vous n'êtes pas paquet.\n- Il perd 10 di par Seisme qui ont touché le boss au début de son tour, jusqu'a -50 DI maximum."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce:",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce:", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Donjon Crustargneux",
@@ -1634,13 +1491,7 @@
         "Le Crustacérébro (Boss): Il tape COMME UN SOURD, mais seulement aligné à vous. Sinon, ses dégats sont plutôt faible. (Tape principalement EAU) Il n'est pas rare de se faire OS même avec 80% de res eau.\n- Il ne peu se déplacer qu'exclusivement sur les cases acide, à vous de gerer votre gestions des cases acides. Tapez en bougeant le moins possible.",
         "Un etat spécial est présent pendant le boss: A chaque tour du boss, vous allez être TP à la position où vous avez finis votre tour précédent, à vous de bien gerer vos placement.\nAstuce: Ne JAMAIS taper depuis une case \"temporelle\", sinon vous allez simplement être TP dans une cases acide et mourrir."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce:",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce:", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Donjon Mansots",
@@ -1675,13 +1526,7 @@
         "Le Tortumulte: Il tape TRES FORT, et si vous ne pouvez pas le tuer avant qu'il joue, ou que vous ne parvenez pas à le tenir à distance grâce au tortumulus, il va décimer votre équipe.",
         "Essayez de stab votre DPT qui est boosté pour qu'il puisse jouer son tour sans devoir être TP avec le tortumulus au cours de son tour."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce:",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce:", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     }
   ],
   "216 - 230": [
@@ -1700,13 +1545,7 @@
         "Voici une façon de placer les mobs pour les taper! Il faudra taper MONOCIBLE un seul des monstres pour taper tout le monde de la meilleure des manière ! (F5 si l'image ne s'affiche pas)",
         "F5 SI L'IMAGE NE S'AFFICHE PAS A DROITE:"
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Egaré",
@@ -1721,13 +1560,7 @@
         "Il ne tape pas très fort, exclusivement feu. Le seul dangés réside dans la zone qu'il pose au début de sont tour sur la même ligne que lui, ainsi que les 2 ligne devant lui. La zone prend toute la largeur de la map, et fait TRES MAL.",
         "Astuce: Jouez un ZONEUR en 1er ou 2eme de la timeline (Exemple: Elio, Dragosa, Roublard bombe..). Faite une premiere zone où vous tuez tout le monde. Les monstre revivent 2 tours après, et vu que votre zoneur joue avant les monstre => Vous les retuez tous avant qu'ils ne puissent jouer. Votre autre DPT tue le boss petit à petit."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Vidéant",
@@ -1743,13 +1576,7 @@
         "Le boss fait énormément de dégâts, et il se déplacera de manière à vous mettre dans l'aura. Il est donc important de le garder désactivé quasiment tous les tours.\nPour éviter de prendre trop de dégâts, il peut être utile de réfléchir à une rotation des perso pour leur faire perdre l'état multiplicateur. Partez du principe que si le boss joue, et qu'il peu bouger => Vous êtes mort. Soit vous avez bcp de retrait PM, soit vous le tuez très vite.",
         "Contrairement au mob, le boss perd 200 de rési quand il est désactivé: c'est donc à ce moment qu'il faut le taper."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Phytomorphe",
@@ -1766,13 +1593,7 @@
         "ATTENTION: Vaal possède un etat qui change chaque tour. En début de tour, elle lance automatiquement 3 sort sans LDV sur 3 cibles. Si vous ne respectez pas la condition de LDV qu'elle impose, les dommage sont quadruplé.",
         "Tour pair: Cible CACHE => X4 // Tour Impair: Cible en LDV => X4"
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Ravageur",
@@ -1788,13 +1609,7 @@
         "Astuce: Tour 4, 7, 10, 13... ect, le boss va proc son archétype \"mélée\" qui consistance a gagner 10%di permanant par entité a +6 cases de lui: Faite en sorte d'avoir vos perso proche de lui pour éviter de lui donner trop de DI au fil du combat.",
         "Astuce 2: Laissez le boss très bas en HP avec vos DPT pour le tuer avec un de vos premier personnage de la timeline, ça vous permettra de mieux gerer les résidus et d'éviter d'avoir trop de boss qui spawn en même temps. L'idéal étant de pouvoir les gerer 1 par 1, eventuellement 2 par 2 si vous avez beaucoup de dégats."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Steameur",
@@ -1812,26 +1627,14 @@
         "Il changera d'état en fin de tour T2 5 8 11.. ect. Au début du tours suivant (T3 6 9 12.. ect), il va sauter sur l'éntité la plus éloigné (Invocation incluse). \nEssayez d'envoyer une invocation pour le forcer à s'éloigner de votre équipe pour pouvoir gerer le combat.",
         "Conseil: Il faudra zoner et éliminer au plus vite les monstre. Dans l'idéal, vous devrez avoir tuer tout les monstre T2 sinon le combat risque de devenir bourbier ! Avoir un support en fin de timeline pour replacer votre équipe en cas de mauvais positionnement pour eviter un ultime facilite énormement le combat."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Poisseux",
       "level": "Raeliss",
       "boss": "",
       "strategies": [],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Cire Momore (230)",
@@ -1859,13 +1662,7 @@
         "Lorsque Toross atteint 0 pw, il lance un sort de zone autour de lui qui dépop instantanément 5 cases autour de toross. Le sort rebondit sur les alliés touchés. Si vous jouez avec un dpt mêlée, il est conseillé de conserver au minimum 1 pw (3 pw si la stèle polyphagie est activée).",
         "Stèles : \r\nLes stèles sont globalement très simples et la prise en main est facile. Toutefois, il faut faire attention à la combinaison de la stèle polyphagie et de la stèle sècheresse qui ne sont pas propices aux combats longs."
       ],
-      "tips": [
-        "Stèles:",
-        "Astuce",
-        "Stèle 1:",
-        "Stèle 2:",
-        "Stèle 3"
-      ]
+      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
     },
     {
       "name": "Rushu",
@@ -2051,9 +1848,7 @@
         "CeEvroaint:\n   Il ne faut pas les taper de DOS, peu stack un etat pour faire très mal sur un sort",
         "Mécanique du donjon et de Ar'nan"
       ],
-      "tips": [
-        "Aide additionnelle"
-      ]
+      "tips": ["Aide additionnelle"]
     },
     {
       "name": "Spirale du Vide",

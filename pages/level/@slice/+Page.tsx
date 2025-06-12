@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { usePageContext } from "vike-react/usePageContext";
 import { Link } from "../../../components/Link";
+import useDungeons from "@/hooks/useDungeons";
 
 interface Dungeon {
   name: string;
@@ -15,9 +16,8 @@ type DungeonData = {
 };
 
 export default function LevelSlicePage() {
-  const [dungeons, setDungeons] = useState<Dungeon[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [levelRange, setLevelRange] = useState("");
+  const { getLevelRanges, getDungeonsByLevelRange, isLoading } = useDungeons();
+
   const pageContext = usePageContext();
   const hasScrolled = useRef(false);
 
@@ -26,20 +26,24 @@ export default function LevelSlicePage() {
     if (isLoading) return;
 
     let timer: ReturnType<typeof setTimeout>;
-    
+
     const scrollToHash = () => {
       const hash = window.location.hash;
       if (!hash) return;
 
+      console.log("hash", hash);
+
       // Reset scroll state for new navigation
       hasScrolled.current = false;
-      
+
       // Clear any existing timer
       if (timer) clearTimeout(timer);
-      
+
       // Small delay to ensure the DOM is fully rendered
       timer = setTimeout(() => {
-        const element = document.getElementById(decodeURIComponent(hash.substring(1)));
+        const element = document.getElementById(
+          decodeURIComponent(hash.substring(1))
+        );
         if (!element || hasScrolled.current) return;
 
         // Calculate scroll position with header offset
@@ -50,7 +54,7 @@ export default function LevelSlicePage() {
         // Scroll to the element
         window.scrollTo({
           top: offsetPosition,
-          behavior: 'auto',
+          behavior: "auto",
         });
         hasScrolled.current = true;
       }, 50);
@@ -58,54 +62,23 @@ export default function LevelSlicePage() {
 
     // Initial scroll attempt
     scrollToHash();
-    
+
     // Listen for route changes
     const handleRouteChange = () => {
       hasScrolled.current = false;
       scrollToHash();
     };
-    
+
     // Listen for both popstate and hashchange
-    window.addEventListener('popstate', handleRouteChange);
-    window.addEventListener('hashchange', handleRouteChange);
+    window.addEventListener("popstate", handleRouteChange);
+    window.addEventListener("hashchange", handleRouteChange);
 
     return () => {
       if (timer) clearTimeout(timer);
-      window.removeEventListener('popstate', handleRouteChange);
-      window.removeEventListener('hashchange', handleRouteChange);
+      window.removeEventListener("popstate", handleRouteChange);
+      window.removeEventListener("hashchange", handleRouteChange);
     };
   }, [isLoading]);
-
-  useEffect(() => {
-    const loadDungeons = async () => {
-      try {
-        // Get the slice parameter from the route (it's an array with catch-all routes)
-        const sliceParam = Array.isArray(pageContext.routeParams?.slice)
-          ? pageContext.routeParams.slice[0]
-          : pageContext.routeParams?.slice;
-
-        if (!sliceParam) return;
-
-        // Convert URL-friendly slug back to the format used in the JSON keys
-        // e.g., "51-65" -> "51 - 65"
-        const formattedSlice = sliceParam.replace(
-          /(\d+)([\s-]+)(\d+)/,
-          "$1 - $3"
-        );
-
-        setLevelRange(formattedSlice);
-        const response = await fetch("/data/dungeons.json");
-        const data: DungeonData = await response.json();
-        setDungeons(data[formattedSlice] || []);
-      } catch (error) {
-        console.error("Failed to load dungeons:", error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    loadDungeons();
-  }, [pageContext.routeParams]);
 
   if (isLoading) {
     return (
@@ -116,6 +89,10 @@ export default function LevelSlicePage() {
       </div>
     );
   }
+
+  const levelRange = Array.isArray(pageContext.routeParams?.slice)
+    ? pageContext.routeParams.slice[0]
+    : pageContext.routeParams?.slice;
 
   if (!levelRange) {
     return (
@@ -135,6 +112,8 @@ export default function LevelSlicePage() {
       </div>
     );
   }
+
+  const dungeons = getDungeonsByLevelRange(levelRange);
 
   return (
     <div className="space-y-8">

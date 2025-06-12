@@ -3,6 +3,8 @@ import "./tailwind.css";
 import { SearchDialog } from "../components/SearchDialog";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
+import { ReloadButton } from "@/components/ReloadButton";
+import { useDungeons } from "@/hooks/useDungeons";
 
 export default function LayoutDefault({
   children,
@@ -19,10 +21,13 @@ export default function LayoutDefault({
           {/* Sticky header */}
           <header className="sticky top-0 z-10 bg-white shadow">
             <div className="h-16 flex items-center justify-between px-4">
-              <SidebarTrigger />
-              {/* <div className="max-w-7xl mx-auto"> */}
-              <SearchDialog />
-              {/* </div> */}
+              <div className="flex items-center space-x-4">
+                <SidebarTrigger />
+              </div>
+              <div className="flex items-center space-x-4">
+                <ReloadButton />
+                <SearchDialog />
+              </div>
             </div>
           </header>
 

@@ -1,54 +1,31 @@
 import { useState, useEffect } from "react";
-
-type DungeonData = Record<
-  string,
-  Array<{
-    name: string;
-    level: string;
-    boss: string;
-    strategies: string[];
-    tips: string[];
-  }>
->;
+import { useDungeons } from "../../hooks/useDungeons";
 
 interface LevelRange {
   display: string;
   slug: string;
+  minLevel: number;
+  maxLevel: number;
 }
 
 export default function Page() {
-  const [isLoading, setIsLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState("");
   const [levelRanges, setLevelRanges] = useState<LevelRange[]>([]);
+  const { getLevelRanges, isLoading } = useDungeons();
 
   useEffect(() => {
-    const loadData = async () => {
-      try {
-        const response = await fetch("/data/dungeons.json");
-        const data: DungeonData = await response.json();
-
-        // Convert data to level ranges with URL-friendly slugs
-        const ranges = Object.keys(data)
-          .map((range) => ({
-            display: range,
-            slug: range.replace(/\s+/g, ""), // Remove all spaces for URL
-          }))
-          .sort((a, b) => {
-            const aStart = Number.parseInt(a.display.split("-")[0]);
-            const bStart = Number.parseInt(b.display.split("-")[0]);
-            return aStart - bStart;
-          });
-
-        setLevelRanges(ranges);
-      } catch (error) {
-        console.error("Failed to load dungeon data:", error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    loadData();
-  }, []);
+    const ranges = getLevelRanges().map((range) => {
+      // Parse the level range from the display string (e.g., "51 - 65")
+      const [minLevel, maxLevel] = range.display.split(/\s*-\s*/).map(Number);
+      return {
+        display: range.display,
+        slug: range.slug,
+        minLevel: !Number.isNaN(minLevel) ? minLevel : 0,
+        maxLevel: !Number.isNaN(maxLevel) ? maxLevel : 0,
+      };
+    });
+    setLevelRanges(ranges);
+  }, [getLevelRanges]);
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value.toLowerCase());
