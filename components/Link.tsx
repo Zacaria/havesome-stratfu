@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 import { navigate } from "vike/client/router";
 import { usePageContext } from "vike-react/usePageContext";
 
