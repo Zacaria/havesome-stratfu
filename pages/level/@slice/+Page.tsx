@@ -1,26 +1,23 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { usePageContext } from "vike-react/usePageContext";
-import { Link } from "../../../components/Link";
+import { Link } from "@/components/Link";
+import { ReloadButton } from "@/components/ReloadButton";
 import useDungeons from "@/hooks/useDungeons";
+import type { Dungeon, DungeonWithLevelRange } from "@/types/dungeon";
 
-interface Dungeon {
-  name: string;
-  level: string;
-  boss: string;
-  strategies: string[];
-  tips: string[];
-}
-
-type DungeonData = {
-  [key: string]: Dungeon[]; // Key is the level range with spaces (e.g., "51 - 65")
+type LocalDungeon = Omit<DungeonWithLevelRange, "level"> & {
+  level: string; // Override level to be string for display
 };
 
 export default function LevelSlicePage() {
-  const { getLevelRanges, getDungeonsByLevelRange, isLoading } = useDungeons();
-
+  const { getLevelRanges, getDungeonsByLevelRange, isLoading, data } =
+    useDungeons();
+  const [dungeons, setDungeons] = useState<LocalDungeon[]>([]);
   const pageContext = usePageContext();
   const hasScrolled = useRef(false);
+  const [isPageLoading, setIsPageLoading] = useState(true);
 
+  console.log("page render", data);
   // Handle scroll to anchor after data is loaded and route changes
   useEffect(() => {
     if (isLoading) return;
@@ -80,40 +77,62 @@ export default function LevelSlicePage() {
     };
   }, [isLoading]);
 
-  if (isLoading) {
-    return (
-      <div className="flex justify-center items-center min-h-screen">
-        <div className="animate-pulse text-xl text-gray-600">
-          Loading dungeons...
-        </div>
-      </div>
-    );
-  }
-
   const levelRange = Array.isArray(pageContext.routeParams?.slice)
     ? pageContext.routeParams.slice[0]
     : pageContext.routeParams?.slice;
+
+  // Update dungeons when levelRange changes or data is loaded
+  useEffect(() => {
+    if (!levelRange) return;
+
+    console.log(
+      "Loading dungeons for level range:",
+      levelRange,
+      "data changed:",
+      !!data
+    );
+
+    const levelDungeons = getDungeonsByLevelRange(levelRange);
+    console.log("Level dungeons:", levelDungeons);
+
+    if (!levelDungeons || levelDungeons.length === 0) {
+      console.log("No dungeons found for level range:", levelRange);
+      setDungeons([]);
+      setIsPageLoading(false);
+      return;
+    }
+
+    // Map to LocalDungeon type with string level
+    const typedDungeons: LocalDungeon[] = levelDungeons.map((dungeon) => ({
+      ...dungeon,
+      level: String(dungeon.level),
+    }));
+
+    console.log("Setting dungeons:", typedDungeons);
+    setDungeons(typedDungeons);
+    setIsPageLoading(false);
+  }, [levelRange, getDungeonsByLevelRange, data]);
+
+  if (isLoading || isPageLoading) {
+    return (
+      <div className="flex justify-center items-center min-h-[50vh]">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500" />
+      </div>
+    );
+  }
 
   if (!levelRange) {
     return (
       <div className="text-center py-12">
         <h1 className="text-2xl font-bold text-gray-900">
-          Level Range Not Found
+          No level range selected
         </h1>
         <p className="mt-2 text-gray-600">
-          The requested level range could not be found.
+          Please select a level range from the sidebar
         </p>
-        <Link
-          href="/"
-          className="mt-4 inline-block text-blue-600 hover:underline"
-        >
-          ← Back to all levels
-        </Link>
       </div>
     );
   }
-
-  const dungeons = getDungeonsByLevelRange(levelRange);
 
   return (
     <div className="space-y-8">

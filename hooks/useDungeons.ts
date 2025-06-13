@@ -1,17 +1,15 @@
-import { useEffect, useState, useCallback } from "react";
-import type {
-  Dungeon,
-  DungeonData,
-  DungeonWithLevelRange,
-} from "types/dungeon";
+import { useAppContext } from "@/contexts/AppContext";
+import { useEffect, useCallback } from "react";
+import type { DungeonData, DungeonWithLevelRange } from "types/dungeon";
 
 const CACHE_KEY = "dungeons_data";
 const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
 
 export function useDungeons() {
-  const [data, setData] = useState<DungeonData | null>(null);
-  const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [error, setError] = useState<Error | null>(null);
+  const {
+    updateDungeonState,
+    dungeonState: { data, isLoading, error },
+  } = useAppContext();
 
   const fetchDungeons = useCallback(async (): Promise<DungeonData> => {
     try {
@@ -27,8 +25,7 @@ export function useDungeons() {
   }, []);
 
   const loadDungeons = useCallback(async () => {
-    setIsLoading(true);
-    setError(null);
+    updateDungeonState({ isLoading: true, error: null });
 
     try {
       // Try to get data from cache first
@@ -38,7 +35,7 @@ export function useDungeons() {
       // Check if cache is still valid
       if (parsedCache && Date.now() - parsedCache.timestamp < CACHE_DURATION) {
         console.log("Using cached data");
-        setData(parsedCache.data);
+        updateDungeonState({ data: parsedCache.data });
         return;
       }
       console.log("Fetching fresh data");
@@ -53,26 +50,57 @@ export function useDungeons() {
       };
       localStorage.setItem(CACHE_KEY, JSON.stringify(cache));
 
-      setData(freshData);
+      updateDungeonState({ data: freshData });
     } catch (err) {
       console.error("Failed to load dungeons:", err);
-      setError(
-        err instanceof Error ? err : new Error("Failed to load dungeons")
-      );
+      updateDungeonState({
+        error:
+          err instanceof Error ? err : new Error("Failed to load dungeons"),
+      });
     } finally {
-      setIsLoading(false);
+      updateDungeonState({ isLoading: false });
     }
-  }, [fetchDungeons]);
+  }, [fetchDungeons, updateDungeonState]);
 
-  const reloadDungeons = useCallback(() => {
+  const reloadDungeons = useCallback(async () => {
     console.log("Reloading dungeons...");
-    setIsLoading(true);
-    setError(null);
-    // Clear local storage cache and fetch fresh data
-    localStorage.removeItem(CACHE_KEY);
+    updateDungeonState({ isLoading: true, error: null });
 
-    loadDungeons();
-  }, [loadDungeons]);
+    try {
+      // Clear local storage cache
+      localStorage.removeItem(CACHE_KEY);
+
+      // Clear current data to force a re-fetch
+      // setData(null);
+
+      // Force a re-fetch of fresh data
+      const freshData = await fetchDungeons();
+
+      // Update cache with fresh data
+      const cache = {
+        data: freshData,
+        timestamp: Date.now(),
+      };
+      localStorage.setItem(CACHE_KEY, JSON.stringify(cache));
+
+      console.log("Updated dungeons:", freshData);
+      // Update the data state
+      updateDungeonState({ data: freshData, isLoading: false });
+
+      return freshData;
+    } catch (error) {
+      console.error("Failed to reload dungeons:", error);
+      updateDungeonState({
+        error:
+          error instanceof Error
+            ? error
+            : new Error("Failed to reload dungeons"),
+      });
+      throw error;
+    } finally {
+      updateDungeonState({ isLoading: false });
+    }
+  }, [fetchDungeons, updateDungeonState]);
 
   // Get all dungeons with their level ranges
   const getAllDungeons = useCallback((): DungeonWithLevelRange[] => {
@@ -89,6 +117,7 @@ export function useDungeons() {
   // Get dungeons for a specific level range or return all dungeons if no range is provided
   const getDungeonsByLevelRange = useCallback(
     (levelRange?: string): DungeonWithLevelRange[] => {
+      console.log("callback updated getDungeonsByLevelRange");
       if (!data) return [];
 
       // If no level range is provided, return all dungeons
@@ -144,6 +173,7 @@ export function useDungeons() {
       });
   }, [data]);
 
+  // Initial data load
   useEffect(() => {
     loadDungeons();
   }, [loadDungeons]);
