@@ -205,7 +205,7 @@ export default function LevelSlicePage() {
                     Strategies
                   </h3>
                   <ul className="space-y-3">
-                    {dungeon.strategies.map((strategy, strategyIndex) => (
+                    {dungeon.strategies?.map((strategy, strategyIndex) => (
                       <li
                         key={`${dungeon.name}-strategy-${strategyIndex}`}
                         className="flex items-start"
@@ -229,13 +229,13 @@ export default function LevelSlicePage() {
                     ))}
                   </ul>
 
-                  {dungeon.tips.length > 0 && (
+                  {!!dungeon.tips?.length && (
                     <div className="mt-6">
                       <h3 className="text-lg font-medium text-gray-900 mb-3">
                         Tips
                       </h3>
                       <ul className="space-y-3">
-                        {dungeon.tips.map((tip, tipIndex) => (
+                        {dungeon.tips?.map((tip, tipIndex) => (
                           <li
                             key={`${dungeon.name}-tip-${tipIndex}`}
                             className="flex items-start"
