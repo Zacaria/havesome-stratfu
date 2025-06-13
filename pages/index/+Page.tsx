@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useDungeons } from "../../hooks/useDungeons";
+import { Link } from "@/components/Link";
 
 interface LevelRange {
   display: string;
@@ -81,16 +82,16 @@ export default function Page() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredLevelRanges.map(({ display, slug }) => (
               <div key={slug} className="relative group">
-                <a
+                <Link
                   href={`/level/${slug}`}
                   className="block p-6 bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200 h-full"
                 >
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg font-medium text-gray-900">
-                      Level {display}
+                      {display}
                     </h3>
                   </div>
-                </a>
+                </Link>
               </div>
             ))}
           </div>

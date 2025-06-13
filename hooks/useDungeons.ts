@@ -1,9 +1,41 @@
 import { useAppContext } from "@/contexts/AppContext";
 import { useEffect, useCallback } from "react";
 import type { DungeonData, DungeonWithLevelRange } from "types/dungeon";
+import defaultDungeons from "@/build/data/dungeons.json";
 
 const CACHE_KEY = "dungeons_data";
 const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+
+export async function fetchDungeons() {
+  return defaultDungeons;
+  // try {
+  //   const response = await fetch("/data/dungeons.json");
+  //   if (!response.ok) {
+  //     throw new Error(`Failed to fetch dungeons: ${response.statusText}`);
+  //   }
+  //   return await response.json();
+  // } catch (err) {
+  //   console.error("Error fetching dungeons:", err);
+  //   throw err;
+  // }
+}
+
+export function getLevelRanges(
+  data: DungeonData
+): Array<{ display: string; slug: string }> {
+  if (!data) return [];
+
+  return Object.keys(data)
+    .map((range) => ({
+      display: range,
+      slug: range.replace(/\s+/g, ""), // Remove all spaces for URL
+    }))
+    .sort((a, b) => {
+      const aStart = Number.parseInt(a.display.split("-")[0]);
+      const bStart = Number.parseInt(b.display.split("-")[0]);
+      return aStart - bStart;
+    });
+}
 
 export function useDungeons() {
   const {
@@ -11,18 +43,18 @@ export function useDungeons() {
     dungeonState: { data, isLoading, error },
   } = useAppContext();
 
-  const fetchDungeons = useCallback(async (): Promise<DungeonData> => {
-    try {
-      const response = await fetch("/data/dungeons.json");
-      if (!response.ok) {
-        throw new Error(`Failed to fetch dungeons: ${response.statusText}`);
-      }
-      return await response.json();
-    } catch (err) {
-      console.error("Error fetching dungeons:", err);
-      throw err;
-    }
-  }, []);
+  // const fetchDungeons = useCallback(async (): Promise<DungeonData> => {
+  //   try {
+  //     const response = await fetch("/data/dungeons.json");
+  //     if (!response.ok) {
+  //       throw new Error(`Failed to fetch dungeons: ${response.statusText}`);
+  //     }
+  //     return await response.json();
+  //   } catch (err) {
+  //     console.error("Error fetching dungeons:", err);
+  //     throw err;
+  //   }
+  // }, []);
 
   const loadDungeons = useCallback(async () => {
     updateDungeonState({ isLoading: true, error: null });
@@ -60,7 +92,7 @@ export function useDungeons() {
     } finally {
       updateDungeonState({ isLoading: false });
     }
-  }, [fetchDungeons, updateDungeonState]);
+  }, [updateDungeonState]);
 
   const reloadDungeons = useCallback(async () => {
     console.log("Reloading dungeons...");
@@ -100,7 +132,7 @@ export function useDungeons() {
     } finally {
       updateDungeonState({ isLoading: false });
     }
-  }, [fetchDungeons, updateDungeonState]);
+  }, [updateDungeonState]);
 
   // Get all dungeons with their level ranges
   const getAllDungeons = useCallback((): DungeonWithLevelRange[] => {
@@ -155,22 +187,12 @@ export function useDungeons() {
   );
 
   // Get all level ranges
-  const getLevelRanges = useCallback((): Array<{
+  const getLevelRangesCb = useCallback((): Array<{
     display: string;
     slug: string;
   }> => {
     if (!data) return [];
-
-    return Object.keys(data)
-      .map((range) => ({
-        display: range,
-        slug: range.replace(/\s+/g, ""), // Remove all spaces for URL
-      }))
-      .sort((a, b) => {
-        const aStart = Number.parseInt(a.display.split("-")[0]);
-        const bStart = Number.parseInt(b.display.split("-")[0]);
-        return aStart - bStart;
-      });
+    return getLevelRanges(data);
   }, [data]);
 
   // Initial data load
@@ -184,7 +206,7 @@ export function useDungeons() {
     error,
     getAllDungeons,
     getDungeonsByLevelRange,
-    getLevelRanges,
+    getLevelRanges: getLevelRangesCb,
     refresh: reloadDungeons,
   };
 }

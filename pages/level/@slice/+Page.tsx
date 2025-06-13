@@ -1,9 +1,8 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef } from "react";
 import { usePageContext } from "vike-react/usePageContext";
 import { Link } from "@/components/Link";
-import { ReloadButton } from "@/components/ReloadButton";
 import useDungeons from "@/hooks/useDungeons";
-import type { Dungeon, DungeonWithLevelRange } from "@/types/dungeon";
+import type { DungeonWithLevelRange } from "@/types/dungeon";
 
 type LocalDungeon = Omit<DungeonWithLevelRange, "level"> & {
   level: string; // Override level to be string for display
