@@ -1,30 +1,28 @@
 import { useAppContext } from "@/contexts/AppContext";
 import { useEffect, useCallback } from "react";
-import defaultDungeons from "@/build/data/dungeons.json";
 
 const CACHE_KEY = "dungeons_data";
 const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
 
-export function fetchDungeons(): DungeonData[] {
-  return defaultDungeons;
-  // try {
-  //   const response = await fetch("/data/dungeons.json");
-  //   if (!response.ok) {
-  //     throw new Error(`Failed to fetch dungeons: ${response.statusText}`);
-  //   }
-  //   return await response.json();
-  // } catch (err) {
-  //   console.error("Error fetching dungeons:", err);
-  //   throw err;
-  // }
+export async function fetchDungeons(): Promise<DungeonData[]> {
+  try {
+    const response = await fetch(
+      `${import.meta.env.BASE_URL}data/dungeons.json`
+    );
+    if (!response.ok) {
+      throw new Error(`Failed to fetch dungeons: ${response.statusText}`);
+    }
+    return await response.json();
+  } catch (err) {
+    console.error("Error fetching dungeons:", err);
+    throw err;
+  }
 }
 
 export function getLevelRanges(
   data: DungeonsData
 ): Array<{ display: string; slug: string }> {
   if (!data) return [];
-
-  console.log("getLevelRanges", data);
 
   return data
     .map((range) => ({
