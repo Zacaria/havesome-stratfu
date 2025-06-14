@@ -1,7 +1,9 @@
 import { renderPage } from "vike/server";
 export const edge = true;
 // We use JSDoc instead of TypeScript because Vercel seems buggy with /api/**/*.ts files
-
+if (process.env.NODE_ENV === 'production') {
+  await import('../dist/server/entry.mjs') // Or wherever the build directory is
+}
 /**
  * @param {import('@vercel/node').VercelRequest} req
  * @param {import('@vercel/node').VercelResponse} res
