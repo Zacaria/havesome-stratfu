@@ -111,7 +111,7 @@ export function SearchDialog() {
         setQuery("");
 
         // Use the router to navigate to the page
-        if (pageContext?.urlPathname?.startsWith("/level/")) {
+        if (pageContext?.urlPathname?.includes("/level/")) {
           // If we're already on a level page, do a full page load to ensure anchor works
           window.location.href = href;
         } else {

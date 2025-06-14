@@ -6,7 +6,6 @@ type LinkProps = {
   href: string;
   children: React.ReactNode;
   className?: string;
-  // [key: string]: any;
 };
 
 export function Link({ href, children, className = "", ...props }: LinkProps) {

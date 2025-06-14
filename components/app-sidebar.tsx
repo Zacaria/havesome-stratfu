@@ -31,7 +31,7 @@ export function AppSidebar() {
 
   useEffect(() => {
     // Check if we're on a level slice page
-    const match = pageContext.urlPathname.match(/^\/level\/(\d+[-\s]\d+)/);
+    const match = pageContext.urlPathname.match(/\/level\/(\d+[-\s]\d+)/);
     if (match) {
       setCurrentRange(match[1]);
     } else {

@@ -3,7 +3,9 @@ import { fetchDungeons } from "@/hooks/useDungeons";
 
 export const onBeforePrerenderStart: OnBeforePrerenderStartAsync = async () => {
   const dungeons = await fetchDungeons();
-  const urls = Object.keys(dungeons).map((range) => `/level/${range}`);
+  const urls = dungeons.map(
+    (range) => `${import.meta.env.BASE_URL}level/${range.id}`
+  );
 
   console.log("urls", urls);
   return urls;
