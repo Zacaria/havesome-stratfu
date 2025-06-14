@@ -38,7 +38,7 @@ export default function Page() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen p-6">
+      <div className="p-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center py-12">
             <div className="animate-pulse text-2xl">
@@ -51,16 +51,17 @@ export default function Page() {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="">
       <header className="shadow-md">
         <div className="max-w-6xl mx-auto px-4 py-6">
           <h1 className="text-3xl font-bold">HaveSome Stratfu</h1>
           <p className="mt-2">
-            Stratégies des donjons Wakfu générées à partir des données de &nbsp;
+            Stratégies des donjons Wakfu générées à partir des données de{" "}
             <a
               href="https://docs.google.com/spreadsheets/d/1mFfXCpF_maoiPMBL6oN_PquvHYkGMmJveN3r5dP6ADw"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:underline text-green-600"
             >
               Stratfu
             </a>
@@ -91,18 +92,6 @@ export default function Page() {
           </div>
         )}
       </main>
-
-      <footer className="py-8 mt-12">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center">
-            <p>HaveSome Stratfu &copy; {new Date().getFullYear()}</p>
-            <p className="text-sm mt-2">
-              This is a fan-made project and is not affiliated with Ankama
-              Games.
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
