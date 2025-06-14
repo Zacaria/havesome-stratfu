@@ -7,7 +7,7 @@
   ],
   "functions": {
     "api/ssr.js": {
-      "includeFiles": ["dist/server/entry.mjs"]
+      "includeFiles": "dist/server/entry.mjs"
     }
   }
 }
