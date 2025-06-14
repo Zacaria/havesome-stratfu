@@ -44,7 +44,7 @@ printFileTree('/var/task');
   const pageContextInit = { urlOriginal: url };
   const pageContext = await renderPage(pageContextInit);
   const { httpResponse } = pageContext;
-  console.log("httpResponse", !!httpResponse,httpResponse);
+  console.log("httpResponse", !!httpResponse);
 
   if (!httpResponse) {
     res.statusCode = 200;

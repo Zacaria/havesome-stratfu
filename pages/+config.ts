@@ -16,6 +16,7 @@ export default {
   extends: vikeReact,
   prerender: {
     partial: true,
+    keepDistServer: true,
   },
   htmlAttributes: {
     lang: "fr",
