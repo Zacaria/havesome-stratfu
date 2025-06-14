@@ -1,5 +1,5 @@
 import { renderPage } from "vike/server";
-
+export const edge = true;
 // We use JSDoc instead of TypeScript because Vercel seems buggy with /api/**/*.ts files
 
 /**
