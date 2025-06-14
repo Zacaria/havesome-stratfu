@@ -1,9 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { usePageContext } from "vike-react/usePageContext";
 import { useDungeons } from "@/hooks/useDungeons";
-import type { DungeonWithLevelRange } from "@/types/dungeon";
-
-type Dungeon = DungeonWithLevelRange; // Alias for backward compatibility
 
 // Simple classNames helper for conditional classes
 function classNames(...classes: (string | boolean | undefined)[]): string {
@@ -20,8 +17,8 @@ export function SearchDialog() {
   const resultsRef = useRef<HTMLDivElement>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const pageContext = usePageContext();
-  const { getAllDungeons, isLoading: isDungeonsLoading } = useDungeons();
-  const allDungeonsRef = useRef<DungeonWithLevelRange[]>([]);
+  const { data, isLoading: isDungeonsLoading } = useDungeons();
+  const allDungeonsRef = useRef<DungeonsData | null>(null);
 
   // Toggle search dialog
   useEffect(() => {
@@ -75,9 +72,10 @@ export function SearchDialog() {
   // Load all dungeons once when component mounts
   useEffect(() => {
     if (!isDungeonsLoading) {
-      allDungeonsRef.current = getAllDungeons();
+      console.log("data", data);
+      allDungeonsRef.current = data;
     }
-  }, [getAllDungeons, isDungeonsLoading]);
+  }, [data, isDungeonsLoading]);
 
   // Filter dungeons based on search query
   useEffect(() => {
@@ -89,12 +87,16 @@ export function SearchDialog() {
     setIsLoading(true);
     const searchTerm = query.toLowerCase().trim();
 
-    const filtered = allDungeonsRef.current.filter(
-      (dungeon) =>
-        dungeon.name.toLowerCase().includes(searchTerm) ||
-        dungeon.boss.toLowerCase().includes(searchTerm) ||
-        dungeon.levelRange.includes(searchTerm)
-    );
+    const filtered = allDungeonsRef.current
+      ? allDungeonsRef.current
+          .flatMap((range) => range.dungeons)
+          .filter(
+            (dungeon) =>
+              dungeon.name.toLowerCase().includes(searchTerm) ||
+              dungeon.boss.toLowerCase().includes(searchTerm) ||
+              dungeon.levelRange?.toLowerCase().includes(searchTerm)
+          )
+      : [];
 
     setResults(filtered);
     setIsLoading(false);
@@ -105,10 +107,7 @@ export function SearchDialog() {
     (index: number) => {
       if (results[index]) {
         const dungeon = results[index];
-        const href = `/level/${dungeon.levelRange}#${dungeon.name
-          .toLowerCase()
-          .replace(/\s+/g, "-")
-          .replace(/[^a-z0-9-]/g, "")}`;
+        const href = `/level/${dungeon.levelRange}#${dungeon.slug}`;
 
         // Close the dialog first to ensure smooth transition
         setIsOpen(false);

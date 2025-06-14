@@ -2,29 +2,23 @@ import { useState, useEffect, useRef } from "react";
 import { usePageContext } from "vike-react/usePageContext";
 import { Link } from "@/components/Link";
 import useDungeons from "@/hooks/useDungeons";
-import type { DungeonWithLevelRange } from "@/types/dungeon";
-
-type LocalDungeon = Omit<DungeonWithLevelRange, "level"> & {
-  level: string; // Override level to be string for display
-};
 
 export default function LevelSlicePage() {
-  const { getLevelRanges, getDungeonsByLevelRange, isLoading, data } =
-    useDungeons();
-  const [dungeons, setDungeons] = useState<LocalDungeon[]>([]);
+  const { getDungeonsByLevelRange, isLoading, data } = useDungeons();
   const pageContext = usePageContext();
   const hasScrolled = useRef(false);
-  const [isPageLoading, setIsPageLoading] = useState(true);
+  const hash = !isLoading && window?.location?.hash;
 
   console.log("page render", data);
   // Handle scroll to anchor after data is loaded and route changes
   useEffect(() => {
     if (isLoading) return;
 
+    console.log("loaded, scrolling to anchor");
+
     let timer: ReturnType<typeof setTimeout>;
 
     const scrollToHash = () => {
-      const hash = window.location.hash;
       if (!hash) return;
 
       console.log("hash", hash);
@@ -74,51 +68,18 @@ export default function LevelSlicePage() {
       window.removeEventListener("popstate", handleRouteChange);
       window.removeEventListener("hashchange", handleRouteChange);
     };
-  }, [isLoading]);
+  }, [isLoading, hash]);
 
-  const levelRange = Array.isArray(pageContext.routeParams?.slice)
-    ? pageContext.routeParams.slice[0]
-    : pageContext.routeParams?.slice;
-
-  // Update dungeons when levelRange changes or data is loaded
-  useEffect(() => {
-    if (!levelRange) return;
-
-    console.log(
-      "Loading dungeons for level range:",
-      levelRange,
-      "data changed:",
-      !!data
-    );
-
-    const levelDungeons = getDungeonsByLevelRange(levelRange);
-    console.log("Level dungeons:", levelDungeons);
-
-    if (!levelDungeons || levelDungeons.length === 0) {
-      console.log("No dungeons found for level range:", levelRange);
-      setDungeons([]);
-      setIsPageLoading(false);
-      return;
-    }
-
-    // Map to LocalDungeon type with string level
-    const typedDungeons: LocalDungeon[] = levelDungeons.map((dungeon) => ({
-      ...dungeon,
-      level: String(dungeon.level),
-    }));
-
-    console.log("Setting dungeons:", typedDungeons);
-    setDungeons(typedDungeons);
-    setIsPageLoading(false);
-  }, [levelRange, getDungeonsByLevelRange, data]);
-
-  if (isLoading || isPageLoading) {
+  if (isLoading) {
     return (
       <div className="flex justify-center items-center min-h-[50vh]">
         <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500" />
       </div>
     );
   }
+  const levelRange = Array.isArray(pageContext.routeParams?.slice)
+    ? pageContext.routeParams.slice[0]
+    : pageContext.routeParams?.slice;
 
   if (!levelRange) {
     return (
@@ -132,6 +93,8 @@ export default function LevelSlicePage() {
       </div>
     );
   }
+
+  const levelDungeons = getDungeonsByLevelRange(levelRange);
 
   return (
     <div className="space-y-8">
@@ -167,7 +130,7 @@ export default function LevelSlicePage() {
         </p>
       </div>
 
-      {dungeons.length === 0 ? (
+      {levelDungeons.length === 0 ? (
         <div className="text-center py-12">
           <p className="text-gray-500">
             No dungeons found for this level range.
@@ -181,14 +144,8 @@ export default function LevelSlicePage() {
         </div>
       ) : (
         <div className="space-y-12">
-          {dungeons.map((dungeon) => (
-            <section
-              key={dungeon.name}
-              id={dungeon.name
-                .toLowerCase()
-                .replace(/\s+/g, "-")
-                .replace(/[^a-z0-9-]/g, "")}
-            >
+          {levelDungeons.map((dungeon) => (
+            <section key={dungeon.name} id={dungeon.slug}>
               <div className="bg-white shadow overflow-hidden rounded-lg">
                 <div className="px-4 py-5 sm:px-6 bg-gray-50">
                   <h2 className="text-xl font-semibold text-gray-900">

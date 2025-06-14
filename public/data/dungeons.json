@@ -4,6 +4,7 @@
       "name": "Le Papaturage Royal",
       "level": "Moogrr Royal",
       "boss": "Le Moogrr Royal n'est pas invulnérable mais :",
+      "slug": "moogrrroyal",
       "strategies": [
         "- Moogrr Royal gagne 1 PW en début de tour et 1 à chaque ennemi tué, à son maximum elle fait exploser toutes les bouses infligeant de lours dégâts.",
         "- La gestion des boubouzes et/ou le placement seront très importants pour ne pas subir trop de dégâts du sort « Bombouzement en chaîne », qui se débloque lorsque le Moogrr Royal a 5 PW. Il en gagne un à chaque début de tour et à chaque fois qu’un monstre est mis K.O (invocations comprises).",
@@ -18,6 +19,7 @@
       "name": "La Montage Adezieu",
       "level": "Craqueleur Royal",
       "boss": "Le Craqueleur Royal n'est pas invulnérable mais :",
+      "slug": "craqueleurroyal",
       "strategies": [
         "Conseil: Un soigneur ou un donneur de bouclier sont conseillés.",
         "- Le Craqueleur Royal possède le passif : Cotte de granit : Possède 10 niveaux. Le craqueleur gagne passivement 400 résistances élémentaires. Chaque attaque en mêlée et collision retire 1 niveau et 25 résistances élémentaires. Au niveau 0, déclenche Rage Sismique et invoque une caillasse autour de lui.",
@@ -31,6 +33,7 @@
       "name": "Les Champs Pourchan",
       "level": "Plante Carnivore",
       "boss": "La Plante Carnivore n'est pas invulnérable mais :",
+      "slug": "plantecarnivore",
       "strategies": [
         "- Plante Carnivore, tentez de la garder à distance, sa Morsure au corps-à-corps est douloureuse.",
         "- Le linceul de fleurs laissé par les monstres à leur mort peut vite envahir la salle, lancez des invocations pour nettoyer les lieux à votre place ou soyez assuré de vos déplacements en ne laissant pas le malus de résistances se cumuler d’un tour à l’autre.",
@@ -43,6 +46,7 @@
       "name": "Equipage du Poulpe",
       "level": "Pohl Le Poulpe",
       "boss": "Pohl le Poulpe n'est pas invulnérable mais:",
+      "slug": "pohllepoulpe",
       "strategies": [
         "- Pohl tapent sans ligne de vu, 3 fois par tour en retirant de la portée. Essayer de retourner vos supports pour qu'ils soient ciblé en priorité par Pohl !",
         "- Pohl gagne des DI chaques tour qu'il passe sous l'eau. Pour le faire surgir, il faut tuer les tentacule. Astuce: Dans la salle du boss elle sont des \"invocations\", Enutrof ou Osamodas sont donc géniaux pour les tuer.",
@@ -63,6 +67,7 @@
       "name": "Donjon Mort-Brûlés",
       "level": "Hark-Sahniss",
       "boss": "Hark Saniss n'est pas invulnérable mais:",
+      "slug": "hark-sahniss",
       "strategies": [
         "Stêle d'intervention Cire Momore ankylosé Disponible seulement en modulé",
         "- Cases Malédiction. Un monstre sur la case gagne 200 de résistance. Marcher sur les cases les enlève mais vous applique un état \"Maudit\"",
@@ -84,6 +89,7 @@
       "name": "La Tour Minérale",
       "level": "Agonie la Déterrée",
       "boss": "WARNING : Pour accéder au contenu de cette tour, vous allez avoir besoin d’une incantation de Féca. Celle-ci peut être fabriquée par un ébéniste. L’incantation est consommée à l’utilisation mais vous pourrez faire autant de tentatives que vous le souhaitez contre Agonie tant que vous ne gagnez pas le combat et ne sortez pas du donjon.",
+      "slug": "agonieladterre",
       "strategies": [
         "Agonie n'est pas invulnérable mais :",
         "- Chaque visite du donjon détermine un gameplay parmi les huit disponibles pour Agonie et ses Trépamorts. Ce gameplay influence la façon dont le combat se déroule, mais ne change pas en cas d’abandon tant que vous ne sortez pas du donjon. Ainsi, il est possible de jouer le premier tour pour identifier le gameplay en cours, d’abandonner et de relancer après avoir adapté son équipement et sa stratégie.",
@@ -115,6 +121,7 @@
       "name": "Marteau-Agris",
       "level": "Goël le Golem",
       "boss": "Goël n'est pas invulnérable mais:",
+      "slug": "gollegolem",
       "strategies": [
         "- Dans la salle de Goël, une mécanique spéciale apparaît: Un bouclier apparaît sur les monstres les tours impair, et sur le Goël les tours pairs. Ce bouclier donnent de grande resistance mais avec une contrepartie: Pour chaque entité qui infligera au moins 1 dégât en étant aligné à un monstre retirera des résistances au monstre au tour d'après.",
         "- Goël fait beaucoup de dégats.",
@@ -134,6 +141,7 @@
       "name": "L'Antre Oubliée",
       "level": "Grand Bouftou Sauvage",
       "boss": "Le Grand Bouftou Sauvage est invulnérable mais:",
+      "slug": "grandbouftousauvage",
       "strategies": [
         "- Le Grand Bouftou Sauvage invoque 2 totems bleus chacun entourés de glyphes bleus à chacun de ses tours, il les détruit et en réinvoque deux autres à chaque tour, le placement est aléatoire.",
         "- Un personnage doit se placer sur une glyphe bleue et se transformera en esprit bouftou. Une fois transformé, approchez vous du Grand Bouftou Sauvage et lancer le seul sort que vous possédez (ou passez votre tour à son CàC), cela retirera l'invulnérabilité du Grand Bouftou Sauvage pour 1 tour. Il faudra refaire cette action, à chaque tour."
@@ -144,6 +152,7 @@
       "name": "Donjon Bwork",
       "level": "Throll",
       "boss": "Le Throll n'est pas invulnérable mais:",
+      "slug": "throll",
       "strategies": [
         "- Le Throll possède le passif \"Régénération Sauvage\", qui lui permet de se régénérer 5% de ses HP max par niveau du passif au début du tour de chaque combattant. Pour contrer ça, il faut que le Throll termine son tour sur un artefact, il perdra 1 niveau du passif, ce qui diminue sa régénération. Il n'est pas affecté par les bonus des artefacts.",
         "- Il faudra inciter le Throll à utiliser son sort \"Charge Sauvage\" sur un joueur à côté d'un artefact pour l'attirer.",
@@ -159,6 +168,7 @@
       "name": "La Skouale Sèche",
       "level": "Royal Skouale",
       "boss": "Le Royal Skouale n'est pas invulnérable mais:",
+      "slug": "royalskouale",
       "strategies": [
         "- Il faut placer le Royal Skouale sur les glyphes, afin d'éviter de lui générer des PW en le tapant.",
         "- Placer Royal Skouale suffit uniquement à éviter la régénération de PW si on le tape au cac, si on le tape à distance il continuera à gagner des PW à chaque coup.",
@@ -172,6 +182,7 @@
       "name": "Donjon Mollusky",
       "level": "Kralaboss",
       "boss": "Kralaboss n'est pas invulnérable mais:",
+      "slug": "kralaboss",
       "strategies": [
         "- Le Kralaboss possède un sort \"Kralahypnose\" qu'il lance dès le premier tour puis tous les 3 tours qui réduit les dégâts infligés et les coups critiques des personnages qui le regardent. Il faut donc se retourner pour éviter l'état.",
         "- Il faudra déplacer le Kralaboss dans les glyphes de bordure de map et glyphes Kralamouille pour éviter de générer des PW en le tapant. A partir de 5PW il lancera le sort \"High Voltage\" et tuera tous vos personnages dans la zone.",
@@ -183,6 +194,7 @@
       "name": "Kokokolantha",
       "level": "Grokokolantha",
       "boss": "Grokokolantha n'est pas invulnérable mais:",
+      "slug": "grokokolantha",
       "strategies": [
         "- Grokokolantha invoque un Pilier Koko indestructible et toujours sur la même case. Ce pilier est utile uniquement pour les joueurs car si vous arrivez à placer les ennemis de sorte à ce que, lorsqu’il activeront leur passif « Coup d’koko » celui-ci se trouve dans la zone de dégâts du passif, il appliquera une perte de -80 de résistance élémentaire sur le boss pour le tour en cours.",
         "- Pour eviter le sort de début de tour du Grokokolantha, il suffit d'avoir prit un coup de début de tour d'un koko, ou d'être au contact d'un koko au début du tour du Grokokolantha",
@@ -196,6 +208,7 @@
       "name": "Château des Cwabes",
       "level": "Cwabe Royal",
       "boss": "Le Cwabe Royal n'est pas invulnérable mais:",
+      "slug": "cwaberoyal",
       "strategies": [
         "- Cwabe Royal lancera le sort Cwabapace, il recevra -100 Dommages Zones et -150 Dommages Distance x2 pour le restant de la durée du combat, un personnage mélée est obligatoire.",
         "- Au début de son tour le Cwabe Royal en ligne de 3 cases de largeur face à lui lancera un sort de dégats.",
@@ -208,6 +221,7 @@
       "name": "Tour Miss Moche",
       "level": "Lela, Erpel, Eenca, Ydalipe",
       "boss": "Les quatres ne sont pas invulnérables mais:",
+      "slug": "lelaerpeleencaydalipe",
       "strategies": [
         "- Lela charge et frappe au contact en poussant de plus en plus loin au fil des tours\n    - Tous les tours pairs elle frappe en zone carré autour d'elle avant de charger.",
         "- Erpel inflige des dégâts monocibles à distance (avec ldv) et invoque une armoire qui inflige quelques dégâts.\n    - Si au prochain tour l'armoire est toujours en vie, Erpel la tue, gagne 25% de dommages infligés et la réinvoque en fin de tour.\n    - L'armoire est immunisée aux dommages à distance, à sa mort donnent 2 PA et 2 PM aux ennemis en zone cercle de 2.",
@@ -223,6 +237,7 @@
       "name": "Les Ratacombes",
       "level": "Ratachouille",
       "boss": "Ratachouille n'est pas invulnérable mais:",
+      "slug": "ratachouille",
       "strategies": [
         "Attention: Les monstres ayant une base de PdV plus élevée, ils auront entre 8 000 et 9 000 HP en Stasis 5.",
         "Conseil: Des personnages faisant des dégâts terre sont recommandés.",
@@ -236,6 +251,7 @@
       "name": "Temple du Grand Orrok",
       "level": "Le Grand Orrok",
       "boss": "Le Grand Orrok n'est pas invulnérable mais:",
+      "slug": "legrandorrok",
       "strategies": [
         "- Dans la salle de Orrok: Ne vous mettez JAMAIS sur les cases du fond lors de la phase de placement, sinon vos personnages auront un poison de 1000 de dégats à leurs début de tour. Ne jamais finir aligner avec aucun totem sous aucune circonstance, sinon c'est la mort.",
         "- Orrok tape très fort en zone colère de 2 à distance de 8 cases et également très fort en monocible en mélée.",
@@ -247,6 +263,7 @@
       "name": "La Corbeau-Cave Niv.66",
       "level": "Korbot K-800",
       "boss": "Le Kotbot K-800 n'est pas invulnérable mais:",
+      "slug": "korbotk-800",
       "strategies": [
         "Conseil: Lorsqu'un monstre à son renvoie d'actif (Visible par une petite luciole violette qui vole autour de lui, taper en zone sans cibler le monstre ou lancez un sort qui aura un effet bénéfique sur vous, il sera renvoyer sur vous, donc avec son effet positif et consommera le renvoie du Corbac !)",
         "- Korbot K-800 pose une glyphe au sol qui retire 50% des HP courants des combattants se trouvant dedans lors du prochain tour du boss.",
@@ -261,6 +278,7 @@
       "name": "Truchière Abandonée",
       "level": "Hongrue, Haute Truche",
       "boss": "Les oeufs ainsi que Hongrue sont invulnérables mais:",
+      "slug": "hongruehautetruche",
       "strategies": [
         "- Pour tuer Hongrue, il faudra d'abord le tacler avec un personnage qui possède un minimum de 500 de tacle. Hongrue gagnera un buff de dégats : 50% Dommages infligés, 20 Vonlonté & 25% Coup Critique et les oeufs seront vulnérables pour 2 tours.",
         "- Si les oeufs ne sont pas morts en moins de 2 tours, il faut répéter la manipulation.",
@@ -275,6 +293,7 @@
       "name": "Domaine du Petit Groin",
       "level": "Gligli Royal",
       "boss": "Le Gligli Royal n'est pas invulnérable mais:",
+      "slug": "gligliroyal",
       "strategies": [
         "- Le Gligli Royal charge une personne en ligne de lui  au début de son tour, et la pousse de 5 cases.",
         "- Le Gligli Royal peut lancer le sort \"Truffe Royal\", qui augmente ses résistances élémentaires de 25, qu'il lancera uniquement lorsqu'il a en dessous de 50% de ses HP max.",
@@ -287,6 +306,7 @@
       "name": "Palais du Tsu",
       "level": "Tsar Tsu Tsu",
       "boss": "Le Tsar Tsu Tsu n'est pas invulnérable mais:",
+      "slug": "tsartsutsu",
       "strategies": [
         "- Tsar Tsu Tsu lance AspiraTsarTsar 2 fois par tour ce qui vole des PW et le fait gonfler.",
         "- Au bout du 3ème AspiraTsarTsar, il lance Explusion de Wakfu qui fait assez mal en cercle de 2 cases.",
@@ -298,6 +318,7 @@
       "name": "Autel de la Lune",
       "level": "Lune Géante",
       "boss": "La Lune Géante n'est pas invulnérable mais:",
+      "slug": "lunegante",
       "strategies": [
         "Conseil: Il vaut mieux abattre la Lune Géante en premier pour se faciliter la tâche.",
         "- Le passif Protection Lunaire de la Lune Géante va être très problématique puisque qu’il confère énormément de résistance aux ennemis qui en ont déjà beaucoup. Elle donne également +200 d’armure cumulable par tour à tous les monstres, en plus des bonus que peuvent donner les lunes des Mulounes et l’armure que les monstres peuvent eux aussi donner en zone par leur sort.",
@@ -310,6 +331,7 @@
       "name": "Donjon Arakne",
       "level": "Veuve Noire",
       "boss": "La Veuve Noire n'est pas invulnérable mais:",
+      "slug": "veuvenoire",
       "strategies": [
         "- La Veuve Noire dispose du passif du même nom qui permet aux joueurs d’infliger 20% de dommages supplémentaire par niveau d’Entoilé, mais chaque premier coup reçu par tour de joueur lui fait invoquer une Petite Arakne (max 6).",
         "- La Veuve Noire peut lancer le sort Morsure de la Veuve Noire, ce sort applique l'état du même nom, le joueur ayant l'état gagnera 1 niveau de l'état si il finit son tour à 6 cases ou moins en cercle autour de la Veuve Noire. Au Niveau 2 de l'état, il perdra 2PM, 4PA, et au Niveau 3 il se transformera en cocon.",
@@ -324,6 +346,7 @@
       "name": "Antre d'Excarnus",
       "level": "Excarnus",
       "boss": "Excarnus est invulnérable qu'en S8+:",
+      "slug": "excarnus",
       "strategies": [
         "Totem Macabre : tant que ce totem est actif Excarnus invoque 2 tas d'os à la fin de son tour",
         "Totem Terre Maudite: Tant que ce totem est actif, le totem terre maudite applique un bonus de 200 résistance elementaire à toute les autres entité ennemis sur la map (A FOCUS EN PRIORITE)",
@@ -341,6 +364,7 @@
       "name": "Sliptorium",
       "level": "Nonne",
       "boss": "La Nonne n'est pas invulnrérable mais:",
+      "slug": "nonne",
       "strategies": [
         "- Tout les 5 tours la Nonne invoquera des tombes à cibler, le tour d'après chaque tombe encore présente fera spawn un mob.",
         "- Quand elle lance son sort Concentration, il faut éviter de la taper sinon elle infligera plus de dommages avec son sort Décharge Spectrale, possible à esquiver en se cachant derrière les bancs.",
@@ -353,6 +377,7 @@
       "name": "Le Misolée",
       "level": "Viktoria-France Kenstein",
       "boss": "Viktoria n'est pas invulnérable mais:",
+      "slug": "viktoria-francekenstein",
       "strategies": [
         "- Viktoria-France Kenstein invoque 3 Gore-Gone au début du combat. Si on tue Viktoria, les Gore-Gone meurent. Lorsque l'on tue un monstre, celui-ci octroie un bonus à Viktoria qui se cumule:",
         "Si Gore-Gone meurt, elle gagne Amélioration des crocs: \n                       - Etat 1 : 25 % de régénération sur les dommages.\n                       - Etat 2 : 25% de régénration sur les dommages en armure.\n                       - Etat 3 : Si vous cumulez plus de 10 PA/PM/PW pour l'attaquer, elle gagne le passif Peau de Pierre.",
@@ -367,6 +392,7 @@
       "name": "Château de Wagnar",
       "level": "Vampyro",
       "boss": "Vampyro n'est pas invulnérable mais :",
+      "slug": "vampyro",
       "strategies": [
         "- Toujours rester à 3 cases des bordures, car Vampyro peut pousser.",
         "- Ne pas regarder vers Vampyro, et ne pas attaquer Vampyro au premier tour car il renverra les dégats sur un allié.",
@@ -380,6 +406,7 @@
       "name": "Académie Trool",
       "level": "El Pochito",
       "boss": "El Pochito n'est pas invulnérable mais :",
+      "slug": "elpochito",
       "strategies": [
         "- Tous les monstres ainsi que El Pochito peuvent baisser vos résistances élémentaires, les bordures de map également.",
         "- Tous les monstres hors Rey Mystroolrio (violet) ont un sort de bonus allié (Armure, PA, Dommages).",
@@ -398,6 +425,7 @@
       "name": "Le Hammamamoule",
       "level": "Bilbymoule Nacrée",
       "boss": "Bilbymoule Nacrée n'est pas invulnérable mais :",
+      "slug": "bilbymoulenacre",
       "strategies": [
         "- Bilbymoule tape assez fort en melée et à distance, faite attention à ne pas vous faire surprendre.",
         "- Tous les monstres ainsi que Bilbymoule infligent le l'état Eclopé Total lorsqu\"ils tapent, celui-ci vous infligera des dégâts lorsque vous vous déplacerez.",
@@ -413,6 +441,7 @@
       "name": "Cavernes des Slekymoses",
       "level": "Reine Slek",
       "boss": "Reine Slek est invulnérable :",
+      "slug": "reineslek",
       "strategies": [
         "- Conseil: Il est préférable de rester à distance car elle one shot en mélée (3 de portée max)",
         "- Pour enlever son invulnérabilité il faut qu'un joueur se place dans la glyphe blanche que Reine Slek invoque et y finisse son tour. Le tour d'après il sera transformer en Slek et pourra lui faire un bisou pour la désenvouter.",
@@ -424,6 +453,7 @@
       "name": "Scarrière Abandonnée",
       "level": "Scaraboss",
       "boss": "Scaraboss est invulnérable mais :",
+      "slug": "scaraboss",
       "strategies": [
         "- Scaraboss invoque 4 Scarafons avec chacun un élément, tuer le Scarafon Feu, enlèvera les résistances Feu du Scaraboss pour 1 tour, même logique pour les autres éléments.",
         "- Tuer un scarafon soigne Scaraboss à hauteur de 25% de ses HP, privilégiez des gros tours de dégâts."
@@ -434,6 +464,7 @@
       "name": "Nécropoil de Morbax",
       "level": "Chaferfu, Roi chafer",
       "boss": "Chaferfu n'est pas invulrérable mais:",
+      "slug": "chaferfuroichafer",
       "strategies": [
         "- Face à Chaferfu vous recevrez dès le début du combat 100% de résistance soin.",
         "- La seule manière de pouvoir vous soigner et de mourir à 5 de portée ou plus de Chaferfu pour ensuite revenir à la vie avec 50% de vos points de vie et 0% de résistance soin.",
@@ -448,6 +479,7 @@
       "name": "Antre du Meulou",
       "level": "Milkar le Meulou",
       "boss": "Raison de l'invulnérabilité ou du problème",
+      "slug": "milkarlemeulou",
       "strategies": [
         "- Un GDOC sera écrit pour les stratégie des BU ! Désolé pour l'attente."
       ],
@@ -459,6 +491,7 @@
       "name": "Katrepat",
       "level": "Kralaman",
       "boss": "- Kralaman tape en cercle de 3, il peut attirer, projette une cible dans son dos, gagne des dommages infligés pour chaque tentacule possédée (commence à 4, en perds 1 lorsqu'un joueur le tape dans le dos, il peut en perdre maximum une par tour par joueur, et en regagne 1 par tour et 4 si sa stèle est activée",
+      "slug": "kralaman",
       "strategies": [],
       "tips": []
     },
@@ -466,6 +499,7 @@
       "name": "Donjon 3 joueurs",
       "level": "Mégathon",
       "boss": "- Mégathon peut attirer, il tape au contact comme à distance en monocible, pose des pièges de dégâts sur la carte, peut appliquer un sort Bulle sur un personnage ce qui le rend incapable d'agir, des dégâts alliés permettent de briser la bulle.",
+      "slug": "mgathon",
       "strategies": [],
       "tips": []
     },
@@ -473,6 +507,7 @@
       "name": "Donjon 1 salle",
       "level": "Merkator",
       "boss": "- Merkator peut attirer, il tape de loin, donne des bonus de dommages infligés et de PM à ses alliés, sa stèle lui permet de tuer toute la salle dès que ses 3 alliés sont morts.",
+      "slug": "merkator",
       "strategies": [],
       "tips": []
     },
@@ -480,13 +515,18 @@
       "name": "Clear",
       "level": "Lardevil",
       "boss": "- Lardevil tape au contact en monocible comme en zone, il possède peu de PM mais se téléporte et inflige des dégâts de zone lorsqu'un personnage traverse les cases alignées avec lui (sa téléportation peut blesser ses alliés), à la mort d'un de ses alliés il se téléporte sur l'attaquant et lui inflige des dommages. La stèle associé lui fait gagner 3 PM et stabilisé. (peut être stabilisé de base, à vérifier)",
+      "slug": "lardevil",
       "strategies": [],
-      "tips": ["Stèle 3:", "Stèle 4:"]
+      "tips": [
+        "Stèle 3:",
+        "Stèle 4:"
+      ]
     },
     {
       "name": "L'Arène Dansante Niv.96",
       "level": "La Bilby Queen",
       "boss": "La Bilby Queen est invulnérable. Il faut respecter son etat pour la taper.",
+      "slug": "labilbyqueen",
       "strategies": [
         "- Bilby Queen a un état avec un niveau qui correspond au nombre de case de distance auquel vous devez vous trouver pour pouvoir la taper, sinon ça renvoie et ne fait pas de dégâts. Exemple: Si le boss a un état de 1, vous devez le taper au corps-à-corps, s'il a état de 5, il doit y avoir 4 cases entre vous et le monstre.",
         "A partir de 30% HP à la fin de son tour, Bilby Queen gagne un état supplémentaire en alternant :\n- Préparation Des Facettes : le tour d'après il tape très fort sur les cases de la croix colorée (3 cases de largeur en croix).\n- Préparation du Dancing Floor Mortel : le tour d'après il fait très mal sur les cibles situées sur toute la map sauf la croix de 3 cases de largeur.",
@@ -498,6 +538,7 @@
       "name": "Le Glaglacier Cornu Niv.96",
       "level": "Lady Glagla",
       "boss": "Lady Glagla n'est pas invulnérable mais:",
+      "slug": "ladyglagla",
       "strategies": [
         "- Lady Glagla soigne tout les Glaglawi en début de tour et se téléporte à coté d'un allié à la fin de son tour.",
         "Les glaglas ont deux états :\n- Glaglaçon : régénération de 50% des HP manquants quand le monstre est au corps-à-corps d'un allié au début de son tour.\n- Protection glaciale : Si le glagla est attaqué en ligne il est repoussé de 2 cases (il n'est pas repoussé si tapé au corps-à-corps), si il collisionne avec un autre glagla, il perd des résistances pour le tour du combattant et gagne 25% de dommages et 2PM pour 1 tour.",
@@ -509,6 +550,7 @@
       "name": "Niche du Yech'ti'Wawa Niv.96",
       "level": "Yech'ti'Wawa",
       "boss": "Le Yech'ti'Wawa n'est pas invulnérable mais :",
+      "slug": "yechtiwawa",
       "strategies": [
         "- Si le Yech'ti'Wawa a moins de 30% de ses HP max, il deviendra invisible à chaque tour jusqu'à ce qu'il remonte au dessus de la barre des 30%.",
         "- Le Yech'ti'Wawa attaque au corps-à-corps à 3PO max et attaque en ligne.",
@@ -525,6 +567,7 @@
       "name": "Donjon Gelée Niv.96",
       "level": "Empereur Gelax",
       "boss": "L'empereur gelax n'est pas invulnérable mais :",
+      "slug": "empereurgelax",
       "strategies": [
         "- Empereur Gelax tape très fort en zone donc il ne faut pas être collé aux alliés.",
         "- Pour chaque gelée tuée, Empereur Gelax gagnera +15% dommages infligés.",
@@ -541,6 +584,7 @@
       "name": "Chuchobase Niv.96",
       "level": "Maître Chuchoku",
       "boss": "Maître Chuchoku n'est pas invulnérable mais :",
+      "slug": "matrechuchoku",
       "strategies": [
         "- Maître Chuchoku dispose d'une aura assez grande autour de lui. A chaque début de tour, il appliquera un débuff à chaque personnage présent dans une glyphe.\n                 - Aura rouge: -2PA\n                 - Aura bleue: -15% de dégâts infligés\n                 - Aura verte: -2PM\n                 - Aura blanche: -100 résistances\n\nSachant qu'un allié qui n'est pas dans une aura au moment de taper aura un malus de -40% de dégâts infligés.",
         "- Quand un monstre (sauf les porte-étendards) est tapé il voit sa résistance augmenter dans l'élément utilisé et la résistance de l'élément inverse baisse (exemple : taper feu augmente sa résistance feu, sa résistance air baisse), les porte-étendards voient leurs résistances augmentés lorsqu'ils tapent dans un élément.",
@@ -552,6 +596,7 @@
       "name": "Repaire des Magik Riktus Niv.96",
       "level": "Chapo Magik",
       "boss": "Le Chapo Magik est invulnérable mais :",
+      "slug": "chapomagik",
       "strategies": [
         "- Il faut que trois entités différentes tapent Chapo Magik dans le dos afin qu'il invoque 3 chapeaux, une fois ces 3 chapeaux invoqués, il devient vulnérable.",
         "- Les chapeaux invoquent des Riktus au bout de 2 tours sur le terrain, aucun d'entre-eux n'est une invocation, il faudra donc tous les tuer.",
@@ -563,6 +608,7 @@
       "name": "Antre du Boufrog Niv.96",
       "level": "Magmog le Boufrog",
       "boss": "Raison de l'invulnérabilité ou du problème",
+      "slug": "magmogleboufrog",
       "strategies": [
         "- Un GDOC sera écrit pour les stratégie des BU ! Désolé pour l'attente."
       ],
@@ -572,6 +618,7 @@
       "name": "Antre du corbeau noir",
       "level": "Corbeau Noir",
       "boss": "Le CN est invulnérable mais:",
+      "slug": "corbeaunoir",
       "strategies": [
         "P1",
         "Tuer les corbeaux & finir son tour derrière les murs. S'approcher du CN pour le rendre vulnérable avec le sort tornade, puis le taper. Il vaut mieux qqn avec une grosse ini pour le rendre vulnérable en début de tour, il faut réappliquer l'effet tous les tours.",
@@ -589,6 +636,7 @@
       "name": "Antre du Dragon-Cochon Niv.111",
       "level": "Dragon-Cochon",
       "boss": "Raison de l'invulnérabilité ou du problème",
+      "slug": "dragon-cochon",
       "strategies": [
         "- Le boss possède une mécanique de provocation, il concentre ses attaques sur le joueur en ayant le plus (il peut se téléporter sur sa cible)",
         "- En phase 1 il est nécessaire d'utiliser 30 PA pour l'attaquer de dos pour le delock (2 tours)",
@@ -601,6 +649,7 @@
       "name": "Le Pot d'Hagën-Glass Niv.111",
       "level": "Hägen-Glass",
       "boss": "Hâgen-Glass n'est pas invulnérable mais :",
+      "slug": "hgen-glass",
       "strategies": [
         "- En Phase 1 Hägen-Glass possède 4 PM et se soigne de 30% des dommages subits à 3 cases et moins.",
         "- Hägen-Glass possède un état \"Givré\" qui augmente de 1 par tour (et mort de monstre), au niveau 4 de l'état il est stabilisé.",
@@ -619,6 +668,7 @@
       "name": "Aile de L'ambassadrice Niv.111",
       "level": "Kya, Missiz Frizz",
       "boss": "Missiz Frizz est invulnérable qu'en deuxième phase :",
+      "slug": "kyamissizfrizz",
       "strategies": [
         "- Mécanique du donjon : Terminer sur un glyphe tête de mort, tue. Réanimation automatique après 2 tours, le soin fait des dégats. Seul les personnages ayant été réanimés de cette manière peuvent taper les monstres invulnérables.",
         "Salle 1: \n                 - 3 monstres invulnérables.\n                 - Les monstres posent l'état \"Congélation\" faisant perdre PA et PM, au niveau 5 de l'état Transformation en glaçon, taper ses alliés avec des dégâts feu fait diminuer l'état.\n                 - Attention, les monstres KO se réaniment au bout de certains tours, bien penser à désincarner.",
@@ -632,6 +682,7 @@
       "name": "La Tour Gelée Niv.111",
       "level": "Sylargh",
       "boss": "Le Sylargh est invulnérable mais :",
+      "slug": "sylargh",
       "strategies": [
         "- Tant que Sylargh est en vie, il va booster 2 mobs à portée par tour (buff résistances et buff PM)",
         "- Après avoir déclenché son ulti Sylargh perds 30% de dégâts et 300 résistances pour deux tours.",
@@ -644,6 +695,7 @@
       "name": "Donjon Cacterre Niv.111",
       "level": "Piktus",
       "boss": "Le Piktus est invulnérable mais :",
+      "slug": "piktus",
       "strategies": [
         "Piktus a deux phases: \nPhase 1:\n                 - Il faut utilisé 10 PA de chaque élément sur le Piktus, il sera vulnérable au prochain tour et pendant 2 tours.\n                 - Pendant cette période, il gagne des PM, 100% dégâts et se stabilise.\n                 - Si il a plus de 30% de sa vie après les 2 tours, il faut répéter l'opération.",
         "Phase 2:\n                 - Il n'aura plus d'invulnérabilité.\n                 - Il gagne PM, 200% dégâts, 150 résistances et est stabilisé.\n                 - Le tuer au plus vite.",
@@ -659,6 +711,7 @@
       "name": "Fosse du Tourmenteur Niv.111",
       "level": "Spectrex le tourmenteur",
       "boss": "Spectrex n'est pas invulnérable mais:",
+      "slug": "spectrexletourmenteur",
       "strategies": [
         "En début de combat : \n                 - Applique \"Pacte Tourmenté\" aux Ennemis (Les sorts de soin n'ont plus d'effet :\n                 - Les dommages sur un joueur Alliés sont transformés en sois (réduction de moitié)\n                 - Les dommages sur un joueur Alliés sont propagés autour (cercle de 2) (ne touche pas les Ennemis)\n                 - Les Dommages sur un joueur Alliés lui conférent 20 Tacle pour chaque PA et PM utilisé par le sort déclencheur",
         "- Au début de sont tour, le Tourmenteur attaque dans la direction vers laquelle il regarde ainsi que dans son dos.",
@@ -678,6 +731,7 @@
       "name": "Caverne Smarrante Niv.111",
       "level": "Smarillion",
       "boss": "Le Smarillion est invulnérable mais :",
+      "slug": "smarillion",
       "strategies": [
         "- Début de combat : Smarillion invoque un Smarmot qui est invulnérable.",
         "- Il faut faire en sorte que le boss commence toujours son tour avec un ennemi à 3 cases minimum, sinon, Smarillion fait des dégâts sur toute la map et pousse tous les personnages dans des directions aléatoires.",
@@ -690,6 +744,7 @@
       "name": "Donjon Flaqueux Niv.111",
       "level": "Flaque Royale",
       "boss": "La Flaque Royale n'est pas invulnérable mais :",
+      "slug": "flaqueroyale",
       "strategies": [
         "- Flaque Royale met un état Bois La Tasse, cet état tue le joueur si il n'est pas alligné avec un tonneau en fin de son tour.",
         "Flaque Royale gagne un état à chaque fois qu'un de ses alliés meurt, cet état va lui débloquer un sort qui inflige de très gros dégâts sur toute la carte :\n                 - Les cases près des tonneaux de pommes permettent de se protéger de ce sort\n                 - Il est préférable de tuer le boss avant les monstres pour éviter ce sort",
@@ -701,6 +756,7 @@
       "name": "La Pichine Niv.111",
       "level": "Zespadon Noir",
       "boss": "Le Zespadon n'est pas invulnérable mais :",
+      "slug": "zespadonnoir",
       "strategies": [
         "- Zespadon Noir tape très fort. Il peu vous \"rush\" si il a quelqu'un en ligne de lui. Essayez d'eviter d'être en position d'être aligné avec lui T1 et vous devrez pouvoir le tenir facilement à distance !",
         "- Il y a un mini-boss à activer à l'aide des leviers présents avant la salle du boss. Le boss fait de très lourds dégâts stasis sur de très grande zone."
@@ -711,6 +767,7 @@
       "name": "Brèche Ultime Frigost Niv.111",
       "level": "Brèches de boss",
       "boss": "Listes boss :",
+      "slug": "brchesdeboss",
       "strategies": [
         "Piktus : Ne pas commencer au corps à corps, 10 PA des 4 éléments pour retirer l'invulnérabilité.",
         "Smare : Un des persos max 3 cases au début de son tour, taper au cac une fois par perso chaque tour pour retirer l'invulnérabilité.",
@@ -728,6 +785,7 @@
       "name": "Temple de l'Empeleul Lenald Niv. 126",
       "level": "Empeleul Lenald",
       "boss": "L'Empeleul est invulnérable mais seulement en phase 2:",
+      "slug": "empeleullenald",
       "strategies": [
         "- La première phase de Empeleul Lenald n'a pas de mécanique particulière, il faut lui infliger toute sa barre de vie pour qu'il se transforme et passe en phase 2, sous cette forme il tape sur toute la ligne face à lui, mais vous pouvez ramasser un glyphe qui lui définiera une faiblesse, de dos, de face, à distance ou en melée, en revanche il augmentera ses dégâts de 25% par faiblesse subie.",
         "- La seconde phase, il faut simplement le taper, l'Empeleul Lenald fait très mal mais vous pouvez ramasser un glyphe cette fois-ci qui augmente vos résistances.",
@@ -736,24 +794,38 @@
         "- Porte feu : Lorsque vous tuez un monstre, une explosion de 2 à 4 cases autour de lui est déclenchée.",
         "- Porte eau : lorsqu'un monstre descends à moins de 30% de ses HP, il gagne beaucoup d'armure pour un tour."
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Jawdin de la Weine Niv. 126",
       "level": "Gwand Viziw Wabbit",
       "boss": "Le Gwand Viziw Wabbit est invulnérable :",
+      "slug": "gwandviziwwabbit",
       "strategies": [
         "- Le boss pause des cawotes sur le terrain, chacune entre 1 et 4 PV, chaque tour elles perdent 1 PV , quand elles tombent à 0 PV elles explosent en cercle de 3. Celles à 1 PV (il y en a 2 chaque tour) ont un petit soleil au dessus pour qu'on puisse les distinguer",
         "- Pour retirer l'invulnérabilité, le boss doit prendre l'explosion d'une cawote, il sera désinvu pour 1 tour.",
         "- Quand il est désinvu il gagne 10 PM et débloque un sort qui frappe toute la map infligeant de lourds dégâts terre. Pour éviter ces dégâts il faut être au contact d'une autre cawotte.",
         "- Pour les monstres : \n   - Le Wabbit gagne 50% cumulable s'il croque un cawotte\n   - Le Ti Wabbit se téléporte au contact d'une cawotte en attirant autour de celle ci\n   - Le Wo Wabbit donne des résistances à ses alliés en cercle de 3 autour des cawottes. Il retire des PA en zone mélée\n   - Le Gwand Pa Wabbit"
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Sanctuaire Mihmol Niv. 126",
       "level": "Mihmol l'Empaleur",
       "boss": "Le Mihmol n'est pas invulnérable mais :",
+      "slug": "mihmollempaleur",
       "strategies": [
         "- Le soin est impossible (vol de vie inclu).",
         "- Le seul moyen de se soigner est via le totem central chaque début de tour de table en étant au corps-à-corps de celui-ci.",
@@ -774,6 +846,7 @@
       "name": "Donjon Noirespore Niv. 126",
       "level": "Telob Champmane",
       "boss": "Telob Champmane est invulnérable mais :",
+      "slug": "telobchampmane",
       "strategies": [
         "- Telob Champmane est invulnérable, il invoquera un monstre dès le premier tour et il faudra le tuer à moins de 3PO de Telob Champmane, quand on tentera de le tuer, il se bloquera à 42HP et il faudra attendre 3 tours pour ensuite pouvoir le tuer.",
         "- Pendant les 3 tours d'attente, il réinvoquera les monstres du combat, et il faudra les tuer de nouveau, ainsi que Telob.",
@@ -782,21 +855,35 @@
         "- La mécanique des baves est présente en salle 1, ce sont les 3 Cépolourpode écrasant qui en mettent dans leur sillage, il n'y a pas de bave en bord de map.",
         "- Chaque tour la map rétrécie, la bave se rapproche et si un personnage commence son tour sur une case avec de la bave, il est mort. Terminer dedans n'est pas dangereux tant qu'on vous déplace avant votre tour de jeu"
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Donjon de la Trouffe Salée Niv. 126",
       "level": "Fripon",
       "boss": "Le Fripon n'est pas invulnérable mais :",
+      "slug": "fripon",
       "strategies": [
         "- Ne pas finir en ligne vers là où regarde Fripon, sinon il chargera."
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Donjon Abraknyde Niv. 126",
       "level": "Chêne Mou",
       "boss": "Tuer 10 fois la barre d'armure du Chêne Mou :",
+      "slug": "chnemou",
       "strategies": [
         "Passif caché: Malediction des Polters: On le récupère si on est a -50%HP au début du tours du Chêne Mou, celui-ci prendra des dégats supplémentaire sur son armure.",
         "Conseil: Placer une invocation sur le chemin des polters pour bloquer leurs avancer et eviter de subir des dégats. Tuez les dès que possible.",
@@ -806,12 +893,19 @@
         "- Au Niveau 3 de l'état, les polters sortent des glyphes et vont vers le boss, les tuer avant.",
         "- Les polters retirent 25% d'HP au Chêne Mou."
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Compost du grand Potofeu Niv. 126",
       "level": "Potofeu",
       "boss": "Potofeu est invulnérable mais seulement lors de son passage en phase 2 :",
+      "slug": "potofeu",
       "strategies": [
         "- Potofeu invoque une aubergine et deux Fan le Radi, ces ennemis seront réinvoqués à chaque tour du Potofeu, si ils ne sont pas tué, ils sont réinvoqué tous les 3 tours, l'aubergine change de place et deux Fan le Radi supplémentaires.",
         "- L'aubergine applique un poison en zone (-2PM, -25% des HP max en fin de tour), le poison se transmet en fin de tours aux alliés au contact ou à Potofeu en passant à côté. Vous pouvez la tuer pour obtenir 4PA et 6PM.",
@@ -826,7 +920,13 @@
         "- Cawotte Zombie : Lorsqu'il subit des dommages Terre, il gagne 1 PM par attaque (deux fois maximum), pour chaque PM dépensé pendant son tour, il perd 20 résistances élémentaires (deux fois maximum pendant le combat et une fois par tour maximum).\n                  Le monstre inflige un sort au corps-à-corps qui zombifie la cible, lui infligeant -200 de résistances et les soins reçus transformés en dégâts pour 3  tours.",
         "Au début du combat, deux Fan le Radi apparaissent, ils sont immunisé à distance, et si ils subissent une attaque à distance, ils échangent de position avec l'attaquant."
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     }
   ],
   "141 - 155": [
@@ -834,6 +934,7 @@
       "name": "Vignoble Ignoble Niv. 141",
       "level": "Grande Prétresse Sydonia",
       "boss": "Grande Prétresse Sydonia est invulnérable mais :",
+      "slug": "grandeprtressesydonia",
       "strategies": [
         "Astuce : Lorsque vous tapez Sydonia après l'avoir désinvulnérabilisé donc entre le 2 et 3 monstre tué, elle prendra l'invulnérabilité de Dranipoch pour s'invulnérabiliser elle-même, vous pourrez ensuite taper Dranipoch directement.",
         "- Pour désinvulnérabiliser Sydonia et éveiller Dranipoch il faut tuer deux montres.",
@@ -847,22 +948,36 @@
         "- Les glyphes lignes des totems, marcher dessus vous retire 100PM et vous serez KO au prochain tour, les totems retirent des PW max quand ils sont niveau maximum.",
         "- Les Serprieuses apparaissent quand on tape leur alliés hors autres Serprieuses, si vous tuez un monstre sur le coup, elles ne viennent pas au corps-à-corps et restent cachées."
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Château du Wa Wabbit Niv. 141",
       "level": "Wa Wabbit",
       "boss": "Le Wa Wabbit est invulnérable :",
+      "slug": "wawabbit",
       "strategies": [
         "Le Wa Wabbit a deux phases:\n  - Phase 1 : il est intouchable. Il cible un de ses alliés pour 1 tour parmis le Tiwailleuw, le Gawde et le Chevaliew.  Il faut descendre cette cible à 1PV. Faire ça avec les 3 monstres, le Wobot ne sera jamais ciblé et peut être tuer de suite\nLorsque les 3 monstres sont passés à 1 PV, on passe en phase 2.\n  - Phase 2 : Il descend de sa position, vient sur le terrain et est maintenant ciblable. Les trois monstres sont maintenant dans notre camps, nous pouvons les controler et peuvent cibler le Wa Wabbit. \nLe Boss fait une zone autour d'eux en cercle de 3, s'ils retombent à 1 PV ils ne sont plus jouables.",
         "Les monstres: \n  - Le Tiwailleuw peut soigner ses alliés et mettre un malus -30PO\n  - Le Gawde saute dans le dos de ses ennemis, retire 200 resistances et retire PM\n  - Le Chevaliew peut sacrifer un allié et retirer des PM\n  - Le Wobot stabilise et retire PM, fait très mal au corps à corps"
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Laboratoire de Womewo Niv. 141",
       "level": "Gwand Wabbit GM",
       "boss": "Le Gwand Wabbit GM n'est pas invulnérable mais :",
+      "slug": "gwandwabbitgm",
       "strategies": [
         "- Les monstres possèdent l'état Supew Soldat, ce qui les empêches de mourir, les laissant déclencher leur super attaque de début de tour, il faut tous les tuer pour finir le combat.",
         "- Le Gwand Wabbit GM possède un passif, à chaque fin de tour, il aura un état alératoire parmi les 3 suivants :",
@@ -876,12 +991,19 @@
         "- Le Wabbit Tados se téléporte derrière le personnage le plus éloigné et le pousse.",
         "- Avoir un placeur peu dépendant des pw en fin de tour de table peut grandement aider à respecter les états du boss"
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Donjon Srambad Niv. 141",
       "level": "Venâme le Mangelombre",
       "boss": "Venâme le Mangelombre n'est pas invulnérable mais :",
+      "slug": "venmelemangelombre",
       "strategies": [
         "Venâme possède deux phases:\n- 100% à 50% HP :\n                 - Il gagne des maîtrise et attire les adversaires qui le frappe à 5 portée et plus.",
         "- Il y a une phase d'invulnérabilité entre les deux phases.",
@@ -889,23 +1011,37 @@
         "- Chaque monstre ainsi que Venâme posent des orbes d'armures récupérables, Venâme a également un sort qui les fait explosées, ne pas en laisser trop sur le terrain.",
         "- En salle 1, nos points de vie tombent à 1 et tout le reste est transformé en armure."
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Donjon Enutrosor Niv. 141",
       "level": "Jamall'Auneth le Porte-Clés",
       "boss": "Jamall'Auneth le Porte-Clefs n'est pas invulnérable mais à beaucoup de point de vie :",
+      "slug": "jamallaunethleporte-cls",
       "strategies": [
         "- Ne pas rester au corps-à-corps de Jamall'Aunet le Porte-Clefs, si un autre personnage que celui qui inflige des dégats tape Jamall, celui-ci sera invulnérable.",
         "- Tuer une des pierres précieuses donnera un tour avec les dégats boostés pour le tour en cours uniquement, chaque gemme a des faiblesses dans un element précis (Jaune : Air / Rouge : Feu / Vert : Terre / Bleu : Eau)",
         "- De base, les mobs ont +400 de resistances. Il faut taper le boss pour baisser les resistances des montres, il faut donc tuer le boss en premier via le gain de dgt que procure les gemmes à leurs mort. Une fois Jamall mort, les mobs auront leurs resistance basique"
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Blopéra Niv. 141",
       "level": "Blopgang Amadeus Blopzart",
       "boss": "Blopang Amadeus Mozart n'est pas invulnérable mais :",
+      "slug": "blopgangamadeusblopzart",
       "strategies": [
         "Conseil : L'état \"Stasifié\"du Steamer ne peut pas être utilisé sur Blopgang.",
         "- Les monstres peuvent infliger beaucoup de dégats en zone ou en monocible à tous vos personnages (tanks inclus) selon les monstres, il vaut mieux faire attention à ça.",
@@ -921,12 +1057,19 @@
         "- Niveau 3 : -1500 dommages direct de l'élément reçus.",
         "- Niveau 5 : -2500 dommages direct de l'élément reçus."
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Donjon Source du Mal Niv. 141",
       "level": "Bulbrute",
       "boss": "Le Bulbrute n'est pas invulnérable mais à beaucoup de point de vie :",
+      "slug": "bulbrute",
       "strategies": [
         "Conseil : Un Pandawa est recommandé pour ce donjon une fois en haut stasis.",
         "- Tuer les mobs en poussant le Bulbrute car il inflige l'état Mort Subite au corps-à-corps.\n- Le Bulbrute est vulnérable uniquement lorsqu'un personnage à Mort Subite, donc finir dans son dos (ou dans le dos d'un autre monstre) puis attendre le prochain tour pour le tuer.",
@@ -944,6 +1087,7 @@
       "name": "Donjon Ruche-mère Sabléoptère Niv. 141",
       "level": "Bombyxolite Endopterygote",
       "boss": "Bombyxolite n'est pas invulnérable mais:",
+      "slug": "bombyxoliteendopterygote",
       "strategies": [
         "Conseil: Les Mantueuse deviennent invisibles si pendant leurs tours elles ont tapé quelqu'un (Elle ne tapent qu'exclusivement en mélée). Essayez de les maintenir à distance de sorte qu'elle ne vous touche pas, ou tuez les avant qu'elles jouent pour éviter de devoir tatoner pour les trouver, de plus la prochaine morsure de ce monstre fera des dégats plus importants.",
         "- Bombyxolite est une larve qui empoisonne l'unité la plus proche et qui une fois tué deviendra une énorme crysallide qui deviendra un gros papillon qui occupera 3x3 cases, et qui pousse toute les entités dans les cases de bordure de zone à chaque début de tour.",
@@ -966,7 +1110,11 @@
       "name": "Tal Kasha",
       "level": "Tal Kasha",
       "boss": "Stratégie du donjon:",
-      "strategies": ["GDOC: Guide ECRIT TK", "Vidéo GUIDE: GUIDE TK"],
+      "slug": "talkasha",
+      "strategies": [
+        "GDOC: Guide ECRIT TK",
+        "Vidéo GUIDE: GUIDE TK"
+      ],
       "tips": []
     }
   ],
@@ -975,6 +1123,7 @@
       "name": "La Patapoutrerie Niv. 156",
       "level": "Mamapoutre",
       "boss": "La Mamapoutre n'a pas d'invulnérabilité mais :",
+      "slug": "mamapoutre",
       "strategies": [
         "Astuce: Ne fait pas de grosse zone dans ce DJ. Focus en priorité les \"Patapikot\", ce sont les plus important et plus simple à tuer.",
         "- La map est divisée verticalement en 3 : une partie centrale (bleu) qui comprend les trois lignes de la largeur de Mamapoutre ainsi que 2 lignes de chaque côté (7 lignes au total) et deux parties droite et gauche (roses) qui contiennent les lignes restantes. Une ligne (violette) est commune au deux parties.",
@@ -1001,6 +1150,7 @@
       "name": "Le Lampionaute Niv.156",
       "level": "Javého",
       "boss": "Javého est invulnérable mais :",
+      "slug": "javho",
       "strategies": [
         "- Le donjon possède une mécanique de déplacement inversé infligé par un sort de zone des monstres, vérifiez qui l'a et qui ne l'a pas avant de vous déplacer, dans les 3 premières salles cela n'a d'impact que sur le gain PA/PM.",
         "- Sur le combat contre Javého, une balise est présente sur la carte, pour désinvulnérabilisé Javého :",
@@ -1011,12 +1161,19 @@
         "- 66% à 33% HP :",
         "- 33% à 0% HP : Infliger des dégats à Javeho fera des dégâts autour de lui en melée."
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Roub'Bar Niv.156",
       "level": "Remington Smisse",
       "boss": "Remington est invulnérable mais :",
+      "slug": "remingtonsmisse",
       "strategies": [
         "- La mécanique de donjon se trouve dans l'état \"Bombifié\", dans les deux salles cet état fonctionne de la même manière, il faut se coller au monstre pour l'obtenir, et il faut finir aligné avec un allié l'ayant également pour faire apparaitre des poudres entre les deux personnages à un maximum de 8 cases.",
         "- Dans la première salle 1 il y a un mini-boss \"Brise-Tibia\", elle perd des dommages infligés par personnages à son contact à son début de tour.",
@@ -1028,12 +1185,19 @@
         "- Il a un sort de zone qui retire des PA, évitez de grouper vos personnage.",
         "Astuce : Stabiliser Remington lors du passage en Phase 2 permet de savoir où il est, car il ne pourra pas se téléporter à la fin de son tour, il suffira donc de lancer un sort sur la case où il a terminé son tour pour le trouver."
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Donjon Riktus Elite Niv.156",
       "level": "Le Riktus Masqué",
       "boss": "Le Riktus Masqué n'a pas d'invulnérabilité mais :",
+      "slug": "leriktusmasqu",
       "strategies": [
         "Requis : Il va vous falloir des bombes dans ce donjon afin de briser les rochers qui bloquent certaines salles",
         "- Le Riktus Masqué se soigne à 100% à chaque début de tour, il faut donc le tuer en un tour.",
@@ -1044,12 +1208,19 @@
         "- Des étendards posés sur la carte bloquent les dommages de zone reçu à 1000 dégâts maximum en zone de 2 autour d'eux, il y en a un par Elitendards sur la carte, en tuant ces monstres ils disparaissent.",
         "- Les monstres ont tous \"Révolution Riktus\" comme état, il augmente les résistances à chaque tour de jeu sans avoir subit de retrait résistance."
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Repaire de Kali Niv.156",
       "level": "Kali",
       "boss": "Kali n'a pas d'invulnérabilité mais :",
+      "slug": "kali",
       "strategies": [
         "- Kali a 4 états différents et 2 phases (100% - 50%/ 50% - 0%)",
         "- Il n'y a pas de différence entre la phase 1 et 2, sauf que Kaly débloque un sort en plus et réinvoque 3 monstres.",
@@ -1072,6 +1243,7 @@
       "name": "Fabrique Méka Niv.156",
       "level": "Vertox l'Intemporel",
       "boss": "Vertox est invulnérable mais :",
+      "slug": "vertoxlintemporel",
       "strategies": [
         "Avant toute chose, il faut ouvrir ce lien pour comprendre de quoi nous allons parler :  https://imgur.com/a/CVcXAoE",
         "http://chachastuce.fr/vertox/index.html Placement Cadran, la carte de gauche montre le tour en cours de votre personnage, la seconde le tour d'après afin d'anticiper le placement pour pas vous faire surprendre par la zone de mort. A chaque tour de personnage avancer simplement le cadran en même temps pour toujours avoir les bonnes informations.",
@@ -1096,6 +1268,7 @@
       "name": "Donjon E-Bou Niv.156",
       "level": "Raipiode l'Infréquençable",
       "boss": "Raipiode est invulnérable mais :",
+      "slug": "raipiodelinfrquenable",
       "strategies": [
         "Chaque monstre de ce donjon possède un sort de zone de dégâts qui se déclenche à leur mort :",
         "- Poz 2-4 cases autour (la case en mélée est donc pas touchée), au tour 2 si il arrive au corps-à-corps de votre personnage, il se met dans un état qui renvoie 100% les dommages terre reçus.\n                 - Syclick diagonale de 3.\n                 - Lair Davan en ligne de 6 de chaque côté.",
@@ -1114,6 +1287,7 @@
       "name": "Plateau des Hauts-Vents",
       "level": "Serre d'Acier",
       "boss": "Serre d'Acier n'est pas invulnérable mais :",
+      "slug": "serredacier",
       "strategies": [
         "Phase 1 : 100% à 85% HP\n                 - il invoque 9 Corbacs, les tuer fait monter l'état de 1 (max 3), quand on est au niveau max on devient insensible aux poussées de Serre d'Acier\n                 - Il pousse en fin de tour, toutes les cases autour de la carte et le bloc de 4 cases sont des cases de morts instantanées, tous les tours à partir de la Phase 2, il fait son tour, change de côté et pousse.",
         "Phase 2 : 85% 50% HP\n                 - Il change de côté chaque tour, jusque la phase 3.",
@@ -1133,6 +1307,7 @@
       "name": "Donjon des Crocodailles Niv.171",
       "level": "Roi Dunîl",
       "boss": "Le Roi Dunîl est invulnérable mais :",
+      "slug": "roidunl",
       "strategies": [
         "- Dans ce donjon, si deux ennemis sont au corps-à-corps l'un de l'autre, ils ont une réduction des dégâts reçus.\n- Il y a dans le donjon, une mécanique qui fait que les personnages et invocations glissent dans la direction regardé en faisant des sorts de \ndéplacements (poussée, attirance, téléportation, etc). Dans la salle 1, ce n'est pas aussi dérangeant que dans la salle du boss où il y a des trous\nsur la map, qui, si vous tombez dedans, vous désincarne.",
         "Le Roi Dunîl a 2 phases :\n- Phase 1 : Il n'a pas d'invulnérabilité ni de condition pour le taper, en revanche la seconde, le Roi Dunil devient\ninvulnérable.\n- Phase 2 : Elle commence entre 52% et 55% de PDV quand il gagne l'état Écailles Renforcés :\n            Il faut lui retirer une fois par tour de table, pour ce faire, il faut que le Roi Dunîl subisse des dégâts de collision, vu que le Roi Dunîl n'est pas poussable/attirable, il faut faire en sorte que ça soit un de vos  personnages qui se cogne au Roi Dunîl. Il faut répéter cela jusqu'à le tuer.\n\n- Le Roi Dunil gagne des coups critiques, des dégâts et des résistances par alliés vaincu.",
@@ -1152,6 +1327,7 @@
       "name": "Donjon des Kannivores Niv.171",
       "level": "Grozépine",
       "boss": "Grozépine est invulnérable mais :",
+      "slug": "grozpine",
       "strategies": [
         "Grozépine a 3 phases : \n- Phase 1 : 100% - 65% : Le boss est vulnérable, profiter de cette phase pour tuer les adds.\n- Phase 2 : 65% - 35% : Le boss est invulnérable tant qu'il y a plus de deux racines. Un porteur de poison apparait.\n- Phase 3 : 35% - 0% : Comme en phase 2. Un second porteur de poison apparait.\n\nIl réduit largement les dégats au CaC et se soigne d'autant de dégats qu'il fait aux invocations (/!\\ dégats des glyphes des racines)",
         "- C'est plus simple de tuer les monstres en premier",
@@ -1167,6 +1343,7 @@
       "name": "Donjon des Kannibouls Niv 171",
       "level": "Kannistère",
       "boss": "Le Kannistère est invulnérable mais :",
+      "slug": "kannistre",
       "strategies": [],
       "tips": []
     },
@@ -1174,6 +1351,7 @@
       "name": "Moon - Jungle",
       "level": "Darkli Moon",
       "boss": "- La mécanique du donjon sont les totems élémentaires. Ils apparaissent tous les tours de manière aléatoire.\n- Ces totems échangent de place avec votre personnage si ils sont tapé dans leur élément avec un sort monocible.\n- Tous les tours pairs, il y aura de gros dégâts en zone de 1-3 autour des totems.",
+      "slug": "darklimoon",
       "strategies": [
         "Dans la salle 1, trois monstres (un de chaque type) sont invulnérables.\n\nPour les rendre vulnérable il faut :\n  - Commencer proche des totems des éléments dans lesquels vous frappez, cela vous mets un état élémentaire pour 2 tours\n  - Puis faire commencer un monstre près de ces totems pour qu'il l'avale, vous pourrez le taper pour un tour dans le ou les éléments avalés\n  seulement si vous avez l'état correspondant\n\nAttention : Bien le faire dans cet ordre, si le monstre avale le totem avant que vous ayez récupéré l'état élémentaire, vous allez devoir attendre\nle tour prochain pour que le totem ne réapparaisse",
         "- Au Kannistère, la mécanique est identique.\n\nQuand le Kannistère peut être taper dans un élément, on ne peut pas dépasser 20% strict de sa vie max dans cet élément, exemple :\n     - Vous avez l'état élémentaire feu\n     - Le boss a avalé le totem feu\n     - Si 20% de sa vie est = 5000, \n     - Si vous faites 3100+1900 vous aurez taper pleinement\n     - Par contre si vous faites 3100+1901, le coup de 1901 sera réduit à 0 car cela fait dépasser les 20%\n\n- Si le Kannistère commence son tour isolé, il sera stabilisé à la fin de son tour\n- Il a des sorts qui tape sous l'armure au corps à corps\n- Il a un sort de poussé, pour le tacler il faut se stabiliser ou avoir un obstacle derrière pour pas être poussé. \n- Dès lors que le Kannistère absorbe un totem, il gagne un bonus important de dégats pour chaque totem qui n'est PAS absorbé. \n    - Pour limiter ses dégats, il faut lui faire absorber tous les totems d'un coup.",
@@ -1192,6 +1370,7 @@
       "name": "Donjon des Tropikes Niv.171",
       "level": "Koko le Nutt",
       "boss": "Koko le Nutt est invulnérable mais :",
+      "slug": "kokolenutt",
       "strategies": [
         "- Koko le Nut n'a pas de phase, mais est invulnérable à chaque début de tour.\n- Sur la carte, il y aura 3 Nodkoko avec des points de vie différents ( de 1 à 3), à chaque début elles perdent 1 PV, quand elles arrivent à 0, \nelles explosent en cercle de 2. Si Koko le Nut est dans la zone, il sera vulnérable pour un tour. Elles ne sont pas déplaçables, mais elles avancent \nde 2 cases chaque tour dans la direction qu'elles regardent, que l'on peut modifier en tapant un coup de là où vous voulez qu'elles pointent.\n- Les tours suivants où Koko le Nut a été désinvulnérabilisé, il invoquera un monstre.",
         "- Koko le Nut a un sort tous les 3 tours qui frappe sur toutes la cases à 6 de portée et plus de lui.\n- Il peut également vous retirer des résistances ainsi que des coups critiques.\n- Il gagne des résistances en fonction des dégâts qu'il reçoit.",
@@ -1210,6 +1389,7 @@
       "name": "Cité Interdite Niv.171",
       "level": "Pandore",
       "boss": "Pandore est invulnérable mais :",
+      "slug": "pandore",
       "strategies": [
         "- La zone centrale de la carte donne des résistances à toutes les entités",
         "Pandore a deux phases:\n     - En phase 1, Il est en fond de carte et invulnérable\n     - Il tape en ligne sur toute la longueur de la map\n     - Et frappe l'entité la plus éloignée qui pose un état, si au tour suivant cette même entité est toujours la plus éloigné le coup fera plus mal",
@@ -1217,12 +1397,18 @@
         "Au passage à la phase 2 , Pandore se téléporte au centre de map\n     - Il faut penser à le faire sortir de la zone qui donne des résistances quand on le tape\n     - Gros dégâts sur toute la zone centrale si aucun autel n'a été détruit au tour précédent\n     - Ne pas laisser Pandore isolé (= un personnage en mêlée et dans la zone centrale) sinon il gagne 2pm et des % de dégâts permanents\n     - Il se soigne de 50% pv manquant tous les 3 tours",
         "Plus le combat dure plus Pandore fera mal, il ne faut pas que le combat s'éternise"
       ],
-      "tips": ["Stèle 1:", "Stèle 2:", "Stèle 3:", "Stèle 4:"]
+      "tips": [
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3:",
+        "Stèle 4:"
+      ]
     },
     {
       "name": "Donjon Gerbouille Niv.171",
       "level": "Maman Gerbouille",
       "boss": "La Maman Gerbouille est invulnérable mais :",
+      "slug": "mamangerbouille",
       "strategies": [
         "Pour la rendre vulnérable il est nécessaire de retirer les 8 bulles electrostatiques qui sont autours d'elle. Seul les joueurs avec le debuff conducteur peuvent retirer les bulles. Les bébés gerbouilles et la Maman Gerbouille peuvent donner cet état via leur attaque morsure.",
         "La façon la plus simple de retirer les bulles est d'attaquer une fois la Maman au corps-à-corps en face une fois, et de dos, une fois.",
@@ -1240,6 +1426,7 @@
       "name": "Cime du Grand Totem Niv 171",
       "level": "Foul Moon",
       "boss": "Doc écrit par CARCHY",
+      "slug": "foulmoon",
       "strategies": [],
       "tips": []
     }
@@ -1249,6 +1436,7 @@
       "name": "Tanière des Blérox",
       "level": "Blerwitch le furax",
       "boss": "Blerwitch le furax n'est pas invulnérable",
+      "slug": "blerwitchlefurax",
       "strategies": [
         "Mécanique du donjon: \n\n• Le sort \"Pluie Acide\" est lancé automatiquement à chaque début de tour de table depuis l'emplacement du boss (ou depuis celui du cristal présent en salle 1). \n• Ce sort inflige d'énormes dégâts (à considérer comme un OS) sur une zone variable. Celle-ci implique donc une autre zone que l'on nommera \"safe\", où les personnages vont devoir se placer pour éviter les dégâts. \nLa zone de dégâts du sort \"Pluie Acide\" dépend de l'état du Boss (ou du Cristal présent en salle 1) et varie à chaque tour en conséquence.\n• Dans la 1ère salle l'état du cristal (et donc la Pluie Acide) suit un cycle bien défini (ci-contre). En revanche dans la 2ème salle, à compter du 2ème tour, l'état du boss alterne de manière aléatoire à chaque tour entre les 3 états existants",
         "Phase 1 (100% à 70% HP): Blerwitch tape sous l'armure, et peut également taper en zone (si persos zonés à 4 cases ou - les uns des autres). Blerwitch réduit les dégâts qu'il reçoit si l'allié qui les inflige ne se trouve pas dans la zone safe requise par son état actuel (cf mécanique ci-dessus)",
@@ -1276,6 +1464,7 @@
       "name": "Volcan de Or'Hodruin",
       "level": "Sor’Hon, Seigneur de la Flamme",
       "boss": "Sor'Hon n'est pas invulnérable",
+      "slug": "sorhonseigneurdelaflamme",
       "strategies": [
         "Mécanique du donjon:\n\n• Esprit du Phénix: Passif de résurrection possédé par chaque monstre. \n- Si un monstre commence son tour avec - de 20% de ses HP, il est intégralement soigné, gagne 100 de résistances élémentaires et 20% DI (cumulable 5 fois)\n- Si un monstre n'est pas achevé dans les conditions requises par son passif, l'esprit du Phénix se déclenche également\n• Mécanique de \"Case de lave\": Dans le donjon, certaines cases vont se transformer en lave. Se déplacer dessus désincarne le personnage. \n- En salle 1, à la mort d'un monstre, la case qu'il occupait devient lave. De plus la case du perso le plus éloigné des monstres est marquée à chaque début de tour. La case en question et les 4 adjaçentes deviendront lave à la fin du tour du personnage. Au boss, le fonctionnement est un peu différent, on détaille ça ci-dessous",
         "Phase 1 (100% à 70% HP): Sor'Hon fait tomber 4 rochers à chaque fin de tour. En début de tour, si 7 rochers ou plus sont sur la carte, les cases occupées par un rocher sont transformées en lave",
@@ -1299,6 +1488,7 @@
       "name": "Sanctuaire des Dragoeufs",
       "level": "Oeuf Antique - Minibulia",
       "boss": "Minibulia est invulnérable:",
+      "slug": "oeufantique-minibulia",
       "strategies": [
         "Il n'y a pas de mécanique \"générale\" dans ce donjon",
         "Salle du Boss: L'Oeuf Antique ne joue pas. Si vous le tapez, vous lui incrémenterez un état de 1 par 1PA/PM/PW utilisé sur lui. Une fois l'état à 40, tous les monstres encore en vie sur la carte perdront -200 res pendant 2 tours (Cumulable avec le retrait res). \nÀ 50 niveaux de l'état, l'oeuf éclôt et \"Minibulia\" en sort.",
@@ -1323,6 +1513,7 @@
       "name": "Crète Givrée",
       "level": "Cendragon",
       "boss": "Cendragon est invulnérable:",
+      "slug": "cendragon",
       "strategies": [
         "Mécanique du donjon:\n\n• Des fumerelles sont présentes sur la map. Commencer son tour ou se déplacer/être déplacé dessus tue le personnage\n• Un nuage est présent dans une zone de 2 cases autour de chaque fumerelle. Il y a 5 types de nuages différents qui vont vous appliquer des malus spécifiques quand vous entrerez dans leur zone (dégâts, perte de résistances, perte de PO, poison PA, etc). À noter que vous perdez les malus quand vous sortez des nuages, mais pas le poison \"Asphyxie\"\n• Les monstres et le Boss possèdent l'état \"Quintessence\". Ce passif possède 15 niveau max et octroie des résistances aux mobs ainsi qu'un léger soin lorsque ces derniers sont dans un nuage à leur début de tour.\nLorsqu'un monstre meurt, il transmet son niveau de Quintesse à son allié le plus proche dans un rayon de 3 PO.\n• Les monstres peuvent appliquer l'état \"Charge statique\" aux personnages. Cet état donnent des effets/capacités additionnelles aux monstres (soin/dégâts subis supplémentaires par les alliés, etc)",
         "Phase 1 (100% à 70% HP): Cendragon gagne 2PM et 1200 maitrise élémentaire pour la phase. S'il commence son tour dans un nuage, il frappe plus fort les alliés dans l'état \"charge statique\" et gagne 2PA.",
@@ -1347,6 +1538,7 @@
       "name": "La Tour Minérale",
       "level": "XXX",
       "boss": "XXX est invulnérable:",
+      "slug": "xxx",
       "strategies": [
         "P1: Clear monstres & descendre a 70%",
         "P2:  Jusqu'a 30% (1) Péter le cristal avec la marque, sinon wipe. (2) Zone rose autours des cristaux: rester dans la zone verte",
@@ -1358,6 +1550,7 @@
       "name": "Tombeau de Pandala",
       "level": "Fantôme Tanukouï-San",
       "boss": "Fantôme Tanukouï-San n'est pas invulnérable mais:",
+      "slug": "fantmetanukou-san",
       "strategies": [
         "Les monstres ont un passif spécifique dans ce DJ: Après avoir subis 20% de leurs HP max dans leurs tours, ils vont gagner \"Barriere fantomatique\" (200 de resistances pendant 1 tour (jusqu'au tour de celui qui a tapé)). Il faut donc essayer de les tuer en 1 tours",
         "Fantôme Tanuki-Chan: Ne sont pas dangereuse, pousses de 7+ cases et soigne en zone.",
@@ -1369,12 +1562,19 @@
         "Si le Tanukouï-San ne peu taper personne, il va devenir comme \"Madara\" et lancer des météores en dégats FEU sur toute les entité allié de la map: Dégats en zone taille 3. Les dégats sont bcp plus conséquent autours de la cible.",
         "Astuce: Faites en sorte que le tanu ne vous tape jamais au cac, et restez toujours à 3 cases les un des autres. Les météores sont relativement simple a tanker si vous avez des resistances FEU"
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Canyon des Fléopards",
       "level": "Fléogre",
       "boss": "Fléogre n'est pas invulnérable mais:",
+      "slug": "flogre",
       "strategies": [
         "Il regagne 75% de ses PV manquants chaque tour (500k pv en S2). La stratégie consiste à diminuer drastiquement ses resistances afin de le tuer en un tour. \nNotez qu'appliquer incurable sur le boss aide énormément. La stratégie est la suivante:",
         "1. Tuez tous les adds dans un premier temps, mais prenez garde à ne pas détruire les Fléoremparts !",
@@ -1395,6 +1595,7 @@
       "name": "Usine Hibourg",
       "level": "Granduk Hibourg",
       "boss": "Granduk Hibourg n'est pas invulnérable mais:",
+      "slug": "grandukhibourg",
       "strategies": [
         "La famille de ce monstre a uine mécanique unique: L'Etat \"Puissance Hibourg\" qui se partage entre toute les entité de la carte.",
         "Puissance hibourg commence niveau 11, et peu varier entre le niveau 1 et 21. Etat Niv.11 correspond a 0DI, Niv.1 à -100DI et Niv.21 à +100Di. Il augmentera de 1 pour chaque entité aligné enemis et allié aligné entre-elles, et baisse de 1 pour chaque entité non aligné avec un ennemis à chaque tour de jeu de chaque entité. à vous de jouer avec pour gerer votre combat !",
@@ -1405,20 +1606,34 @@
         "Le Granduk Hibourg n'a pas de phase, cependant: Il a une réduction de 75% de dégat et est stab tout le combat. Le combat est entouré de zone avec des symboles: Chaque zone change à chaque tour de table et offre des bonus aléatoire selon la zone. Une d'entre-elles sera \"Plume dorée\"",
         "Pour le taper, il faudra qu'il soit placer sur la zone \"La plume dorée\" pour pouvoir le taper convenablement. A chaque dégat subit, le \"Granduk\" va s'envoler vers la zone suivante sauf si la cases d'arrivée est bloqué par une entité. Attention, au début de son tour il sautera sur la case et tuera instantannément la cible qui est dessus: Placez donc une invocation sacrifiable sur la case pour empecher Granduk de s'envoler et de pouvoir le taper sans retenu !"
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Dimension-Objet d'Ombrage",
       "level": "Ombrage",
       "boss": "Stratégie du BU:",
-      "strategies": ["GDoc: XXX", "Vidéo GUIDE: GUIDE OMBRAGE"],
+      "slug": "ombrage",
+      "strategies": [
+        "GDoc: XXX",
+        "Vidéo GUIDE: GUIDE OMBRAGE"
+      ],
       "tips": []
     },
     {
       "name": "Antre de Nogord l'Ezarélé",
       "level": "Nogord",
       "boss": "Stratégie du BU",
-      "strategies": ["Gdoc: GUIDE ECRIT NOGORD", "Vidéo GUIDE: XXX"],
+      "slug": "nogord",
+      "strategies": [
+        "Gdoc: GUIDE ECRIT NOGORD",
+        "Vidéo GUIDE: XXX"
+      ],
       "tips": []
     }
   ],
@@ -1427,6 +1642,7 @@
       "name": "La Tour Minérale",
       "level": "Agonie",
       "boss": "N'est pas invulnérable mais:",
+      "slug": "agonie",
       "strategies": [],
       "tips": []
     },
@@ -1434,18 +1650,26 @@
       "name": "Donjon Toundrasoirs",
       "level": "Bufflamboyant",
       "boss": "N'est pas invulnérable mais:",
+      "slug": "bufflamboyant",
       "strategies": [
         "Loupin: Bcp de rez, mais si une cible est isolé, saute dessus et en echange perd les rez bonus.  Gagne des pm quand on le tape\n=> Pour tuer les Loupins, isolez votre support le plus tanky et faite les sauter dessus, ils perdront leurs resistances et seront très facil à tuer. Ils auront toujours une haute initiative et joueront toujours en premier côté ennemis.",
         "Renard: Échange de place si tapé aligné. (Une fois par entité)\n=> Utilisez la TP pour prendre le dos et tuer facilement les Renard Valo",
         "Tigris: Vol de vie en zone quand tapé (une fois par entité), Attaque qui stabilise au cac\n=> Le premier coup fait un vol de vie en aoe autours des Tigris, évitez de les taper si vous n'envisagez pas de les tuer dans le tour, sinon ils vont vite regagner de la vie si ils sont dans votre team.",
         "Mecanique du boss: Des totem sont présent sur la map, lorsqu'un totem est tué, le boss prend un archétype différent par totem (Non cumulable, mais chaque etat peu montrer jusqu'au niveau 15):\n                    - Chef de meute: Les alliées du Bufflamboyant gagnes des DI et des RES chaque tour, il invoque un allié tout les 3 tours. TP un mobs au cac quand on l'attaque (Une fois par entité)\n                    - Totem de Mage: Son AOE de flamme grandit et gagne des dégats chaque tour (Peu finir par prendre toute la map). Retire des PM quand il se fait taper (Une fois par entité).\n                    - Totem de Brute: Il pousse en ligne de X cases (Selon son niveau d'etat \"Brute\"), et provoque d'énorme dommage de collision. Vous TP à son contact une fois tapé (Une fois par éntité)"
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Donjon Plantigardes",
       "level": "Casse-Cours",
       "boss": "N'est pas invulnérable mais:",
+      "slug": "casse-cours",
       "strategies": [
         "Les monstres ont tous du \"Miel\" sur eux, que l'ont peu voler si on les tape en mélée (Alliée comme Ennemis). Le miel peu se cumuler jusqu'au niveau 10 et vous donne des DI et des PM selon le niveau de l'etat. \nVoler le miel des mobs provoques certains effets:",
         "Koung-fours: Applique un état qui fait que la cible prends degats x2 par le Koung.",
@@ -1453,36 +1677,57 @@
         "Oursonge: Armure en cercle de 3 cases (Evitez de mettre le boss dans l'AOE, l'armure donné est en % de vie de la cible)",
         "Le Casse-Cours (Boss): Il gagne 1 level de miel par tour (+1 niveau par mob mort).\nIl perd son miel en fin de tour sur tout la map et récupère ceux pas pris au début de tour, il recupere tout le miel au sol au début de son tour. Il saute sur le mec qui a le plus de miel pour lui voler, et inflige de gros dégat en zone autours de la case d'arrivée.\n\nAstuce: Mettez un maximum de Miel sur un SUPPORT, ou sur une invoque. Forcez le a sauter sur votre Panda/Tacleur pour qu'il soit obligé de perdre des PA/PM au détacle."
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Donjon Cagnardeurs",
       "level": "Scorpiétineur",
       "boss": "N'est pas invulnérable mais:",
+      "slug": "scorpitineur",
       "strategies": [
         "Une mecanique est présente pendant tout le DJ: \n-Dommage distances +1pw\n-Dommage mélée -1pw\n\nSi les monstres (ou le boss, à la salle du boss) arrivent a 0 PW  ou 20 PW, chaque coup qui fera monter/tomber les PW en dessous/dessus du seuils donnera des DJ cumulables au monstre/boss. Alterner donc les coup mélée/distance pour éviter de donner des DI au ennemis !",
         "Tatourbillon: En tour impair => Sacrifice les enemi autour autour, réduit les dégtas",
         "Castrorbital: Quand ils sont full hp, leurs sont gagnent une deuxieme ligne de dégats IRREDUCTIBLE. Ils sont perma-stab\nAstuce: Placer un Poison/Glyphe sous eux pour qu'ils perdent au moins 1pv et n'aient plus la ligne secondaire. (Dégat indirect pour passer sous l'armure)",
         "Scorpiétineur (Boss): -Lance un poison paralisant 1 tour sur 3 sur le joueur le plus éloigné. Après 2 tour, le poison vous empeche de bouger, et vous retire 5po. Il vous faudra infligez au moins 1 dégat à un ennemis pour ne pas mourrir.\n- Au contact, le boss va lancer un sort qui va rebondir sur toute les cible aligné, faite donc attention à ce que personne ne soit aligné à la cible du sort.\n- Son deuxieme sort d'AOE tape en carrée de 3x3 autour de la cible, faite en sorte de ne pas être dans cette zone pour eviter de prendre la zone.\n- Dès que vous déplacez le boss peu importe la manière, il sera stab à son prochain tour."
       ],
-      "tips": ["Stèles:", "Astuce:", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce:",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Donjon Vandaliénés",
       "level": "Phacochemar",
       "boss": "N'est pas invulnérable mais:",
+      "slug": "phacochemar",
       "strategies": [
         "Une mécanique est présente tout le dj: Des cases \"Seisme\" apparaissent autours de votre team a chaque tour. Au début du tour du premier mobs (ou boss), elles font des dégats en cercles de 3. A chaques seisme qui vous touche de façon succéssive, les dégats sont démultiplié. 1 seisme n'est pas dangereux, mais 3/4 sont presque mortel.",
         "Uto-pic: A chaque tour d'entité, il effectue un renvoie de dégats (Fixe, non indéxé sur vos dégats) FEU. à leurs mort, un cercle de taille 2 apparait. Il fait: +3 pa, -30% hp MAX",
         "Assassinge: Plus il utilise de pm, plus ils font de di (et donc vous explose) => à FOCUS",
         "Phacochemar (Boss): En début de tour, il saute de sorte à attérrir là où le plus d'entité seront touché par son AOE de cercle 3: Il inflige plus de dégat si plus d'entité sont touché.\n- Il pousse en ligne, retire des PA mais n'est pas dangereux si vous n'êtes pas paquet.\n- Il perd 10 di par Seisme qui ont touché le boss au début de son tour, jusqu'a -50 DI maximum."
       ],
-      "tips": ["Stèles:", "Astuce:", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce:",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Donjon Crustargneux",
       "level": "Crustacérébro",
       "boss": "N'est pas invulnérable mais:",
+      "slug": "crustacrbro",
       "strategies": [
         "Une mécanique est présente tout le dj: Des cases \"Acide\" vont apparaîtres sur les cases d'où vous avez infligez des dégats: -Toujours pouvoir bouger après avoir taper, les cases font TRES MAL.",
         "Pincision: A FOCUS. Faiblesse dos, peuvent sacrifices leurs allié, font une ligne de dégats IRREDUCTIBLE si ils tapent après s'être déplacé de tout leurs PM.",
@@ -1491,12 +1736,19 @@
         "Le Crustacérébro (Boss): Il tape COMME UN SOURD, mais seulement aligné à vous. Sinon, ses dégats sont plutôt faible. (Tape principalement EAU) Il n'est pas rare de se faire OS même avec 80% de res eau.\n- Il ne peu se déplacer qu'exclusivement sur les cases acide, à vous de gerer votre gestions des cases acides. Tapez en bougeant le moins possible.",
         "Un etat spécial est présent pendant le boss: A chaque tour du boss, vous allez être TP à la position où vous avez finis votre tour précédent, à vous de bien gerer vos placement.\nAstuce: Ne JAMAIS taper depuis une case \"temporelle\", sinon vous allez simplement être TP dans une cases acide et mourrir."
       ],
-      "tips": ["Stèles:", "Astuce:", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce:",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Donjon Mansots",
       "level": "Sumorse",
       "boss": "Est invulnérable:",
+      "slug": "sumorse",
       "strategies": [
         "Manchômage: Retire des PA en zone au cac. Lorsque vous les taper, et uniquement sur la premiere ligne de dégat du tour du joueur, le Manchômage va echanger de place avec vous.",
         "Manchot Kola: Ils posent des pieges autours des entités qu'il tape, et des piege monocible sur certaines cases: Ils ne tapent pas fort mais retire 100pm. Ils sont à FOCUS",
@@ -1519,6 +1771,7 @@
       "name": "Donjon Carapattes",
       "level": "Tortumulte",
       "boss": "N'est pas invulnérable mais:",
+      "slug": "tortumulte",
       "strategies": [
         "Seul, les monstres ne sont pas spécialement dangereux. Il y a une mécanique dans le DJ: Chaque PW vous fera échanger de place avec le \"Tortumulus\".",
         "Tortumulus: Entité non déplaçable, invulnérable et qui ne fera que se déplacer pendant son tour. Au début de son tour, il repousse de 5 cases toute entité aligné avec lui. A chaque utilisation de PW, il va échanger de place avec le joueur, et en croix de 2 autours de sa cases d'arriver, il va retirer 50 de resistance et donner 40 di, cumulable jusqu'a 10 fois. (-500 res et 400 di). Le bonus fonctionne a la fois sur les allié mais aussi les ennemies.",
@@ -1526,7 +1779,13 @@
         "Le Tortumulte: Il tape TRES FORT, et si vous ne pouvez pas le tuer avant qu'il joue, ou que vous ne parvenez pas à le tenir à distance grâce au tortumulus, il va décimer votre équipe.",
         "Essayez de stab votre DPT qui est boosté pour qu'il puisse jouer son tour sans devoir être TP avec le tortumulus au cours de son tour."
       ],
-      "tips": ["Stèles:", "Astuce:", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce:",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     }
   ],
   "216 - 230": [
@@ -1534,6 +1793,7 @@
       "name": "Démhorrible",
       "level": "Cratéros, Bourreau de la fin",
       "boss": "Le boss n'est pas invulnérable, mais:",
+      "slug": "cratrosbourreaudelafin",
       "strategies": [
         "Les ennemies de ce donjon sont liées. \nTout dégâts sur un ennemi est répliqués sur les autres. Si le placement des ennemies n'est pas bon, les dommages sont grandement réduits (80%).",
         "Le \"Sangsure\" doit être à 4-6 cases de l'attaquant, le \"Condamnateur\" en Diagonale, le \"Rapace dépeceur\" sur les côtés, le boss à 0-2 cases.",
@@ -1545,12 +1805,19 @@
         "Voici une façon de placer les mobs pour les taper! Il faudra taper MONOCIBLE un seul des monstres pour taper tout le monde de la meilleure des manière ! (F5 si l'image ne s'affiche pas)",
         "F5 SI L'IMAGE NE S'AFFICHE PAS A DROITE:"
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Egaré",
       "level": "!@#dh`~",
       "boss": "Le boss n'est pas invulnérable, mais:",
+      "slug": "dh",
       "strategies": [
         "Les monstres ne meurt pas. Ils tombent au sol et se releve 2 tours plus tard avec 50% des PV (ce montant baisse à chaque fois qu'ils sont tué et revivent)",
         "Pour finir le combat, il faut mettre au sol TOUT les mobs en même temps.",
@@ -1560,12 +1827,19 @@
         "Il ne tape pas très fort, exclusivement feu. Le seul dangés réside dans la zone qu'il pose au début de sont tour sur la même ligne que lui, ainsi que les 2 ligne devant lui. La zone prend toute la largeur de la map, et fait TRES MAL.",
         "Astuce: Jouez un ZONEUR en 1er ou 2eme de la timeline (Exemple: Elio, Dragosa, Roublard bombe..). Faite une premiere zone où vous tuez tout le monde. Les monstre revivent 2 tours après, et vu que votre zoneur joue avant les monstre => Vous les retuez tous avant qu'ils ne puissent jouer. Votre autre DPT tue le boss petit à petit."
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Vidéant",
       "level": "Ar'nan, Augure du néant",
       "boss": "Le boss n'est pas invulnérable, mais:",
+      "slug": "arnanauguredunant",
       "strategies": [
         "La famille des videants à des dégâts très élevés, en échange, il est possible de leur faire passer leurs tours en les désactivant.",
         "L'echinoidéant est désactivé s'il reçoit des dommages au Contact, Inanite dans le dos et Chrysavide s'il est déplacé. => La première fois, la condition devra être remplie par 1 personnage pour les désactiver, puis 2 personnages différents puis 3 ... Lorsque qu'ils sont désactivés, il gagne beaucoup de résistance jusqu'au début du tour du personnage qui les a désactivés.",
@@ -1576,12 +1850,19 @@
         "Le boss fait énormément de dégâts, et il se déplacera de manière à vous mettre dans l'aura. Il est donc important de le garder désactivé quasiment tous les tours.\nPour éviter de prendre trop de dégâts, il peut être utile de réfléchir à une rotation des perso pour leur faire perdre l'état multiplicateur. Partez du principe que si le boss joue, et qu'il peu bouger => Vous êtes mort. Soit vous avez bcp de retrait PM, soit vous le tuez très vite.",
         "Contrairement au mob, le boss perd 200 de rési quand il est désactivé: c'est donc à ce moment qu'il faut le taper."
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Phytomorphe",
       "level": "Vaal'Enthia",
       "boss": "Le boss est Invulnérable:",
+      "slug": "vaalenthia",
       "strategies": [
         "Dans le Donjon, une mécanique spéciale est présente: La corruption.",
         "Salle 1: Plusieurs mobs seront invulnérable, et vous ne pourrez les taper que si votre personnage possède un etat corruption et tape en respectant la condition de la corruption que vous avez.",
@@ -1593,12 +1874,19 @@
         "ATTENTION: Vaal possède un etat qui change chaque tour. En début de tour, elle lance automatiquement 3 sort sans LDV sur 3 cibles. Si vous ne respectez pas la condition de LDV qu'elle impose, les dommage sont quadruplé.",
         "Tour pair: Cible CACHE => X4 // Tour Impair: Cible en LDV => X4"
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Ravageur",
       "level": "K'abah'al, Gardien de la route des morts",
       "boss": "Il n'est pas invulnérable, mais:",
+      "slug": "kabahalgardiendelaroutedesmorts",
       "strategies": [
         "Le donjon a une mécanique particuliere: Lorsque que vous tuez un monstre, un \"résidu\" va apparaître. Il est innofensif, mais renvoie 100% des dégats que vous lui infligerait. Lorsque 2 résidu arrivent au cac l'un de l'autre, ils vont fusionné et re-devenir un monstre, qu'il faudra tuer (et aucun résidu n'apparaîtra)",
         "Glouto: Pas trop dangereux, ils peuvent \"glouter\" vos invocation/mécanisme, gagner des HP max/Di/Pm. Essayer d'éviter qu'il ne mange trop d'invoc.",
@@ -1609,12 +1897,19 @@
         "Astuce: Tour 4, 7, 10, 13... ect, le boss va proc son archétype \"mélée\" qui consistance a gagner 10%di permanant par entité a +6 cases de lui: Faite en sorte d'avoir vos perso proche de lui pour éviter de lui donner trop de DI au fil du combat.",
         "Astuce 2: Laissez le boss très bas en HP avec vos DPT pour le tuer avec un de vos premier personnage de la timeline, ça vous permettra de mieux gerer les résidus et d'éviter d'avoir trop de boss qui spawn en même temps. L'idéal étant de pouvoir les gerer 1 par 1, eventuellement 2 par 2 si vous avez beaucoup de dégats."
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Steameur",
       "level": "Sir Comte Flex",
       "boss": "Sir comte Flex n'est pas invulnérable mais:",
+      "slug": "sircomteflex",
       "strategies": [
         "Les mobs ont tous un \"compteur\", ce compteur augmente sous différentes conditions. Une fois le compteur à 5 et plus, chaque monstre peu lancer un \"ultime\" qui sera lancé automatiquement au début de leurs tours. Tout les monstres gagne 1 de charge à chaque fois qu'un ennemis et tué.",
         "Artilleur: Ils tapent en ligne, en dégats STASIS. Leurs sort rebondissent en cercle 2. +1 de reserve à la fin de leurs tours par rebond effectué. \nUltime: Sort sans LDV qui envoie une boule de stasis sur un nombre aléatoire d'ennemis en cercles 2. TRES DANGEREUX.",
@@ -1627,19 +1922,33 @@
         "Il changera d'état en fin de tour T2 5 8 11.. ect. Au début du tours suivant (T3 6 9 12.. ect), il va sauter sur l'éntité la plus éloigné (Invocation incluse). \nEssayez d'envoyer une invocation pour le forcer à s'éloigner de votre équipe pour pouvoir gerer le combat.",
         "Conseil: Il faudra zoner et éliminer au plus vite les monstre. Dans l'idéal, vous devrez avoir tuer tout les monstre T2 sinon le combat risque de devenir bourbier ! Avoir un support en fin de timeline pour replacer votre équipe en cas de mauvais positionnement pour eviter un ultime facilite énormement le combat."
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Poisseux",
       "level": "Raeliss",
       "boss": "",
+      "slug": "raeliss",
       "strategies": [],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Cire Momore (230)",
       "level": "Cire Momore",
       "boss": "N'est pas invulnérable mais:",
+      "slug": "ciremomore",
       "strategies": [
         "C'est un Boss D'intervention présent dans les deux DJ d'éréboria. Son fonctionnement est le même dans les deux donjons.",
         "Il prendra la place d'un monstre dans le combat. Il ne peu pas être retrait ni PA ni PM. Il va gagner 2pm par tours, sauf si il lance son sort au CaC de quelqu'un possédant une \"fleur\".",
@@ -1654,6 +1963,7 @@
       "name": "Necromonde",
       "level": "Toross Mordal",
       "boss": "Toross n'est pas invulnérable, mais :",
+      "slug": "torossmordal",
       "strategies": [
         "Spécificité du combat: chaque joueur voit son nombre de points de wakfu fixé à 6 et débloque un sort en 4eme barre : fontaine de wakfu. Ce sort coûte 2 pw, et peut cibler un allié ou une case vide, afin de créer un glyphe qui redonne 3 pw quand on marche dessus. \nCependant, les points de wakfu ne sont plus consommés par les sorts, il faut en abuser. \nLorsqu’il atteint 0 Pw, le joueur est transformé en nécrome et déloque 3 sorts : 1 sort de retrait résistance sur toross (-300 à 1 po), un sort de transfert de dommage subi (communion nécromique) et un sort de mobilité. Tout personnage nécromisé est considéré comme ennemi. Afin de redevenir joueur, il faut regagner tous ses points de wakfu. SI toutefois le joueur reste en nécrome durant le tour de table, il retire 5 pw à Toross mordral",
         "Toross n’est pas invulnérable, mais il dispose de 10 pw qui lui offres chacun 50 résistance élémentaire supplémentaire. Le boss est en 2 phases : 100 -> 50 % puis 50 -> mort.",
@@ -1662,12 +1972,19 @@
         "Lorsque Toross atteint 0 pw, il lance un sort de zone autour de lui qui dépop instantanément 5 cases autour de toross. Le sort rebondit sur les alliés touchés. Si vous jouez avec un dpt mêlée, il est conseillé de conserver au minimum 1 pw (3 pw si la stèle polyphagie est activée).",
         "Stèles : \r\nLes stèles sont globalement très simples et la prise en main est facile. Toutefois, il faut faire attention à la combinaison de la stèle polyphagie et de la stèle sècheresse qui ne sont pas propices aux combats longs."
       ],
-      "tips": ["Stèles:", "Astuce", "Stèle 1:", "Stèle 2:", "Stèle 3"]
+      "tips": [
+        "Stèles:",
+        "Astuce",
+        "Stèle 1:",
+        "Stèle 2:",
+        "Stèle 3"
+      ]
     },
     {
       "name": "Rushu",
       "level": "Rushu",
       "boss": "",
+      "slug": "rushu",
       "strategies": [],
       "tips": []
     }
@@ -1677,6 +1994,7 @@
       "name": "Les Férociraptors",
       "level": "Fulgurosaure",
       "boss": "Mécanique du donjon et du Fulgurosaure",
+      "slug": "fulgurosaure",
       "strategies": [
         "Le Fulgurosaure récupère 5% de ses points de vie tous les 2 tours, donc les tours pairs.",
         "Phase 2 - 70%-0%\n    A chaque fois que vous tapez le Fulgurosaure, par tour, il gagne 1 point de wakfu, jusqu'a 6 points de wakfu par tour.\n    Au début de son tour, le Fulgurosaure va invoquer des \"Pierre d'ailes\" qui cette fois-ci vous permettrons d'éviter la \"Colère celeste\" du Fulgurosaure en étant en mélée des pierre d'ailes, et perdront 50% de leurs points de vie par tour\n    Le Fulgurosaure gagne 75 de résistances par pierre sur le terrain et aura une vulnérabilité de -150 résistance pendant la phase\n    Tous les 3 tours, il va faire apparaître des cases \"feu noir\"",
@@ -1694,6 +2012,7 @@
       "name": "Les Primassifs",
       "level": "Imagori",
       "boss": "Mécanique du donjon et d'Imagori",
+      "slug": "imagori",
       "strategies": [
         "Les monstres vont gagner 30% de leurs points de vie en armure à chaque fois que vous leurs enleverez 10% de leurs points de vie maximum.",
         "Imagori a 4 Disruption\n1. Pousse de 6 cases, réduit dégats de dos de 50%.\n2. -30% points de vie sur les cibles qui ne sont pas aligné à un allié, réduit dégats de côté et face de 50%.\n3. Gagne 300 dommages infligés mélée, réduit les dégats distance de 50%.\n4. Gagne 300 dommages infligés distance, réduit les dégats mélée de 50%.\n\nIl gagne également une disruption à chaque fois que vous tombez 10% de ses points de vie, ce qu'il fait que pendant le tour où vous tombez ses points de vie, il peut avoir plusieurs disruption d'un coup. Elles dépendent également d'où tape le personnage qui passe les 10%.",
@@ -1712,6 +2031,7 @@
       "name": "Savanastraux",
       "level": "Timö le possédé",
       "boss": "Mécanique du donjon et de Timö",
+      "slug": "timlepossd",
       "strategies": [
         "Des zones seront présente sur la carte. Chaque zone correspond à un élément. Les monstres auront une résistance, il vous faudra la force contraire (Eau-Feu//Air-Terre) pour pouvoir infliger des dommages.",
         "Le seul sort de dégat de Timö est un sort air qui rebondit sur les cibles alignées.",
@@ -1738,6 +2058,7 @@
       "name": "Le Clan de Bworkana",
       "level": "Zulnara, cheffe de guerre",
       "boss": "Mécanique du donjon et de Zulnara",
+      "slug": "zulnaracheffedeguerre",
       "strategies": [
         "Zulnara pose un état Vengeresse sur tout les bworks: à chaque fois qu'un de leurs alliés est tué, elle gagne des dégats, des points de mouvements et des résistances. Elle gagne également 20% d'armure à chaque fois.",
         "Zulnara utilise Correction shushutée en début de tour sur la cible ayant le plus de Provocation. Elle se téléporte face à la cible si la cellule est libre, sinon c'est aléatoire dans une zone proche de la cible : il est donc conseillé de faire attention à son orientation. Ce sort inflige des dommages en fonction du niveau de Provocation consommé sur la cible. Pour éviter un très gros burst, il peut être indiqué de bien répartir la provocation sur ses différents personnages pour réduire le montant maximal porté par un personnage unique (et bombarder les res eau).",
@@ -1761,6 +2082,7 @@
       "name": "Machines de Nox",
       "level": "Protozortemps",
       "boss": "Mécanique du donjon et du Protozortemps",
+      "slug": "protozortemps",
       "strategies": [
         "Dans la salle 1, il faut prioriser l'élimination des Noxelanste dans la zone du fond si vous avez un sort qui permet de taper sans ligne de vue.\nSinon il faudra tuer tout les monstres sur le terrain, ils vont rester à 1 point de vie, et les placer sur les cases rouge pour débloquer la zone.",
         "Le Protozortemps sera dans un cube jusqu'a ce que toute les cases rouge soit retirée.\nTuer un monstre et placer le sur une case rouge pour la faire disparaître.",
@@ -1780,6 +2102,7 @@
       "name": "Théâtre intemporel",
       "level": "Nox",
       "boss": "Raison de l'invulnérabilité ou du problème",
+      "slug": "nox",
       "strategies": [
         "Le donjon comporte 4 phases répartie en 4 actes. Chaque acte fait intervenir un pentin de nox et change les règles du combat."
       ],
@@ -1789,6 +2112,7 @@
       "name": "DJ 3 JOUEURS",
       "level": "Principale",
       "boss": "Dans le donjon, il y aura en permanence 3 poupée qui vous donneront chacune un etat si vous finissez/commencez votre tours à leurs contact. L'etat dure 2 tours et peu se transmettre d'un acte à l'autre.\n\nVous ne pourrez pas taper NOX avant l'acte 4.",
+      "slug": "principale",
       "strategies": [
         "Acte 1: Contre \"Marama\", le Feca.",
         "Il sera protégé à hauteur de 30% de réduction par poupée encore en vie. Il protègera les poupées chaque fin de tour avec un sacrifice en zone de 4 autours de lui.",
@@ -1813,6 +2137,7 @@
       "name": "Horloge",
       "level": "Principale",
       "boss": "",
+      "slug": "principale",
       "strategies": [],
       "tips": []
     }
@@ -1822,6 +2147,7 @@
       "name": "Démhorrible",
       "level": "Cratéros, Bourreau de la fin",
       "boss": "Mécanique du donjon et de Catéros:",
+      "slug": "cratrosbourreaudelafin",
       "strategies": [
         "Les ennemies de ce donjon sont liées:\n   Tout dégâts sur un ennemi est répliqués sur les autres. Si le placement des ennemies n'est pas bon, les dommages sont grandement réduits (80%). Chaque mobs possède une zone qui va apparaître après avoir tapé l'un d'entre-eux. Vous devez supperposé toute les zones de chaques ennemis pour pouvoir taper le maximum de dégats possible.\n   Les dégats ZONE sont répliqué et réduit de 30%, tandis que les dommage MONOCIBLE sont répliqués et amplifiés de 30% (L'idéal est de zoner salle 1 car beaucoup de mobs, et de burst monocible sur la salle du boss)",
         "Pas de Phase: \n   Cratéros une attaque en zone 2 autour de lui qui fait beaucoup de dégâts et qui vole toutes votre armure, ce qui est vite un problème puisque que le \"Condamnateur\" vole aussi votre armure et vous met -50% de soin reçus.\n   Le boss peut aussi vous tp à son cac si vous êtes à plus de 6 PO. Il lance son sort tout les 3 tours.",
@@ -1841,6 +2167,7 @@
       "name": "Démentia",
       "level": "!@#dh`~",
       "boss": "Les ennemies de ce donjon ne meurent pas:\n  Ils tombent au sol et se releve 2 tours plus tard avec 50% des PV (ce montant baisse à chaque fois qu'ils sont tué et revivent), et pour finir le combat, il faut mettre au sol TOUT les mobs en même temps. \n  Chaque monstre à une condition à éviter, si elle n'est pas respecté => Le mob echange de place avec son allié le plus eloigné et gagne des resistances et des DI",
+      "slug": "dh",
       "strategies": [
         "Monstres",
         "Ésrevni:\n   Il ne faut pas les taper en MELEE, tape fort en ligne et vol de la vie",
@@ -1848,12 +2175,15 @@
         "CeEvroaint:\n   Il ne faut pas les taper de DOS, peu stack un etat pour faire très mal sur un sort",
         "Mécanique du donjon et de Ar'nan"
       ],
-      "tips": ["Aide additionnelle"]
+      "tips": [
+        "Aide additionnelle"
+      ]
     },
     {
       "name": "Spirale du Vide",
       "level": "Ar'nan, Augure du néant",
       "boss": "Les ennemis peuvent être \"Désactivé\":\n  Les conditions pour désactiver les monstres différes selon le monstre. Une fois remplie, pour la re-remplir il faudra la faire une fois de plus à chaque fois.\n Une fois désactivé, les monstres passeront leurs tours mais vont gagner 400 de resistances.",
+      "slug": "arnanauguredunant",
       "strategies": [
         "Le boss fait énormément de dégâts, et il se déplacera de manière à vous mettre dans l'aura. Il est donc important de le garder désactivé quasiment tous les tours.",
         "Monstres",
@@ -1872,6 +2202,7 @@
       "name": "Royaume du Desespoir",
       "level": "Vaal'Enthia",
       "boss": "Dans le Donjon, une mécanique spéciale est présente: La Corruption. \n\nChaque mobs possèdent une corruption spécifique. Pour récuperer une corruption, il faut tomber les PDV d'un mobs a -50%, et vous lui vollerait une corruption. ATTENTION, eux aussi peuvent pour les voler si ils vous tombent en dessous de 50%.",
+      "slug": "vaalenthia",
       "strategies": [
         "La rendre vulnérable",
         "Vaal'Enthia: Ne peu être taper qu'en possédant un etat corruption et en tapant dans la condition de(s) (la) corruption sur votre personnage.",
@@ -1891,6 +2222,7 @@
       "name": "Route des morts",
       "level": "K'abah'al, Gardien de la route des morts",
       "boss": "Chaque MORT fera apparaître un rédisu.\nLe donjon a une mécanique particuliere: Lorsque que vous tuez un monstre, un \"résidu\" va apparaître. Il est innofensif, mais renvoie 100% des dégats que vous lui infligerait. Lorsque 2 résidu arrivent au cac l'un de l'autre, ils vont fusionné et re-devenir un monstre, qu'il faudra tuer (et aucun résidu n'apparaîtra).",
+      "slug": "kabahalgardiendelaroutedesmorts",
       "strategies": [
         "Si une cible est isolé de ses allié (4 cases et plus), alors K'abah'al va sauter dessus et le griffer directement. Evitez donc d'isoler une entité sauf si c'est volontaire pour éloigner le boss. Le boss fait également apparaître des cases sur le sol, et au début de son tour il lance AUTOMATIQUEMENT (même déphasé) une AOE de cercle de 4 cases sur chaques marque, et sur chaque résidu ! Faite très attention.",
         "Lorsque vous tuez K'abah'al, celui-ci va faire apparaître 8 résidu autours de vos personnages. Lorsqu'ils vont fusionné, ils font des nouveau K'abah'al avec 20% hp, qu'il faut re-tuer.",
@@ -1909,6 +2241,7 @@
       "name": "Steameur",
       "level": "Sir Comte Flex",
       "boss": "Mécanique du donjon et de Sir Comte Flex",
+      "slug": "sircomteflex",
       "strategies": [
         "Les monstres ainsi que le boss ont tous un etat STASIFIE \nLes mobs ont tous un \"compteur\"appellé \"reserve de Stasis\", ce compteur augmente sous différentes conditions. Une fois le compteur à 5 et plus, chaque monstre peu lancer un \"ultime\" qui sera lancé automatiquement au début de leurs tours. Tout les monstres gagne 1 de charge à chaque fois qu'un ennemis et tué.",
         "Etat \"rouge\": Il gagne +1 par ennemies en mélée au début de son tours. Il pose des mînes autours des entité touché par ses sorts, et les fait exploser au début de son tour de jeu. \nUltime: Dégat en croix infinie sur chaque ENTITE (mécanisme inclut). \n                                             NE PAS ETRE ALIGNE SI IL PEU LANCER SON ULTI EN FIN DE TOUR.",
@@ -1938,6 +2271,7 @@
       "name": "Horloge",
       "level": "Principale",
       "boss": "",
+      "slug": "principale",
       "strategies": [],
       "tips": []
     }

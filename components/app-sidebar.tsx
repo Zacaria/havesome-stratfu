@@ -13,11 +13,6 @@ import { Link } from "./Link";
 import { usePageContext } from "vike-react/usePageContext";
 import { useDungeons } from "@/hooks/useDungeons";
 import { useState, useEffect } from "react";
-import type {
-  Dungeon,
-  DungeonWithLevelRange,
-  DungeonData,
-} from "types/dungeon";
 
 // Local type for sidebar-specific dungeon data
 type SidebarDungeon = Dungeon & {
@@ -30,7 +25,7 @@ type SidebarDungeonData = {
 };
 
 export function AppSidebar() {
-  const { getLevelRanges, getDungeonsByLevelRange, isLoading } = useDungeons();
+  const { getLevelRanges, getDungeonsByLevelRange } = useDungeons();
   const [currentRange, setCurrentRange] = useState<string | null>(null);
   const pageContext = usePageContext();
 
@@ -56,23 +51,8 @@ export function AppSidebar() {
     }
   }
 
-  // Map dungeons by slice using the slug to level range mapping
-  const dungeonsbyRange = levelRanges.reduce<Record<string, SidebarDungeon[]>>(
-    (acc, range) => {
-      const levelRange = slugToLevelRange[range.slug];
-      if (levelRange) {
-        const dungeons = getDungeonsByLevelRange(levelRange);
-        acc[range.slug] = dungeons as unknown as SidebarDungeon[];
-      } else {
-        acc[range.slug] = [];
-      }
-      return acc;
-    },
-    {}
-  );
-
   const renderSidebarContent = () => {
-    if (!currentRange || !dungeonsbyRange[currentRange]) {
+    if (!currentRange) {
       return (
         <SidebarGroup>
           <SidebarGroupLabel>Level Ranges</SidebarGroupLabel>
@@ -90,23 +70,28 @@ export function AppSidebar() {
         </SidebarGroup>
       );
     }
+    const dungeonsbyRange = getDungeonsByLevelRange(currentRange);
 
     return (
       <SidebarGroup>
         <SidebarGroupLabel>Dungeons</SidebarGroupLabel>
         <SidebarGroupContent>
-          {dungeonsbyRange[currentRange].map((dungeon: SidebarDungeon) => (
-            <SidebarMenuItem key={dungeon.name}>
-              <Link
-                href={`/level/${currentRange}#${dungeon.name
-                  .toLowerCase()
-                  .replace(/\s+/g, "-")}`}
-                className="block px-3 py-2 text-sm rounded-md hover:bg-gray-100 text-gray-700 hover:text-gray-900"
+          <SidebarMenu>
+            {dungeonsbyRange.map((dungeon: Dungeon) => (
+              <SidebarMenuButton
+                key={dungeon.name}
+                asChild
+                isActive={currentRange === dungeon.name}
               >
-                {dungeon.name}
-              </Link>
-            </SidebarMenuItem>
-          ))}
+                <Link
+                  href={`/level/${currentRange}#${dungeon.slug}`}
+                  className="block px-3 py-2 text-sm rounded-md hover:bg-gray-100 text-gray-700 hover:text-gray-900"
+                >
+                  {dungeon.name}
+                </Link>
+              </SidebarMenuButton>
+            ))}
+          </SidebarMenu>
         </SidebarGroupContent>
       </SidebarGroup>
     );
@@ -125,21 +110,7 @@ export function AppSidebar() {
           <div className="text-sm text-gray-500">Strategies & Guides</div>
         </div>
       </SidebarHeader>
-      <SidebarContent>
-        <SidebarGroup>
-          <SidebarGroupLabel>
-            {/* <SidebarMenuButton> */}
-            {/* {" "} */}
-            {/* <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider"> */}
-            {currentRange ? "Dungeons" : "Level Ranges"}
-            {/* </h3> */}
-            {/* </SidebarMenuButton> */}
-          </SidebarGroupLabel>
-          <SidebarGroupContent>
-            <SidebarMenu>{renderSidebarContent()}</SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
-      </SidebarContent>
+      <SidebarContent>{renderSidebarContent()}</SidebarContent>
     </Sidebar>
   );
 }

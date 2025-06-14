@@ -1,12 +1,11 @@
 import { useAppContext } from "@/contexts/AppContext";
 import { useEffect, useCallback } from "react";
-import type { DungeonData, DungeonWithLevelRange } from "types/dungeon";
 import defaultDungeons from "@/build/data/dungeons.json";
 
 const CACHE_KEY = "dungeons_data";
 const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
 
-export async function fetchDungeons() {
+export function fetchDungeons(): DungeonData[] {
   return defaultDungeons;
   // try {
   //   const response = await fetch("/data/dungeons.json");
@@ -21,14 +20,16 @@ export async function fetchDungeons() {
 }
 
 export function getLevelRanges(
-  data: DungeonData
+  data: DungeonsData
 ): Array<{ display: string; slug: string }> {
   if (!data) return [];
 
-  return Object.keys(data)
+  console.log("getLevelRanges", data);
+
+  return data
     .map((range) => ({
-      display: range,
-      slug: range.replace(/\s+/g, ""), // Remove all spaces for URL
+      display: range.label,
+      slug: range.id, // Remove all spaces for URL
     }))
     .sort((a, b) => {
       const aStart = Number.parseInt(a.display.split("-")[0]);
@@ -39,25 +40,22 @@ export function getLevelRanges(
 
 export function useDungeons() {
   const {
-    updateDungeonState,
-    dungeonState: { data, isLoading, error },
+    data,
+    isLoading,
+    error,
+    lastUpdated,
+    url,
+    setData,
+    setIsLoading,
+    setError,
+    setLastUpdated,
+    setUrl,
   } = useAppContext();
 
-  // const fetchDungeons = useCallback(async (): Promise<DungeonData> => {
-  //   try {
-  //     const response = await fetch("/data/dungeons.json");
-  //     if (!response.ok) {
-  //       throw new Error(`Failed to fetch dungeons: ${response.statusText}`);
-  //     }
-  //     return await response.json();
-  //   } catch (err) {
-  //     console.error("Error fetching dungeons:", err);
-  //     throw err;
-  //   }
-  // }, []);
-
   const loadDungeons = useCallback(async () => {
-    updateDungeonState({ isLoading: true, error: null });
+    setIsLoading(true);
+    setError(null);
+    console.log("Loading dungeons...");
 
     try {
       // Try to get data from cache first
@@ -67,7 +65,7 @@ export function useDungeons() {
       // Check if cache is still valid
       if (parsedCache && Date.now() - parsedCache.timestamp < CACHE_DURATION) {
         console.log("Using cached data");
-        updateDungeonState({ data: parsedCache.data });
+        setData(parsedCache.data);
         return;
       }
       console.log("Fetching fresh data");
@@ -82,21 +80,22 @@ export function useDungeons() {
       };
       localStorage.setItem(CACHE_KEY, JSON.stringify(cache));
 
-      updateDungeonState({ data: freshData });
+      setData(freshData);
     } catch (err) {
       console.error("Failed to load dungeons:", err);
-      updateDungeonState({
-        error:
-          err instanceof Error ? err : new Error("Failed to load dungeons"),
-      });
+      setError(
+        err instanceof Error ? err : new Error("Failed to load dungeons")
+      );
     } finally {
-      updateDungeonState({ isLoading: false });
+      setIsLoading(false);
     }
-  }, [updateDungeonState]);
+  }, [setData, setError, setIsLoading]);
 
   const reloadDungeons = useCallback(async () => {
     console.log("Reloading dungeons...");
-    updateDungeonState({ isLoading: true, error: null });
+    // updateDungeonState({ isLoading: true, error: null });
+    setIsLoading(true);
+    setError(null);
 
     try {
       // Clear local storage cache
@@ -117,74 +116,20 @@ export function useDungeons() {
 
       console.log("Updated dungeons:", freshData);
       // Update the data state
-      updateDungeonState({ data: freshData, isLoading: false });
+      setData(freshData);
+      setIsLoading(false);
 
       return freshData;
     } catch (error) {
       console.error("Failed to reload dungeons:", error);
-      updateDungeonState({
-        error:
-          error instanceof Error
-            ? error
-            : new Error("Failed to reload dungeons"),
-      });
+      setError(
+        error instanceof Error ? error : new Error("Failed to reload dungeons")
+      );
       throw error;
     } finally {
-      updateDungeonState({ isLoading: false });
+      setIsLoading(false);
     }
-  }, [updateDungeonState]);
-
-  // Get all dungeons with their level ranges
-  const getAllDungeons = useCallback((): DungeonWithLevelRange[] => {
-    if (!data) return [];
-
-    return Object.entries(data).flatMap(([levelRange, dungeons]) =>
-      dungeons.map((dungeon) => ({
-        ...dungeon,
-        levelRange,
-      }))
-    );
-  }, [data]);
-
-  // Get dungeons for a specific level range or return all dungeons if no range is provided
-  const getDungeonsByLevelRange = useCallback(
-    (levelRange?: string): DungeonWithLevelRange[] => {
-      console.log("callback updated getDungeonsByLevelRange");
-      if (!data) return [];
-
-      // If no level range is provided, return all dungeons
-      if (!levelRange) {
-        return Object.entries(data).flatMap(([range, dungeons]) =>
-          dungeons.map((dungeon) => ({
-            ...dungeon,
-            levelRange: range,
-          }))
-        );
-      }
-
-      // Handle both formats: "51-65" and "51 - 65"
-      const formattedRange = levelRange.includes(" - ")
-        ? levelRange
-        : levelRange.replace(/(\d+)([\s-]+)(\d+)/, "$1 - $3");
-
-      // Check if the formatted range exists in the data
-      if (!(formattedRange in data)) {
-        console.warn(
-          `No dungeons found for level range: "${formattedRange}"`,
-          data[formattedRange],
-          formattedRange in data,
-          data
-        );
-        return [];
-      }
-
-      return data[formattedRange].map((dungeon) => ({
-        ...dungeon,
-        levelRange: formattedRange,
-      }));
-    },
-    [data]
-  );
+  }, [setData, setError, setIsLoading]);
 
   // Get all level ranges
   const getLevelRangesCb = useCallback((): Array<{
@@ -195,8 +140,40 @@ export function useDungeons() {
     return getLevelRanges(data);
   }, [data]);
 
+  // Get dungeons for a specific level range or return all dungeons if no range is provided
+  const getDungeonsByLevelRange = useCallback(
+    (levelRange?: string): Dungeon[] => {
+      if (!data) return [];
+      // console.trace("callback updated getDungeonsByLevelRange");
+      // If no level range is provided, return all dungeons
+      if (!levelRange) {
+        return data.flatMap((dungeon) => dungeon.dungeons);
+      }
+
+      // Handle both formats: "51-65" and "51 - 65"
+      // const formattedRange = levelRange.includes(" - ")
+      //   ? levelRange
+      //   : levelRange.replace(/(\d+)([\s-]+)(\d+)/, "$1 - $3");
+
+      // Check if the formatted range exists in the data
+      const range = data.find((dungeon) => dungeon.id === levelRange);
+      if (!range) {
+        console.warn(
+          `No dungeons found for level range: "${levelRange}"`,
+          data,
+          levelRange
+        );
+        return [];
+      }
+
+      return range.dungeons;
+    },
+    [data]
+  );
+
   // Initial data load
   useEffect(() => {
+    console.log("useEffect updated loadDungeons");
     loadDungeons();
   }, [loadDungeons]);
 
@@ -204,7 +181,7 @@ export function useDungeons() {
     data,
     isLoading,
     error,
-    getAllDungeons,
+    // getAllDungeons,
     getDungeonsByLevelRange,
     getLevelRanges: getLevelRangesCb,
     refresh: reloadDungeons,

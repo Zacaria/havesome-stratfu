@@ -1,11 +1,10 @@
 // src/contexts/DataContext.tsx
 import type React from "react";
 import { createContext, useContext, useState } from "react";
-import type { DungeonData } from "types/dungeon";
 
 type DungeonContextType = {
-  data: DungeonData;
-  setData: React.Dispatch<React.SetStateAction<DungeonData>>;
+  data: DungeonsData;
+  setData: React.Dispatch<React.SetStateAction<DungeonsData>>;
 };
 
 const DungeonContext = createContext<DungeonContextType | undefined>(undefined);
@@ -13,7 +12,7 @@ const DungeonContext = createContext<DungeonContextType | undefined>(undefined);
 export const DungeonProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const [data, setData] = useState<DungeonData>({});
+  const [data, setData] = useState<DungeonsData>([]);
   return (
     <DungeonContext.Provider value={{ data, setData }}>
       {children}

@@ -8,7 +8,7 @@ import { existsSync } from 'fs';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const targetDir = "../public/data/"
+const targetDir = "../build/data/"
 
 function cleanText(text) {
   if (!text) return '';
@@ -33,7 +33,7 @@ function isDungeonRow(row) {
   return level && name && !isIgnoredRow(row) && !name.includes(':') && name !== 'Boss';
 }
 
-async function parseDungeonData(rows) {
+async function parseDungeonData(rows, rangeId) {
   const dungeons = [];
   let currentDungeon = null;
   let currentStrategy = [];
@@ -66,6 +66,8 @@ async function parseDungeonData(rows) {
         name: level, // First column is dungeon name
         level: name, // Second column is level
         boss: strategy || '', // Third column is boss name
+        slug: name.toLowerCase().replace(/\s+/g, "").replace(/[^a-z0-9-]/g, ""),
+        levelRange: rangeId,
         strategies: [],
         tips: []
       };
@@ -101,7 +103,7 @@ async function analyzeXLSX() {
   try {
     const filePath = resolve(__dirname, '../assets/stratfu-src.xlsx');
     const workbook = xlsx.readFile(filePath);
-    const result = {};
+    const result = [];
 
     for (const sheetName of workbook.SheetNames) {
       if (!sheetName.includes('-')) continue; // Skip non-level range sheets
@@ -113,9 +115,14 @@ async function analyzeXLSX() {
         header: 1,
         blankrows: false
       });
+      const rangeId = cleanText(sheetName).replace(/\s+/g, "");
 
-      const dungeons = await parseDungeonData(jsonData);
-      result[cleanText(sheetName)] = dungeons;
+      const dungeons = await parseDungeonData(jsonData, rangeId);
+      result.push({
+        id: rangeId,
+        label: cleanText(sheetName),
+        dungeons
+      });
       
       console.log(`Found ${dungeons.length} dungeons in ${sheetName}`);
       dungeons.forEach((d, i) => {
