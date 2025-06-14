@@ -1,64 +1,64 @@
-name: Deploy to GitHub Pages
+# name: Deploy to GitHub Pages
 
-on:
-  push:
-    branches: [main] # Change this to your default branch if it's not 'main'
-  workflow_dispatch:
+# on:
+#   push:
+#     branches: [main] # Change this to your default branch if it's not 'main'
+#   workflow_dispatch:
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
+# permissions:
+#   contents: write
+#   pages: write
+#   id-token: write
 
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+# jobs:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: latest
-          run_install: false
+#       - name: Install pnpm
+#         uses: pnpm/action-setup@v4
+#         with:
+#           version: latest
+#           run_install: false
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: "pnpm"
+#       - name: Set up Node.js
+#         uses: actions/setup-node@v4
+#         with:
+#           node-version: "20"
+#           cache: "pnpm"
 
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+#       - name: Install dependencies
+#         run: pnpm install --frozen-lockfile
 
-      - name: Build
-        run: |
-          pnpm run build
+#       - name: Build
+#         run: |
+#           pnpm run build
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.4
-        with:
-          branch: gh-pages
-          folder: dist/client
-          # Remove previous build files
-          clean: true
-          # Remove history — avoiding exploding Git repository size
-          single-commit: true
-          # Do not remove the `.nojekyll` file: we have manually added an empty `.nojekyll` file at the root of the `gh-pages` branch and we don't want having to re-create it after each build.
-          clean-exclude: |
-            .nojekyll
+#       - name: Deploy
+#         uses: JamesIves/github-pages-deploy-action@4.1.4
+#         with:
+#           branch: gh-pages
+#           folder: dist/client
+#           # Remove previous build files
+#           clean: true
+#           # Remove history — avoiding exploding Git repository size
+#           single-commit: true
+#           # Do not remove the `.nojekyll` file: we have manually added an empty `.nojekyll` file at the root of the `gh-pages` branch and we don't want having to re-create it after each build.
+#           clean-exclude: |
+#             .nojekyll
 
-  # deploy:
-  #   needs: build-and-deploy
-  #   permissions:
-  #     pages: write
-  #     id-token: write
-  #   environment:
-  #     name: github-pages
-  #     url: ${{ steps.deployment.outputs.page_url }}
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Deploy to GitHub Pages
-  #       id: deployment
-  #       uses: actions/deploy-pages@v4
+#   # deploy:
+#   #   needs: build-and-deploy
+#   #   permissions:
+#   #     pages: write
+#   #     id-token: write
+#   #   environment:
+#   #     name: github-pages
+#   #     url: ${{ steps.deployment.outputs.page_url }}
+#   #   runs-on: ubuntu-latest
+#   #   steps:
+#   #     - name: Deploy to GitHub Pages
+#   #       id: deployment
+#   #       uses: actions/deploy-pages@v4
