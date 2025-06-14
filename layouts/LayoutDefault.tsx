@@ -5,6 +5,7 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
 import { ReloadButton } from "@/components/ReloadButton";
 import { AppProvider } from "@/contexts/AppContext";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function LayoutDefault({
   children,
@@ -15,6 +16,7 @@ export default function LayoutDefault({
     <AppProvider>
       <SidebarProvider>
         <div className="flex min-h-screen w-full">
+          <Analytics />
           <AppSidebar />
           {/* Main content area */}
           <div className="flex-1 flex flex-col min-w-0 relative justify-between">
