@@ -9,6 +9,45 @@ export const edge = true;
 export default async function handler(req, res) {
   const { url } = req;
   console.log("Request to url:", url);
+
+// Print file tree with max depth of 4
+const fs = require('fs');
+const path = require('path');
+
+function printFileTree(dir, level = 0, maxDepth = 4) {
+  if (level > maxDepth) return;
+  
+  try {
+    const items = fs.readdirSync(dir);
+    for (const item of items) {
+      const itemPath = path.join(dir, item);
+      const stats = fs.statSync(itemPath);
+      const prefix = '  '.repeat(level) + (level > 0 ? '|- ' : '');
+      console.log(`${prefix}${item}`);
+      
+      if (stats.isDirectory() && level < maxDepth) {
+        printFileTree(itemPath, level + 1, maxDepth);
+      }
+    }
+  } catch (err) {
+    console.error(`Error reading directory ${dir}: ${err.message}`);
+  }
+}
+
+console.log("File tree (max depth: 4):");
+printFileTree('/var/task');
+
+  
+try {
+  const { execSync } = require('child_process');
+  const output = execSync('find /var/task -type f -o -type d | sort | sed -e "s/[^-][^/]*\\//  |/g" -e "s/|\\([^ ]\\)/|-\\1/" | head -n 50');
+  console.log("File tree (first 50 entries):");
+  console.log(output.toString());
+} catch (error) {
+  console.error("Error listing file tree:", error.message);
+}
+  
+  
   if (url === undefined) throw new Error("req.url is undefined");
 
   const pageContextInit = { urlOriginal: url };
