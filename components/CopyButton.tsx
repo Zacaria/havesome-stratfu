@@ -1,9 +1,6 @@
 import { CopyIcon, CheckIcon } from "lucide-react";
 import { useState, useEffect } from "react";
-import classNames from "classnames";
-// function classNames(...classes: (string | boolean | undefined)[]): string {
-//   return classes.filter(Boolean).join(" ");
-// }
+import classNames from "@/components/utils";
 
 const ANIMATION_DURATION = 800;
 

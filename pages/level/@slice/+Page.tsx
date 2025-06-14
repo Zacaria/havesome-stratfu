@@ -1,9 +1,9 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { usePageContext } from "vike-react/usePageContext";
 import { Link } from "@/components/Link";
 import useDungeons from "@/hooks/useDungeons";
 import { ArrowLeftIcon, CheckIcon } from "lucide-react";
-import CopyButton from "@/components/CopyButton.client";
+import CopyButton from "@/components/CopyButton";
 
 export default function LevelSlicePage() {
   const { getDungeonsByLevelRange, isLoading, data } = useDungeons();

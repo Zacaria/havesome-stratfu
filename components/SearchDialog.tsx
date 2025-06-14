@@ -2,11 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { usePageContext } from "vike-react/usePageContext";
 import { useDungeons } from "@/hooks/useDungeons";
 import { Search, X } from "lucide-react";
-
-// Simple classNames helper for conditional classes
-function classNames(...classes: (string | boolean | undefined)[]): string {
-  return classes.filter(Boolean).join(" ");
-}
+import classNames from "@/components/utils";
 
 export function SearchDialog() {
   const [isOpen, setIsOpen] = useState(false);
