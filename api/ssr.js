@@ -35,25 +35,15 @@ function printFileTree(dir, level = 0, maxDepth = 4) {
 }
 
 console.log("File tree (max depth: 4):");
-printFileTree('/var/task');
+printFileTree('/var/task/dist');
 
-  
-try {
-  const { execSync } = require('child_process');
-  const output = execSync('find /var/task -type f -o -type d | sort | sed -e "s/[^-][^/]*\\//  |/g" -e "s/|\\([^ ]\\)/|-\\1/" | head -n 50');
-  console.log("File tree (first 50 entries):");
-  console.log(output.toString());
-} catch (error) {
-  console.error("Error listing file tree:", error.message);
-}
-  
-  
+ 
   if (url === undefined) throw new Error("req.url is undefined");
 
   const pageContextInit = { urlOriginal: url };
   const pageContext = await renderPage(pageContextInit);
   const { httpResponse } = pageContext;
-  console.log("httpResponse", !!httpResponse);
+  console.log("httpResponse", !!httpResponse,httpResponse);
 
   if (!httpResponse) {
     res.statusCode = 200;
