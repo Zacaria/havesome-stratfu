@@ -14,28 +14,29 @@ export default async function handler(req, res) {
 const fs = require('fs');
 const path = require('path');
 
-// function printFileTree(dir, level = 0, maxDepth = 4) {
-//   if (level > maxDepth) return;
+function printFileTree(dir, level = 0, maxDepth = 4) {
+  if (level > maxDepth) return;
   
-//   try {
-//     const items = fs.readdirSync(dir);
-//     for (const item of items) {
-//       const itemPath = path.join(dir, item);
-//       const stats = fs.statSync(itemPath);
-//       const prefix = '  '.repeat(level) + (level > 0 ? '|- ' : '');
-//       console.log(`${prefix}${item}`);
+  try {
+    const items = fs.readdirSync(dir);
+    console.log("items", items);
+    for (const item of items) {
+      const itemPath = path.join(dir, item);
+      const stats = fs.statSync(itemPath);
+      const prefix = '  '.repeat(level) + (level > 0 ? '|- ' : '');
+      console.log(`${prefix}${item}`);
       
-//       if (stats.isDirectory() && level < maxDepth) {
-//         printFileTree(itemPath, level + 1, maxDepth);
-//       }
-//     }
-//   } catch (err) {
-//     console.error(`Error reading directory ${dir}: ${err.message}`);
-//   }
-// }
+      if (stats.isDirectory() && level < maxDepth) {
+        printFileTree(itemPath, level + 1, maxDepth);
+      }
+    }
+  } catch (err) {
+    console.error(`Error reading directory ${dir}: ${err.message}`);
+  }
+}
 
 console.log("File tree (max depth: 4):");
-// printFileTree('/var/task/dist');
+printFileTree('/var/task');
 
  
   if (url === undefined) throw new Error("req.url is undefined");
