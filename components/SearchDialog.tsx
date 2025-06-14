@@ -308,6 +308,7 @@ export function SearchDialog() {
                       key={`${dungeon.name}-${dungeon.levelRange}`}
                       data-index={index}
                       className={classNames(
+                        "flex justify-between",
                         "border-l-2",
                         selectedIndex === index
                           ? "border-blue-500 bg-gray-50 dark:bg-gray-700"
@@ -316,7 +317,7 @@ export function SearchDialog() {
                     >
                       <button
                         className={classNames(
-                          "block px-6 py-4 transition-colors cursor-pointer",
+                          "grow text-left px-6 py-4 transition-colors cursor-pointer",
                           selectedIndex === index
                             ? "bg-gray-50 dark:bg-gray-700"
                             : "hover:bg-gray-50 dark:hover:bg-gray-700"

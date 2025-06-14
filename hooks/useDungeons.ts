@@ -40,21 +40,12 @@ export function getLevelRanges(
 
 export function useDungeons() {
   const {
-    data,
-    isLoading,
-    error,
-    lastUpdated,
-    url,
-    setData,
-    setIsLoading,
-    setError,
-    setLastUpdated,
-    setUrl,
+    dungeons: { data, isLoading, error, lastUpdated, url },
+    updateDungeons,
   } = useAppContext();
 
   const loadDungeons = useCallback(async () => {
-    setIsLoading(true);
-    setError(null);
+    updateDungeons({ isLoading: true, error: null });
     console.log("Loading dungeons...");
 
     try {
@@ -65,7 +56,7 @@ export function useDungeons() {
       // Check if cache is still valid
       if (parsedCache && Date.now() - parsedCache.timestamp < CACHE_DURATION) {
         console.log("Using cached data");
-        setData(parsedCache.data);
+        updateDungeons({ data: parsedCache.data });
         return;
       }
       console.log("Fetching fresh data");
@@ -80,22 +71,22 @@ export function useDungeons() {
       };
       localStorage.setItem(CACHE_KEY, JSON.stringify(cache));
 
-      setData(freshData);
+      updateDungeons({ data: freshData });
     } catch (err) {
       console.error("Failed to load dungeons:", err);
-      setError(
-        err instanceof Error ? err : new Error("Failed to load dungeons")
-      );
+      updateDungeons({
+        error:
+          err instanceof Error ? err : new Error("Failed to load dungeons"),
+      });
     } finally {
-      setIsLoading(false);
+      updateDungeons({ isLoading: false });
     }
-  }, [setData, setError, setIsLoading]);
+  }, [updateDungeons]);
 
   const reloadDungeons = useCallback(async () => {
     console.log("Reloading dungeons...");
     // updateDungeonState({ isLoading: true, error: null });
-    setIsLoading(true);
-    setError(null);
+    updateDungeons({ isLoading: true, error: null });
 
     try {
       // Clear local storage cache
@@ -116,20 +107,22 @@ export function useDungeons() {
 
       console.log("Updated dungeons:", freshData);
       // Update the data state
-      setData(freshData);
-      setIsLoading(false);
+      updateDungeons({ data: freshData, isLoading: false });
 
       return freshData;
     } catch (error) {
       console.error("Failed to reload dungeons:", error);
-      setError(
-        error instanceof Error ? error : new Error("Failed to reload dungeons")
-      );
+      updateDungeons({
+        error:
+          error instanceof Error
+            ? error
+            : new Error("Failed to reload dungeons"),
+      });
       throw error;
     } finally {
-      setIsLoading(false);
+      updateDungeons({ isLoading: false });
     }
-  }, [setData, setError, setIsLoading]);
+  }, [updateDungeons]);
 
   // Get all level ranges
   const getLevelRangesCb = useCallback((): Array<{
@@ -144,16 +137,10 @@ export function useDungeons() {
   const getDungeonsByLevelRange = useCallback(
     (levelRange?: string): Dungeon[] => {
       if (!data) return [];
-      // console.trace("callback updated getDungeonsByLevelRange");
       // If no level range is provided, return all dungeons
       if (!levelRange) {
         return data.flatMap((dungeon) => dungeon.dungeons);
       }
-
-      // Handle both formats: "51-65" and "51 - 65"
-      // const formattedRange = levelRange.includes(" - ")
-      //   ? levelRange
-      //   : levelRange.replace(/(\d+)([\s-]+)(\d+)/, "$1 - $3");
 
       // Check if the formatted range exists in the data
       const range = data.find((dungeon) => dungeon.id === levelRange);
@@ -181,7 +168,6 @@ export function useDungeons() {
     data,
     isLoading,
     error,
-    // getAllDungeons,
     getDungeonsByLevelRange,
     getLevelRanges: getLevelRangesCb,
     refresh: reloadDungeons,
