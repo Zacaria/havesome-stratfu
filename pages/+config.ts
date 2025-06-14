@@ -10,11 +10,13 @@ export default {
   Layout,
 
   // https://vike.dev/head-tags
-  title: "My Vike App",
+  title: "Havesome StratFu",
 
-  description: "Demo showcasing Vike",
+  description: "Chargeur de stratégies pour les donjons de Wakfu",
   extends: vikeReact,
-  prerender: true,
+  prerender: {
+    partial: true,
+  },
   htmlAttributes: {
     lang: "fr",
     class: "dark",

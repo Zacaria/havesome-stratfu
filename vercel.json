@@ -3,6 +3,10 @@
     {
       "source": "/((?!assets/).*)",
       "destination": "/api/ssr.js"
+    },
+    {
+      "source": "/",
+      "destination": "/api/ssr.js"
     }
   ]
 }
