@@ -85,7 +85,7 @@ export function AppSidebar() {
               >
                 <Link
                   href={`/level/${currentRange}#${dungeon.slug}`}
-                  className="block px-3 py-2 text-sm rounded-md hover:bg-gray-100 text-gray-700 hover:text-gray-900"
+                  className="block px-3 py-2 text-sm rounded-md"
                 >
                   {dungeon.name}
                 </Link>
@@ -101,13 +101,10 @@ export function AppSidebar() {
     <Sidebar variant="inset">
       <SidebarHeader>
         <div className="mb-2">
-          <Link
-            href="/"
-            className="block text-xl font-bold text-blue-600 hover:text-blue-800 mb-2"
-          >
+          <Link href="/" className="block text-xl font-bold mb-2">
             HaveSome Stratfu
           </Link>
-          <div className="text-sm text-gray-500">Strategies & Guides</div>
+          <div className="text-sm ">Strategies & Guides</div>
         </div>
       </SidebarHeader>
       <SidebarContent>{renderSidebarContent()}</SidebarContent>

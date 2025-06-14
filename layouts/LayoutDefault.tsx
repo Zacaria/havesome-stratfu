@@ -14,13 +14,12 @@ export default function LayoutDefault({
   return (
     <AppProvider>
       <SidebarProvider>
-        <div className="flex min-h-screen bg-gray-50 w-full">
+        <div className="flex min-h-screen w-full">
           <AppSidebar />
-
           {/* Main content area */}
           <div className="flex-1 flex flex-col min-w-0">
             {/* Sticky header */}
-            <header className="sticky top-0 z-10 bg-white shadow">
+            <header className="sticky bg-background top-0 z-10 shadow">
               <div className="h-16 flex items-center justify-between px-4">
                 <div className="flex items-center space-x-4">
                   <SidebarTrigger />
@@ -34,7 +33,7 @@ export default function LayoutDefault({
 
             {/* Scrollable content */}
             <div className="flex-1 overflow-y-auto">
-              <main className="min-h-[calc(100vh-4rem)] bg-gray-50">
+              <main className="min-h-[calc(100vh-4rem)]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-6">
                   {children}
                 </div>

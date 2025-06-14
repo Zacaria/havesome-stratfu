@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { usePageContext } from "vike-react/usePageContext";
 import { useDungeons } from "@/hooks/useDungeons";
+import { Search, X } from "lucide-react";
 
 // Simple classNames helper for conditional classes
 function classNames(...classes: (string | boolean | undefined)[]): string {
@@ -194,24 +195,11 @@ export function SearchDialog() {
         onClick={() => setIsOpen(true)}
         onKeyDown={(e) => e.key === "Enter" && setIsOpen(true)}
         tabIndex={0}
-        className="flex items-center w-full max-w-2xl mx-auto bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-2 text-left cursor-text hover:border-blue-300 dark:hover:border-blue-700 transition-colors"
+        className="flex items-center w-full max-w-2xl mx-auto border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-2 text-left cursor-text  transition-colors"
         aria-label="Open search dialog"
         type="button"
       >
-        <svg
-          className="h-5 w-5 text-gray-400"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          aria-hidden="true"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-          />
-        </svg>
+        <Search className="h-5 w-5 text-gray-400" />
         <span className="ml-3 text-gray-500 dark:text-gray-400">
           Search dungeons...
         </span>
@@ -238,25 +226,12 @@ export function SearchDialog() {
               <div className="px-4 py-4">
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                    <svg
-                      className="h-5 w-5 text-gray-400"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                      />
-                    </svg>
+                    <Search className="h-5 w-5 text-gray-400" />
                   </div>
                   <input
                     ref={inputRef}
                     type="text"
-                    className="block w-full pl-10 pr-3 py-3 border border-gray-200 dark:border-gray-700 rounded-lg leading-5 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                    className="block w-full pl-10 pr-3 py-3 border border-gray-200 dark:border-gray-700 rounded-lg leading-5 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent sm:text-sm"
                     placeholder="Search for a dungeon or boss..."
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
@@ -275,21 +250,7 @@ export function SearchDialog() {
                     className="absolute right-2 top-1/2 -translate-y-1/2 p-1 text-gray-400 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400"
                     aria-label="Close search"
                   >
-                    <svg
-                      className="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <title>Close search</title>
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M6 18L18 6M6 6l12 12"
-                      />
-                    </svg>
+                    <X className="h-5 w-5" />
                   </button>
                 </div>
               </div>
@@ -311,7 +272,7 @@ export function SearchDialog() {
                         "flex justify-between",
                         "border-l-2",
                         selectedIndex === index
-                          ? "border-blue-500 bg-gray-50 dark:bg-gray-700"
+                          ? "border-primary bg-gray-50 dark:bg-gray-700"
                           : "border-transparent"
                       )}
                     >
@@ -339,19 +300,6 @@ export function SearchDialog() {
                               {dungeon.levelRange}
                             </p>
                           </div>
-                          <svg
-                            className="h-5 w-5 text-blue-500 flex-shrink-0"
-                            fill="none"
-                            viewBox="0 0 20 20"
-                            stroke="currentColor"
-                            aria-hidden="true"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
                         </div>
                       </button>
                     </li>
@@ -364,20 +312,7 @@ export function SearchDialog() {
                 </div>
               ) : (
                 <div className="p-8 text-center text-gray-500 dark:text-gray-400">
-                  <svg
-                    className="mx-auto h-12 w-12 text-gray-400"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                    />
-                  </svg>
+                  <Search className="mx-auto h-12 w-12 text-gray-400" />
                   <h3 className="mt-2 text-sm font-medium">
                     Search for dungeons
                   </h3>

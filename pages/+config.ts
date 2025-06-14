@@ -15,4 +15,8 @@ export default {
   description: "Demo showcasing Vike",
   extends: vikeReact,
   prerender: true,
+  htmlAttributes: {
+    lang: "fr",
+    class: "dark",
+  },
 } satisfies Config;
